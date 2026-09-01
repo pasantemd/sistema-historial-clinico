@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import "tailwindcss" source("../");
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-hover: var(--surface-hover);
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-heading: "Inter", system-ui, -apple-system, sans-serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-soft: var(--destructive-soft);
+  --color-destructive-hover: var(--destructive-hover);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-soft: var(--primary-soft);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-soft: var(--warning-soft);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-info-soft: var(--info-soft);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --duration-fast: 120ms;
+  --duration-normal: 180ms;
+  --duration-slow: 240ms;
+  --background: #FAF8FF;
+  --foreground: #1A1B21;
+  --surface: #ffffff;
+  --surface-muted: #F3F3FD;
+  --surface-hover: #EEEDF6;
+  --card: #ffffff;
+  --card-foreground: #1A1B21;
+  --popover: #ffffff;
+  --popover-foreground: #1A1B21;
+  --primary: #003D9B;
+  --primary-hover: #00296D;
+  --primary-soft: #D8E5FF;
+  --primary-foreground: #071A3D;
+  --secondary: #F3F3FD;
+  --secondary-foreground: #1A1B21;
+  --muted: #F3F3FD;
+  --muted-foreground: #434654;
+  --accent: #E7EFFF;
+  --accent-foreground: #00296D;
+  --destructive: #BA1A1A;
+  --destructive-hover: #8F1111;
+  --destructive-foreground: #4A0B0B;
+  --destructive-soft: #FDE7E7;
+  --success: #006C49;
+  --success-foreground: #052E20;
+  --success-soft: #DFF4EA;
+  --warning: #D97706;
+  --warning-foreground: #3B2200;
+  --warning-soft: #FFF1D6;
+  --info: #003D9B;
+  --info-foreground: #071A3D;
+  --info-soft: #D8E5FF;
+  --border: #C3C6D6;
+  --border-strong: #9EA3BA;
+  --input: #C3C6D6;
+  --ring: #003D9B;
+  --chart-1: #003D9B;
+  --chart-2: #006C49;
+  --chart-3: #D97706;
+  --chart-4: #3F6FBC;
+  --chart-5: #BA1A1A;
+  --radius: 0.625rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1A1B21;
+  --sidebar-primary: #003D9B;
+  --sidebar-primary-foreground: #071A3D;
+  --sidebar-accent: #F3F3FD;
+  --sidebar-accent-foreground: #1A1B21;
+  --sidebar-border: #C3C6D6;
+  --sidebar-ring: #003D9B;
+}
+
+.dark {
+  --background: #0D1320;
+  --foreground: #F6F7FB;
+  --surface: #151B2A;
+  --surface-muted: #111827;
+  --surface-hover: #20283B;
+  --card: #151B2A;
+  --card-foreground: #F6F7FB;
+  --popover: #151B2A;
+  --popover-foreground: #F6F7FB;
+  --primary: #7DA7F2;
+  --primary-hover: #A9C4F7;
+  --primary-soft: rgba(125, 167, 242, 0.14);
+  --primary-foreground: #ffffff;
+  --secondary: #20283B;
+  --secondary-foreground: #F6F7FB;
+  --muted: #111827;
+  --muted-foreground: #C1C6D4;
+  --accent: rgba(125, 167, 242, 0.14);
+  --accent-foreground: #D8E5FF;
+  --destructive: #FFB4AB;
+  --destructive-hover: #FFDAD6;
+  --destructive-foreground: #ffffff;
+  --destructive-soft: rgba(255, 180, 171, 0.14);
+  --success: #7EDDB7;
+  --success-foreground: #ffffff;
+  --success-soft: rgba(126, 221, 183, 0.14);
+  --warning: #FFCC80;
+  --warning-foreground: #ffffff;
+  --warning-soft: rgba(255, 204, 128, 0.16);
+  --info: #A9C4F7;
+  --info-foreground: #ffffff;
+  --info-soft: rgba(169, 196, 247, 0.14);
+  --border: #30384E;
+  --border-strong: #4B556D;
+  --input: #4B556D;
+  --ring: #A9C4F7;
+  --chart-1: #7DA7F2;
+  --chart-2: #7EDDB7;
+  --chart-3: #FFCC80;
+  --chart-4: #A9C4F7;
+  --chart-5: #FFB4AB;
+  --sidebar: #0B111E;
+  --sidebar-foreground: #E8ECF6;
+  --sidebar-primary: #7DA7F2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(125, 167, 242, 0.14);
+  --sidebar-accent-foreground: #E8ECF6;
+  --sidebar-border: #30384E;
+  --sidebar-ring: #A9C4F7;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply overflow-x-hidden bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  html {
+    @apply overflow-x-hidden;
+  }
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+}
+
+@utility transition-fast {
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--ease-out);
+}
+
+@utility transition-normal {
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+  transition-duration: var(--duration-normal);
+  transition-timing-function: var(--ease-out);
+}
+
+@utility transition-slow {
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+  transition-duration: var(--duration-slow);
+  transition-timing-function: var(--ease-out);
+}
+
+@keyframes app-content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer components {
+  @media screen {
+    [data-slot="app-content"] {
+      animation: app-content-enter var(--duration-normal) var(--ease-out) both;
+    }
+  }
+
+  main table {
+    @apply w-full border-collapse text-sm;
+  }
+  main table thead {
+    @apply bg-muted/70;
+  }
+  main table th {
+    @apply px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-muted-foreground;
+  }
+  main table tbody tr {
+    @apply transition-colors duration-150 hover:bg-muted/50;
+  }
+  main table td {
+    @apply px-4 py-3 align-middle;
+  }
+  main table td,
+  main table th {
+    @apply border-border/80;
+  }
+
+  main form > [data-slot="card"] > [data-slot="card-header"] {
+    border-bottom: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
+    background: color-mix(in oklab, var(--primary) 3.5%, var(--card));
+    padding-bottom: var(--card-spacing);
+  }
+
+  main form select {
+    background-color: var(--card);
+    color: var(--foreground);
+    outline: none;
+    transition: border-color 150ms var(--ease-out), box-shadow 150ms var(--ease-out);
+  }
+
+  main form select option {
+    background-color: var(--popover);
+    color: var(--popover-foreground);
+  }
+
+  .dark main form select {
+    color-scheme: dark;
+  }
+
+  main form select:focus-visible {
+    border-color: var(--ring);
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--ring) 20%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+  .no-print,
+  .app-chrome {
+    display: none !important;
+  }
+  html,
+  body,
+  main {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    color: black !important;
+    background: white !important;
+  }
+  .print-area {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: black !important;
+    background: white !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+  .print-area section,
+  .print-area article,
+  .print-area table,
+  .print-area tr,
+  .print-area footer {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .certificado {
+    border: none !important;
+    box-shadow: none !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  #hoja-receta {
+    page: receta;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: black !important;
+    background: white !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    font-size: 9pt;
+    line-height: 1.25;
+  }
+  body:has(#hoja-receta),
+  body:has(#hoja-receta) main,
+  body:has(#hoja-receta) .h-screen {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    color: black !important;
+    background: white !important;
+  }
+  #hoja-receta *,
+  #hoja-receta *::before,
+  #hoja-receta *::after {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+  #hoja-receta .receta-bloque,
+  #hoja-receta .receta-medicamentos,
+  #hoja-receta .receta-medicamento,
+  #hoja-receta .receta-indicaciones,
+  #hoja-receta .receta-firma {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+
+@page receta {
+  size: A4 portrait;
+  margin: 10mm;
+}
+
+/* ─── Animaciones del toast de guardado ─────────────────────────── */
+@keyframes toast-entrada {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toast-progreso {
+  from { width: 100%; }
+  to   { width: 0%; }
+}

@@ -1,0 +1,5 @@
+-- CreateEnum
+CREATE TYPE "TipoMorbilidad" AS ENUM ('ENFERMEDAD_GENERAL', 'ENFERMEDAD_OCUPACIONAL', 'ACCIDENTE_LABORAL', 'ACCIDENTE_NO_LABORAL', 'CONTROL_MEDICO');
+
+-- AlterTable
+ALTER TABLE "EvaluacionMedica" ADD COLUMN     "morbilidad" "TipoMorbilidad";

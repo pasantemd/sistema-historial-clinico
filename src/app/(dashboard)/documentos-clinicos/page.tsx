@@ -1,0 +1,3 @@
+import { PaginaDocumentosClinicos } from "@/modulos/documentos-clinicos/componentes/pagina-documentos-clinicos";
+import { requerirPermiso, tienePermiso } from "@/servicios/autenticacion/requerir-permiso";
+export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) { const usuario = await requerirPermiso("documento-clinico.ver"); const p = await searchParams; const uno = (v: string | string[] | undefined) => typeof v === "string" ? v : undefined; return <PaginaDocumentosClinicos usuarioId={usuario.id} puedeCrear={tienePermiso(usuario, "documento-clinico.crear")} filtros={{ trabajador: uno(p.trabajador), fecha: uno(p.fecha), estado: uno(p.estado), pagina: Number(uno(p.pagina) ?? 1) }} />; }

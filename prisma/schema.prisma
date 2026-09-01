@@ -1,0 +1,1162 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum EstadoRegistro {
+  ACTIVO
+  INACTIVO
+}
+
+enum EstadoTrabajador {
+  ACTIVO
+  INACTIVO
+  SUSPENDIDO
+  RETIRADO
+}
+
+enum TipoDocumento {
+  CEDULA
+  PASAPORTE
+  RUC
+  OTRO
+}
+
+enum Sexo {
+  MASCULINO
+  FEMENINO
+  OTRO
+  NO_ESPECIFICADO
+}
+
+enum ResultadoAuditoria {
+  EXITOSO
+  FALLIDO
+}
+
+enum EstadoVinculoLaboral {
+  ACTIVO
+  SUSPENDIDO
+  FINALIZADO
+}
+
+enum EstadoEvaluacionMedica {
+  BORRADOR
+  FINALIZADA
+  ANULADA
+}
+
+enum TipoAlergia {
+  MEDICAMENTO
+  ALIMENTO
+  AMBIENTAL
+  OTRA
+}
+
+enum SeveridadAlergia {
+  LEVE
+  MODERADA
+  GRAVE
+}
+
+enum EstadoAtencionMedica {
+  ABIERTA
+  FINALIZADA
+  ANULADA
+}
+
+enum EstadoReceta {
+  BORRADOR
+  EMITIDA
+  ANULADA
+}
+
+enum EstadoCitaMedica {
+  PROGRAMADA
+  CONFIRMADA
+  ATENDIDA
+  CANCELADA
+  NO_ASISTIO
+}
+
+enum EstadoDocumentoClinico {
+  BORRADOR
+  FINALIZADO
+  ANULADO
+}
+
+enum TipoDiagnosticoClinico {
+  PRESUNTIVO
+  DEFINITIVO
+}
+
+model Usuario {
+  id                String         @id @default(uuid()) @db.Uuid
+  nombres           String
+  apellidos         String
+  cedula            String?        @unique
+  codigoProfesional String?
+  especialidad      String?
+  correo            String         @unique
+  claveHash         String
+  estado            EstadoRegistro @default(ACTIVO)
+  ultimoAccesoEn    DateTime?
+  creadoEn          DateTime       @default(now())
+  actualizadoEn     DateTime       @updatedAt
+
+  roles                          UsuarioRol[]
+  auditorias                     Auditoria[]
+  trabajadoresCreados            Trabajador[]             @relation("TrabajadorCreadoPor")
+  trabajadoresActualizados       Trabajador[]             @relation("TrabajadorActualizadoPor")
+  fichasResponsable              FichaOcupacional[]       @relation("FichaResponsable")
+  fichasCreadas                  FichaOcupacional[]       @relation("FichaCreadoPor")
+  fichasActualizadas             FichaOcupacional[]       @relation("FichaActualizadoPor")
+  evaluacionesResponsable        EvaluacionMedica[]       @relation("EvaluacionResponsable")
+  evaluacionesCreadas            EvaluacionMedica[]       @relation("EvaluacionCreadoPor")
+  evaluacionesActualizadas       EvaluacionMedica[]       @relation("EvaluacionActualizadoPor")
+  recetasResponsable             RecetaMedica[]           @relation("RecetaResponsable")
+  recetasCreadas                 RecetaMedica[]           @relation("RecetaCreadoPor")
+  recetasAlergiaConfirmada       RecetaMedica[]           @relation("RecetaAlergiaConfirmadaPor")
+  atencionesResponsable          AtencionMedica[]         @relation("AtencionResponsable")
+  atencionesCreadas              AtencionMedica[]         @relation("AtencionCreadoPor")
+  registrosDiariosProfesional    RegistroDiarioAtencion[] @relation("RegistroDiarioProfesional")
+  registrosDiariosCreados        RegistroDiarioAtencion[] @relation("RegistroDiarioCreadoPor")
+  documentosClinicosProfesional  DocumentoClinico[]       @relation("DocumentoClinicoProfesional")
+  documentosClinicosCreados      DocumentoClinico[]       @relation("DocumentoClinicoCreadoPor")
+  documentosClinicosActualizados DocumentoClinico[]       @relation("DocumentoClinicoActualizadoPor")
+  citasProfesional               CitaMedica[]             @relation("CitaProfesional")
+  citasCreadas                   CitaMedica[]             @relation("CitaCreadoPor")
+  medicamentosInventarioCreados  MedicamentoInventario[]  @relation("MedicamentoInventarioCreadoPor")
+  medicamentosInventarioEditados MedicamentoInventario[]  @relation("MedicamentoInventarioActualizadoPor")
+  movimientosInventario          MovimientoInventario[]   @relation("MovimientoInventarioUsuario")
+  empresasAutorizadas            UsuarioEmpresa[]
+}
+
+model Rol {
+  id            String         @id @default(uuid()) @db.Uuid
+  nombre        String         @unique
+  descripcion   String?
+  estado        EstadoRegistro @default(ACTIVO)
+  creadoEn      DateTime       @default(now())
+  actualizadoEn DateTime       @updatedAt
+
+  usuarios UsuarioRol[]
+  permisos RolPermiso[]
+}
+
+model Permiso {
+  id            String         @id @default(uuid()) @db.Uuid
+  codigo        String         @unique
+  nombre        String
+  descripcion   String?
+  modulo        String
+  estado        EstadoRegistro @default(ACTIVO)
+  creadoEn      DateTime       @default(now())
+  actualizadoEn DateTime       @updatedAt
+
+  roles RolPermiso[]
+}
+
+model UsuarioRol {
+  usuarioId  String   @db.Uuid
+  rolId      String   @db.Uuid
+  asignadoEn DateTime @default(now())
+
+  usuario Usuario @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  rol     Rol     @relation(fields: [rolId], references: [id], onDelete: Cascade)
+
+  @@id([usuarioId, rolId])
+  @@unique([usuarioId])
+}
+
+model RolPermiso {
+  rolId      String   @db.Uuid
+  permisoId  String   @db.Uuid
+  asignadoEn DateTime @default(now())
+
+  rol     Rol     @relation(fields: [rolId], references: [id], onDelete: Cascade)
+  permiso Permiso @relation(fields: [permisoId], references: [id], onDelete: Cascade)
+
+  @@id([rolId, permisoId])
+}
+
+model Empresa {
+  id                            String         @id @default(uuid()) @db.Uuid
+  ruc                           String         @unique
+  razonSocial                   String
+  nombreComercial               String?
+  actividadEconomicaCodigo      String?
+  actividadEconomicaDescripcion String?
+  telefono                      String?
+  correo                        String?
+  direccion                     String?
+  estado                        EstadoRegistro @default(ACTIVO)
+  creadoEn                      DateTime       @default(now())
+  actualizadoEn                 DateTime       @updatedAt
+
+  departamentos         Departamento[]
+  trabajadores          Trabajador[]
+  asignacionesLaborales AsignacionLaboral[]
+  fichaOcupacionals     FichaOcupacional[]
+  evaluacionesMedicas   EvaluacionMedica[]
+  recetas               RecetaMedica[]
+  atenciones            AtencionMedica[]
+  registrosDiarios      RegistroDiarioAtencion[]
+  documentosClinicos    DocumentoClinico[]
+  citas                 CitaMedica[]
+  usuariosAutorizados   UsuarioEmpresa[]
+
+  @@index([estado])
+  @@map("Empresa")
+}
+
+model UsuarioEmpresa {
+  usuarioId  String   @db.Uuid
+  empresaId  String   @db.Uuid
+  asignadoEn DateTime @default(now())
+
+  usuario Usuario @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  empresa Empresa @relation(fields: [empresaId], references: [id], onDelete: Cascade)
+
+  @@id([usuarioId, empresaId])
+  @@index([empresaId])
+  @@map("UsuarioEmpresa")
+}
+
+model Departamento {
+  id            String         @id @default(uuid()) @db.Uuid
+  empresaId     String         @db.Uuid
+  nombre        String
+  descripcion   String?
+  estado        EstadoRegistro @default(ACTIVO)
+  creadoEn      DateTime       @default(now())
+  actualizadoEn DateTime       @updatedAt
+
+  empresa               Empresa                  @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  trabajadores          Trabajador[]
+  asignacionesLaborales AsignacionLaboral[]
+  fichaOcupacionals     FichaOcupacional[]
+  evaluacionesMedicas   EvaluacionMedica[]
+  recetas               RecetaMedica[]
+  atenciones            AtencionMedica[]
+  registrosDiarios      RegistroDiarioAtencion[]
+  documentosClinicos    DocumentoClinico[]
+  citas                 CitaMedica[]
+
+  @@unique([empresaId, nombre])
+  @@index([empresaId])
+  @@index([estado])
+  @@map("Departamento")
+}
+
+model Trabajador {
+  id               String           @id @default(uuid()) @db.Uuid
+  empresaId        String           @db.Uuid
+  departamentoId   String           @db.Uuid
+  tipoDocumento    TipoDocumento    @default(CEDULA)
+  numeroDocumento  String
+  nombres          String
+  apellidos        String
+  fechaNacimiento  DateTime?        @db.Date
+  sexo             Sexo             @default(NO_ESPECIFICADO)
+  telefono         String?
+  correo           String?
+  direccion        String?
+  puestoLaboral    String?
+  tipoContrato     String?
+  jornadaLaboral   String?
+  areaTrabajo      String?
+  lugarTrabajo     String?
+  estadoLaboral    EstadoTrabajador @default(ACTIVO)
+  creadoPorId      String?          @db.Uuid
+  actualizadoPorId String?          @db.Uuid
+  creadoEn         DateTime         @default(now())
+  actualizadoEn    DateTime         @updatedAt
+
+  empresa               Empresa                  @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  departamento          Departamento             @relation(fields: [departamentoId], references: [id], onDelete: Restrict)
+  creadoPor             Usuario?                 @relation("TrabajadorCreadoPor", fields: [creadoPorId], references: [id], onDelete: SetNull)
+  actualizadoPor        Usuario?                 @relation("TrabajadorActualizadoPor", fields: [actualizadoPorId], references: [id], onDelete: SetNull)
+  asignacionesLaborales AsignacionLaboral[]
+  fichaOcupacionals     FichaOcupacional[]
+  evaluacionesMedicas   EvaluacionMedica[]
+  recetas               RecetaMedica[]
+  alergias              AlergiaTrabajador[]
+  atenciones            AtencionMedica[]
+  registrosDiarios      RegistroDiarioAtencion[]
+  documentosClinicos    DocumentoClinico[]
+  citas                 CitaMedica[]
+
+  @@unique([tipoDocumento, numeroDocumento])
+  @@index([empresaId])
+  @@index([departamentoId])
+}
+
+model AsignacionLaboral {
+  id             String               @id @default(uuid()) @db.Uuid
+  trabajadorId   String               @db.Uuid
+  empresaId      String               @db.Uuid
+  departamentoId String               @db.Uuid
+  // Legado: la interfaz ya no solicita fecha de inicio laboral; los nuevos
+  // registros se crean sin fecha (null). Se preserva el dato histórico.
+  fechaInicio    DateTime?            @map("fechaIngreso") @db.Date
+  fechaReingreso DateTime?            @db.Date
+  fechaFin       DateTime?            @map("fechaSalida") @db.Date
+  activa         Boolean              @default(true)
+  estado         EstadoVinculoLaboral @default(ACTIVO)
+  creadoEn       DateTime             @default(now())
+  actualizadoEn  DateTime             @updatedAt
+
+  trabajador   Trabajador         @relation(fields: [trabajadorId], references: [id], onDelete: Restrict)
+  empresa      Empresa            @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  departamento Departamento       @relation(fields: [departamentoId], references: [id], onDelete: Restrict)
+  fichas       FichaOcupacional[]
+  evaluaciones EvaluacionMedica[]
+  recetas      RecetaMedica[]
+  atenciones   AtencionMedica[]
+
+  @@index([trabajadorId])
+  @@index([empresaId])
+  @@index([departamentoId])
+  @@index([trabajadorId, activa])
+  @@map("VinculoLaboral")
+}
+
+model Auditoria {
+  id              String             @id @default(uuid()) @db.Uuid
+  usuarioId       String?            @db.Uuid
+  accion          String
+  modulo          String
+  entidad         String
+  entidadId       String?
+  direccionIp     String?
+  agenteUsuario   String?
+  datosAnteriores Json?
+  datosNuevos     Json?
+  resultado       ResultadoAuditoria
+  creadoEn        DateTime           @default(now())
+
+  usuario Usuario? @relation(fields: [usuarioId], references: [id], onDelete: SetNull)
+
+  @@index([creadoEn])
+  @@index([modulo, creadoEn])
+  @@index([usuarioId, creadoEn])
+}
+
+model IntentoInicioSesion {
+  id        String   @id @default(uuid()) @db.Uuid
+  claveHash String   @db.VarChar(64)
+  creadoEn  DateTime @default(now())
+
+  @@index([claveHash, creadoEn])
+  @@index([creadoEn])
+}
+
+enum TipoEvaluacionOcupacional {
+  INGRESO
+  PERIODICA
+  REINGRESO
+  RETIRO
+}
+
+enum AptitudMedicaOcupacional {
+  APTO
+  APTO_EN_OBSERVACION
+  APTO_CON_LIMITACIONES
+  NO_APTO
+}
+
+enum EstadoFichaOcupacional {
+  BORRADOR
+  FINALIZADA
+  ANULADA
+}
+
+enum NivelCie10 {
+  CATEGORIA
+  SUBCATEGORIA
+}
+
+model EnfermedadCie10 {
+  id                   String     @id @default(uuid()) @db.Uuid
+  codigo               String     @unique @db.VarChar(10)
+  descripcion          String     @db.Text
+  nivel                NivelCie10
+  categoriaPadreCodigo String?    @db.VarChar(10)
+  activa               Boolean    @default(true)
+  creadoEn             DateTime   @default(now())
+  actualizadoEn        DateTime   @updatedAt
+
+  categoriaPadre           EnfermedadCie10?              @relation("CategoriaCie10", fields: [categoriaPadreCodigo], references: [codigo], onDelete: Restrict)
+  subcategorias            EnfermedadCie10[]             @relation("CategoriaCie10")
+  diagnosticos             DiagnosticoFicha[]
+  diagnosticosEvaluaciones DiagnosticoEvaluacion[]
+  diagnosticosDocumentos   DocumentoClinicoDiagnostico[]
+  sinonimos                SinonimoCie10[]
+
+  @@index([codigo])
+  @@index([descripcion])
+  @@index([categoriaPadreCodigo])
+  @@map("enfermedades_cie10")
+}
+
+model SinonimoCie10 {
+  id           String   @id @default(uuid()) @db.Uuid
+  termino      String   @db.VarChar(160)
+  enfermedadId String   @db.Uuid
+  creadoEn     DateTime @default(now())
+
+  enfermedad EnfermedadCie10 @relation(fields: [enfermedadId], references: [id], onDelete: Restrict)
+
+  @@unique([termino, enfermedadId])
+  @@index([termino])
+  @@index([enfermedadId])
+  @@map("sinonimos_cie10")
+}
+
+model FichaOcupacional {
+  id                  String                    @id @default(uuid()) @db.Uuid
+  numeroFicha         String?                   @unique
+  trabajadorId        String                    @db.Uuid
+  empresaId           String                    @db.Uuid
+  departamentoId      String                    @db.Uuid
+  asignacionLaboralId String?                   @db.Uuid
+  atencionMedicaId    String?                   @db.Uuid
+  registroDiarioId    String?                   @db.Uuid
+  usuarioId           String                    @db.Uuid
+  tipoEvaluacion      TipoEvaluacionOcupacional
+  estado              EstadoFichaOcupacional    @default(BORRADOR)
+
+  empresaNombreHistorico      String?
+  empresaRucHistorico         String?
+  departamentoNombreHistorico String?
+
+  institucionSistema    String?
+  tipoInstitucion       String?
+  ruc                   String?
+  ciiu                  String?
+  establecimiento       String?
+  numeroHistoriaClinica String?
+  numeroArchivo         String?
+  primerApellido        String?
+  segundoApellido       String?
+  primerNombre          String?
+  segundoNombre         String?
+  atencionEmbarazada    Boolean   @default(false)
+  atencionDiscapacidad  Boolean   @default(false)
+  atencionCatastrofica  Boolean   @default(false)
+  atencionLactancia     Boolean   @default(false)
+  atencionAdultoMayor   Boolean   @default(false)
+  sexo                  String?
+  fechaNacimiento       DateTime? @db.Date
+  edad                  Int?
+  grupoSanguineo        String?
+  lateralidad           String?
+
+  puestoTrabajoCIUO   String?
+  fechaAtencion       DateTime? @db.Date
+  fechaIngresoTrabajo DateTime? @db.Date
+  fechaReintegro      DateTime? @db.Date
+  fechaSalida         DateTime? @db.Date
+  observacionMotivo   String?
+
+  antecedentesClinicosQuirurgicos String?
+  antecedentesFamiliares          String?
+  autorizaTransfusiones           String?
+  tratamientoHormonal             String?
+  tratamientoHormonalCual         String?
+  fechaUltimaMenstruacion         DateTime? @db.Date
+  gestas                          Int?
+  partos                          Int?
+  cesareas                        Int?
+  abortos                         Int?
+  planificacionFamiliarFemenina   String?
+  metodoPlanificacionFemenina     String?
+  examenesFemeninos               Json?
+  planificacionFamiliarMasculina  String?
+  metodoPlanificacionMasculina    String?
+  examenesMasculinos              Json?
+  consumoSustancias               Json?
+  actividadFisica                 String?
+  actividadFisicaCual             String?
+  actividadFisicaTiempo           String?
+  medicacionHabitual              String?
+  medicacionHabitualCual          String?
+  medicacionHabitualCantidad      String?
+  observacionEstiloVida           String?
+
+  noRefiereSintomatologia   Boolean @default(false)
+  descripcionProblemaActual String?
+
+  temperatura               Float?
+  presionArterial           String?
+  frecuenciaCardiaca        Int?
+  frecuenciaRespiratoria    Int?
+  saturacionOxigeno         Int?
+  peso                      Float?
+  talla                     Float?
+  imc                       Float?
+  perimetroAbdominal        Float?
+  examenFisico              Json?
+  observacionesExamenFisico String?
+
+  actividadesRiesgo  Json?
+  factoresRiesgo     Json?
+  medidasPreventivas String?
+
+  antecedentesLaborales     Json?
+  actividadesExtralaborales Json?
+  resultadosExamenes        Json?
+  observacionesResultados   String?
+  diagnosticosLegado        Json?   @map("diagnosticos")
+
+  aptitudMedica        String?
+  observacionesAptitud String?
+
+  recomendaciones Json?
+
+  retiroRealizaEvaluacion  String?
+  retiroRelacionadoTrabajo String?
+  retiroObservacion        String?
+
+  profesionalNombres      String?
+  profesionalCodigoMedico String?
+  profesionalFirmaUrl     String?
+  profesionalSelloUrl     String?
+
+  firmaTrabajadorAcepta Boolean   @default(false)
+  firmaTrabajadorFecha  DateTime? @db.Date
+  firmaTrabajadorUrl    String?
+
+  creadoPorId      String?   @db.Uuid
+  actualizadoPorId String?   @db.Uuid
+  finalizadoEn     DateTime?
+  creadoEn         DateTime  @default(now())
+  actualizadoEn    DateTime  @updatedAt
+
+  trabajador         Trabajador              @relation(fields: [trabajadorId], references: [id], onDelete: Restrict)
+  empresa            Empresa                 @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  departamento       Departamento            @relation(fields: [departamentoId], references: [id], onDelete: Restrict)
+  asignacionLaboral  AsignacionLaboral?      @relation(fields: [asignacionLaboralId], references: [id], onDelete: Restrict)
+  atencionMedica     AtencionMedica?         @relation(fields: [atencionMedicaId], references: [id], onDelete: SetNull)
+  registroDiario     RegistroDiarioAtencion? @relation(fields: [registroDiarioId], references: [id], onDelete: Restrict)
+  usuario            Usuario                 @relation("FichaResponsable", fields: [usuarioId], references: [id], onDelete: Restrict)
+  creadoPor          Usuario?                @relation("FichaCreadoPor", fields: [creadoPorId], references: [id], onDelete: SetNull)
+  actualizadoPor     Usuario?                @relation("FichaActualizadoPor", fields: [actualizadoPorId], references: [id], onDelete: SetNull)
+  diagnosticos       DiagnosticoFicha[]
+  documentosClinicos DocumentoClinico[]
+  recetas            RecetaMedica[]
+
+  @@index([trabajadorId])
+  @@index([empresaId])
+  @@index([departamentoId])
+  @@index([asignacionLaboralId])
+  @@index([atencionMedicaId])
+  @@index([registroDiarioId])
+  @@index([usuarioId])
+  @@index([tipoEvaluacion])
+  @@index([estado])
+  @@map("FichaOcupacional")
+}
+
+model AlergiaTrabajador {
+  id            String           @id @default(uuid()) @db.Uuid
+  trabajadorId  String           @db.Uuid
+  tipo          TipoAlergia
+  sustancia     String
+  descripcion   String?
+  severidad     SeveridadAlergia
+  activa        Boolean          @default(true)
+  creadoEn      DateTime         @default(now())
+  actualizadoEn DateTime         @updatedAt
+
+  trabajador Trabajador @relation(fields: [trabajadorId], references: [id], onDelete: Restrict)
+
+  @@index([trabajadorId, activa])
+  @@index([tipo, sustancia])
+}
+
+model EvaluacionMedica {
+  id                            String                 @id @default(uuid()) @db.Uuid
+  numeroEvaluacion              String?                @unique
+  trabajadorId                  String                 @db.Uuid
+  empresaId                     String                 @db.Uuid
+  departamentoId                String                 @db.Uuid
+  asignacionLaboralId           String                 @db.Uuid
+  atencionMedicaId              String?                @db.Uuid
+  registroDiarioId              String?                @db.Uuid
+  usuarioId                     String                 @db.Uuid
+  estado                        EstadoEvaluacionMedica @default(BORRADOR)
+  fechaAtencion                 DateTime?              @db.Date
+  profesionalNombreHistorico    String?
+  empresaNombreHistorico        String
+  empresaRucHistorico           String
+  departamentoNombreHistorico   String
+  trabajadorNombreHistorico     String
+  trabajadorDocumentoHistorico  String
+  trabajadorSexoHistorico       String?
+  trabajadorNacimientoHistorico DateTime?              @db.Date
+  motivoConsulta                String?
+  morbilidad                    String?                @db.VarChar(160)
+  sintomas                      String?
+  tiempoEvolucion               String?
+  observacionesMotivo           String?
+  temperatura                   Float?
+  presionArterial               String?
+  frecuenciaCardiaca            Int?
+  frecuenciaRespiratoria        Int?
+  saturacionOxigeno             Int?
+  peso                          Float?
+  talla                         Float?
+  antecedentesRelevantes        String?
+  examenFisico                  String?
+  observacionesClinicas         String?
+  observacionesDiagnostico      String?
+  indicaciones                  String?
+  recomendaciones               String?
+  reposoDias                    Int?
+  seguimiento                   String?
+  proximaConsulta               DateTime?              @db.Date
+  finalizadoEn                  DateTime?
+  anuladaEn                     DateTime?
+  motivoAnulacion               String?
+  creadoPorId                   String?                @db.Uuid
+  actualizadoPorId              String?                @db.Uuid
+  creadoEn                      DateTime               @default(now())
+  actualizadoEn                 DateTime               @updatedAt
+
+  trabajador         Trabajador              @relation(fields: [trabajadorId], references: [id], onDelete: Restrict)
+  empresa            Empresa                 @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  departamento       Departamento            @relation(fields: [departamentoId], references: [id], onDelete: Restrict)
+  asignacionLaboral  AsignacionLaboral       @relation(fields: [asignacionLaboralId], references: [id], onDelete: Restrict)
+  atencionMedica     AtencionMedica?         @relation(fields: [atencionMedicaId], references: [id], onDelete: SetNull)
+  registroDiario     RegistroDiarioAtencion? @relation(fields: [registroDiarioId], references: [id], onDelete: Restrict)
+  usuario            Usuario                 @relation("EvaluacionResponsable", fields: [usuarioId], references: [id], onDelete: Restrict)
+  creadoPor          Usuario?                @relation("EvaluacionCreadoPor", fields: [creadoPorId], references: [id], onDelete: SetNull)
+  actualizadoPor     Usuario?                @relation("EvaluacionActualizadoPor", fields: [actualizadoPorId], references: [id], onDelete: SetNull)
+  diagnosticos       DiagnosticoEvaluacion[]
+  medicamentos       MedicamentoEvaluacion[]
+  receta             RecetaMedica?
+  documentosClinicos DocumentoClinico[]
+
+  @@index([trabajadorId, estado])
+  @@index([empresaId])
+  @@index([departamentoId])
+  @@index([asignacionLaboralId])
+  @@index([atencionMedicaId])
+  @@index([registroDiarioId])
+  @@index([usuarioId])
+  @@index([fechaAtencion])
+}
+
+model DiagnosticoEvaluacion {
+  id           String   @id @default(uuid()) @db.Uuid
+  evaluacionId String   @db.Uuid
+  enfermedadId String   @db.Uuid
+  pre          Boolean  @default(false)
+  def          Boolean  @default(false)
+  creadoEn     DateTime @default(now())
+
+  evaluacion EvaluacionMedica @relation(fields: [evaluacionId], references: [id], onDelete: Restrict)
+  enfermedad EnfermedadCie10  @relation(fields: [enfermedadId], references: [id], onDelete: Restrict)
+
+  @@unique([evaluacionId, enfermedadId])
+  @@index([enfermedadId])
+}
+
+model Medicamento {
+  id              String   @id @default(uuid()) @db.Uuid
+  nombreGenerico  String
+  nombreComercial String?
+  presentacion    String
+  activo          Boolean  @default(true)
+  creadoEn        DateTime @default(now())
+  actualizadoEn   DateTime @updatedAt
+
+  evaluaciones           MedicamentoEvaluacion[]
+  recetas                RecetaMedicamento[]
+  tratamientosDocumentos DocumentoClinicoTratamiento[]
+
+  @@unique([nombreGenerico, presentacion])
+  @@index([nombreGenerico])
+  @@index([activo])
+}
+
+model MedicamentoEvaluacion {
+  id                      String   @id @default(uuid()) @db.Uuid
+  evaluacionId            String   @db.Uuid
+  medicamentoId           String   @db.Uuid
+  cantidad                Decimal? @db.Decimal(12, 2)
+  dosis                   String?
+  frecuencia              String?
+  duracion                String?
+  viaAdministracion       String?
+  indicaciones            String?
+  alertaAlergiaConfirmada Boolean  @default(false)
+  justificacionAlergia    String?
+  creadoEn                DateTime @default(now())
+  actualizadoEn           DateTime @updatedAt
+
+  evaluacion  EvaluacionMedica @relation(fields: [evaluacionId], references: [id], onDelete: Restrict)
+  medicamento Medicamento      @relation(fields: [medicamentoId], references: [id], onDelete: Restrict)
+
+  @@index([evaluacionId])
+  @@index([medicamentoId])
+}
+
+model RecetaMedica {
+  id                               String       @id @default(uuid()) @db.Uuid
+  atencionMedicaId                 String?      @db.Uuid
+  evaluacionId                     String?      @unique @map("evaluacionId") @db.Uuid
+  consultaMedicaId                 String?      @db.Uuid
+  registroDiarioId                 String?      @db.Uuid
+  fichaOcupacionalId               String?      @db.Uuid
+  documentoClinicoId               String?      @db.Uuid
+  trabajadorId                     String       @db.Uuid
+  empresaId                        String       @db.Uuid
+  departamentoId                   String?      @db.Uuid
+  asignacionLaboralId              String?      @db.Uuid
+  profesionalId                    String       @db.Uuid
+  numeroReceta                     String
+  fechaEmision                     DateTime     @map("fecha") @db.Date
+  estado                           EstadoReceta @default(BORRADOR)
+  indicacionesGenerales            String?      @map("indicaciones")
+  recomendaciones                  String?
+  observaciones                    String?
+  trabajadorNombreHistorico        String
+  trabajadorDocumentoHistorico     String
+  empresaNombreHistorico           String
+  empresaRucHistorico              String
+  empresaDireccionHistorica        String?
+  empresaTelefonoHistorico         String?
+  departamentoNombreHistorico      String?
+  trabajadorSexoHistorico          String?
+  trabajadorNacimientoHistorico    DateTime?    @db.Date
+  profesionalNombreHistorico       String
+  profesionalCodigoHistorico       String?
+  profesionalEspecialidadHistorica String?
+  diagnosticosHistoricos           Json?
+  alergiaConfirmada                Boolean      @default(false)
+  justificacionAlergia             String?
+  alergiaConfirmadaPorId           String?      @db.Uuid
+  alergiaConfirmadaEn              DateTime?
+  creadoPorId                      String?      @map("usuarioId") @db.Uuid
+  creadoEn                         DateTime     @default(now())
+  actualizadoEn                    DateTime     @updatedAt
+  anuladaEn                        DateTime?    @db.Date
+  emitidaEn                        DateTime?
+  motivoAnulacion                  String?
+
+  atencionMedica       AtencionMedica?         @relation(fields: [atencionMedicaId], references: [id], onDelete: SetNull)
+  evaluacion           EvaluacionMedica?       @relation(fields: [evaluacionId], references: [id], onDelete: Restrict)
+  registroDiario       RegistroDiarioAtencion? @relation(fields: [registroDiarioId], references: [id], onDelete: Restrict)
+  fichaOcupacional     FichaOcupacional?       @relation(fields: [fichaOcupacionalId], references: [id], onDelete: Restrict)
+  documentoClinico     DocumentoClinico?       @relation(fields: [documentoClinicoId], references: [id], onDelete: Restrict)
+  trabajador           Trabajador              @relation(fields: [trabajadorId], references: [id], onDelete: Restrict)
+  empresa              Empresa                 @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  departamento         Departamento?           @relation(fields: [departamentoId], references: [id], onDelete: Restrict)
+  asignacionLaboral    AsignacionLaboral?      @relation(fields: [asignacionLaboralId], references: [id], onDelete: Restrict)
+  profesional          Usuario                 @relation("RecetaResponsable", fields: [profesionalId], references: [id], onDelete: Restrict)
+  creadoPor            Usuario?                @relation("RecetaCreadoPor", fields: [creadoPorId], references: [id], onDelete: SetNull)
+  alergiaConfirmadaPor Usuario?                @relation("RecetaAlergiaConfirmadaPor", fields: [alergiaConfirmadaPorId], references: [id], onDelete: SetNull)
+  medicamentos         RecetaMedicamento[]
+
+  @@unique([numeroReceta])
+  @@index([atencionMedicaId])
+  @@index([evaluacionId])
+  @@index([registroDiarioId])
+  @@index([fichaOcupacionalId])
+  @@index([documentoClinicoId])
+  @@index([asignacionLaboralId])
+  @@index([trabajadorId])
+  @@index([empresaId])
+  @@index([profesionalId])
+  @@index([alergiaConfirmadaPorId])
+  @@index([fechaEmision])
+  @@index([estado])
+  @@map("Receta")
+}
+
+model RecetaMedicamento {
+  id                         String  @id @default(uuid()) @db.Uuid
+  recetaId                   String  @db.Uuid
+  medicamentoId              String? @db.Uuid
+  nombreMedicamentoHistorico String
+  nombreGenericoHistorico    String?
+  nombreComercialHistorico   String?
+  presentacionHistorica      String
+  concentracionHistorica     String?
+  cantidad                   String
+  dosis                      String
+  frecuencia                 String
+  intervaloHoras             Int?
+  duracion                   String
+  viaAdministracion          String
+  indicaciones               String?
+  observaciones              String?
+  orden                      Int     @default(0)
+
+  receta      RecetaMedica @relation(fields: [recetaId], references: [id], onDelete: Restrict)
+  medicamento Medicamento? @relation(fields: [medicamentoId], references: [id], onDelete: Restrict)
+
+  @@index([recetaId])
+  @@index([medicamentoId])
+}
+
+model DiagnosticoFicha {
+  id            String   @id @default(uuid()) @db.Uuid
+  fichaId       String   @db.Uuid
+  enfermedadId  String   @db.Uuid
+  pre           Boolean  @default(false)
+  def           Boolean  @default(false)
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+
+  ficha      FichaOcupacional @relation(fields: [fichaId], references: [id], onDelete: Restrict)
+  enfermedad EnfermedadCie10  @relation(fields: [enfermedadId], references: [id], onDelete: Restrict)
+
+  @@unique([fichaId, enfermedadId])
+  @@index([fichaId])
+  @@index([enfermedadId])
+  @@map("DiagnosticoFicha")
+}
+
+model AtencionMedica {
+  id                           String               @id @default(uuid()) @db.Uuid
+  trabajadorId                 String               @db.Uuid
+  empresaId                    String               @db.Uuid
+  departamentoId               String?              @db.Uuid
+  asignacionLaboralId          String?              @db.Uuid
+  fechaAtencion                DateTime             @db.Date
+  horaAtencion                 DateTime?            @db.Time
+  motivoGeneral                String?
+  profesionalResponsableId     String?              @db.Uuid
+  profesionalNombreHistorico   String?
+  profesionalCodigoHistorico   String?
+  estado                       EstadoAtencionMedica @default(ABIERTA)
+  empresaNombreHistorico       String
+  empresaRucHistorico          String
+  departamentoNombreHistorico  String?
+  trabajadorNombreHistorico    String
+  trabajadorDocumentoHistorico String
+  creadoPorId                  String?              @db.Uuid
+  creadoEn                     DateTime             @default(now())
+  actualizadoEn                DateTime             @updatedAt
+  finalizadaEn                 DateTime?            @db.Date
+  anuladaEn                    DateTime?            @db.Date
+  motivoAnulacion              String?
+
+  trabajador             Trabajador               @relation(fields: [trabajadorId], references: [id], onDelete: Restrict)
+  empresa                Empresa                  @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  departamento           Departamento?            @relation(fields: [departamentoId], references: [id], onDelete: Restrict)
+  asignacionLaboral      AsignacionLaboral?       @relation(fields: [asignacionLaboralId], references: [id], onDelete: Restrict)
+  profesionalResponsable Usuario?                 @relation("AtencionResponsable", fields: [profesionalResponsableId], references: [id], onDelete: SetNull)
+  creadoPor              Usuario?                 @relation("AtencionCreadoPor", fields: [creadoPorId], references: [id], onDelete: SetNull)
+  fichas                 FichaOcupacional[]
+  evaluaciones           EvaluacionMedica[]
+  recetas                RecetaMedica[]
+  registrosDiarios       RegistroDiarioAtencion[]
+  citas                  CitaMedica[]
+
+  @@index([trabajadorId])
+  @@index([empresaId])
+  @@index([departamentoId])
+  @@index([fechaAtencion])
+  @@index([estado])
+  @@map("AtencionMedica")
+}
+
+enum EstadoRegistroDiario {
+  BORRADOR
+  REGISTRADO
+  ANULADO
+}
+
+enum EstadoMedicamentoInventario {
+  ACTIVO
+  INACTIVO
+}
+
+enum UnidadMedicamentoInventario {
+  UNIDADES
+  TABLETAS
+  CAPSULAS
+  FRASCOS
+  AMPOLLAS
+  SOBRES
+  TUBOS
+  MILILITROS
+  OTRO
+}
+
+enum TipoMovimientoInventario {
+  ENTRADA
+  SALIDA
+  AJUSTE
+  DEVOLUCION
+}
+
+model RegistroDiarioAtencion {
+  id               String  @id @default(uuid()) @db.Uuid
+  numeroRegistro   String  @unique
+  trabajadorId     String  @db.Uuid
+  atencionMedicaId String? @db.Uuid
+  empresaId        String  @db.Uuid
+  departamentoId   String? @db.Uuid
+  profesionalId    String? @db.Uuid
+
+  apellidosNombres String
+  cedula           String
+  fechaNacimiento  DateTime? @db.Date
+  diaAtencion      DateTime  @db.Date
+
+  atencionMorbilidad String
+  medicacion         String?
+  procedimiento      String?
+  firmaConfirmada    Boolean @default(false)
+  observaciones      String?
+
+  empresaNombreHistorico      String
+  empresaRucHistorico         String?
+  departamentoNombreHistorico String?
+  profesionalNombreHistorico  String?
+
+  estado          EstadoRegistroDiario @default(BORRADOR)
+  creadoPorId     String               @db.Uuid
+  creadoEn        DateTime             @default(now())
+  actualizadoEn   DateTime             @updatedAt
+  anuladoEn       DateTime?
+  motivoAnulacion String?
+
+  trabajador         Trabajador                  @relation(fields: [trabajadorId], references: [id], onDelete: Restrict)
+  empresa            Empresa                     @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  departamento       Departamento?               @relation(fields: [departamentoId], references: [id], onDelete: Restrict)
+  profesional        Usuario?                    @relation("RegistroDiarioProfesional", fields: [profesionalId], references: [id], onDelete: SetNull)
+  atencionMedica     AtencionMedica?             @relation(fields: [atencionMedicaId], references: [id], onDelete: SetNull)
+  creadoPor          Usuario                     @relation("RegistroDiarioCreadoPor", fields: [creadoPorId], references: [id], onDelete: Restrict)
+  evaluaciones       EvaluacionMedica[]
+  fichas             FichaOcupacional[]
+  recetas            RecetaMedica[]
+  documentosClinicos DocumentoClinico[]
+  medicamentos       RegistroDiarioMedicamento[]
+
+  @@index([trabajadorId])
+  @@index([diaAtencion])
+  @@index([empresaId])
+  @@index([cedula])
+  @@index([estado])
+  @@map("registros_diarios_atencion")
+}
+
+model MedicamentoInventario {
+  id                      String                      @id @default(uuid()) @db.Uuid
+  nombre                  String
+  cantidadDisponible      Decimal                     @default(0) @db.Decimal(12, 2)
+  unidad                  UnidadMedicamentoInventario
+  fechaCaducidad          DateTime?                   @db.Date
+  estado                  EstadoMedicamentoInventario @default(ACTIVO)
+  observaciones           String?
+  creadoPorUsuarioId      String?                     @db.Uuid
+  actualizadoPorUsuarioId String?                     @db.Uuid
+  creadoEn                DateTime                    @default(now())
+  actualizadoEn           DateTime                    @updatedAt
+
+  creadoPorUsuario      Usuario?                    @relation("MedicamentoInventarioCreadoPor", fields: [creadoPorUsuarioId], references: [id], onDelete: SetNull)
+  actualizadoPorUsuario Usuario?                    @relation("MedicamentoInventarioActualizadoPor", fields: [actualizadoPorUsuarioId], references: [id], onDelete: SetNull)
+  movimientos           MovimientoInventario[]
+  entregasRegistro      RegistroDiarioMedicamento[]
+
+  @@index([nombre])
+  @@index([estado])
+  @@map("medicamentos_inventario")
+}
+
+model MovimientoInventario {
+  id                      String                   @id @default(uuid()) @db.Uuid
+  medicamentoInventarioId String                   @db.Uuid
+  tipoMovimiento          TipoMovimientoInventario
+  cantidad                Decimal                  @db.Decimal(12, 2)
+  cantidadAnterior        Decimal                  @db.Decimal(12, 2)
+  cantidadPosterior       Decimal                  @db.Decimal(12, 2)
+  motivo                  String
+  referenciaTipo          String?
+  referenciaId            String?
+  usuarioId               String                   @db.Uuid
+  creadoEn                DateTime                 @default(now())
+
+  medicamentoInventario MedicamentoInventario       @relation(fields: [medicamentoInventarioId], references: [id], onDelete: Restrict)
+  usuario               Usuario                     @relation("MovimientoInventarioUsuario", fields: [usuarioId], references: [id], onDelete: Restrict)
+  entregasRegistro      RegistroDiarioMedicamento[]
+
+  @@index([medicamentoInventarioId])
+  @@index([tipoMovimiento])
+  @@index([referenciaTipo, referenciaId])
+  @@index([usuarioId])
+  @@map("movimientos_inventario")
+}
+
+model RegistroDiarioMedicamento {
+  id                      String   @id @default(uuid()) @db.Uuid
+  registroDiarioId        String   @db.Uuid
+  medicamentoInventarioId String   @db.Uuid
+  nombreSnapshot          String
+  unidadSnapshot          String
+  cantidadEntregada       Decimal  @db.Decimal(12, 2)
+  movimientoInventarioId  String?  @unique @db.Uuid
+  creadoEn                DateTime @default(now())
+
+  registroDiario        RegistroDiarioAtencion @relation(fields: [registroDiarioId], references: [id], onDelete: Restrict)
+  medicamentoInventario MedicamentoInventario  @relation(fields: [medicamentoInventarioId], references: [id], onDelete: Restrict)
+  movimientoInventario  MovimientoInventario?  @relation(fields: [movimientoInventarioId], references: [id], onDelete: SetNull)
+
+  @@unique([registroDiarioId, medicamentoInventarioId])
+  @@index([registroDiarioId])
+  @@index([medicamentoInventarioId])
+  @@map("registro_diario_medicamentos")
+}
+
+model DocumentoClinico {
+  id                            String                 @id @default(uuid()) @db.Uuid
+  numeroDocumento               String                 @unique
+  trabajadorId                  String                 @db.Uuid
+  registroDiarioId              String?                @db.Uuid
+  evaluacionMedicaId            String?                @db.Uuid
+  fichaOcupacionalId            String?                @db.Uuid
+  empresaId                     String                 @db.Uuid
+  departamentoId                String?                @db.Uuid
+  profesionalId                 String                 @db.Uuid
+  fechaDocumento                DateTime               @db.Date
+  motivoConsulta                String?
+  evolucion                     String?
+  observaciones                 String?
+  estado                        EstadoDocumentoClinico @default(BORRADOR)
+  trabajadorNombreHistorico     String
+  trabajadorDocumentoHistorico  String
+  trabajadorNacimientoHistorico DateTime?              @db.Date
+  empresaNombreHistorico        String
+  empresaRucHistorico           String?
+  departamentoNombreHistorico   String?
+  profesionalNombreHistorico    String
+  profesionalCodigoHistorico    String?
+  creadoPorId                   String                 @db.Uuid
+  actualizadoPorId              String?                @db.Uuid
+  creadoEn                      DateTime               @default(now())
+  actualizadoEn                 DateTime               @updatedAt
+  finalizadoEn                  DateTime?
+  anuladoEn                     DateTime?
+  motivoAnulacion               String?
+
+  trabajador       Trabajador                    @relation(fields: [trabajadorId], references: [id], onDelete: Restrict)
+  registroDiario   RegistroDiarioAtencion?       @relation(fields: [registroDiarioId], references: [id], onDelete: Restrict)
+  evaluacionMedica EvaluacionMedica?             @relation(fields: [evaluacionMedicaId], references: [id], onDelete: Restrict)
+  fichaOcupacional FichaOcupacional?             @relation(fields: [fichaOcupacionalId], references: [id], onDelete: Restrict)
+  empresa          Empresa                       @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  departamento     Departamento?                 @relation(fields: [departamentoId], references: [id], onDelete: Restrict)
+  profesional      Usuario                       @relation("DocumentoClinicoProfesional", fields: [profesionalId], references: [id], onDelete: Restrict)
+  creadoPor        Usuario                       @relation("DocumentoClinicoCreadoPor", fields: [creadoPorId], references: [id], onDelete: Restrict)
+  actualizadoPor   Usuario?                      @relation("DocumentoClinicoActualizadoPor", fields: [actualizadoPorId], references: [id], onDelete: SetNull)
+  diagnosticos     DocumentoClinicoDiagnostico[]
+  tratamientos     DocumentoClinicoTratamiento[]
+  recetas          RecetaMedica[]
+
+  @@index([trabajadorId, fechaDocumento])
+  @@index([registroDiarioId])
+  @@index([evaluacionMedicaId])
+  @@index([fichaOcupacionalId])
+  @@index([empresaId])
+  @@index([profesionalId])
+  @@index([estado])
+}
+
+model DocumentoClinicoDiagnostico {
+  id                   String                 @id @default(uuid()) @db.Uuid
+  documentoClinicoId   String                 @db.Uuid
+  enfermedadId         String                 @db.Uuid
+  tipo                 TipoDiagnosticoClinico
+  codigoHistorico      String
+  descripcionHistorica String
+  observacion          String?
+  orden                Int                    @default(0)
+
+  documentoClinico DocumentoClinico @relation(fields: [documentoClinicoId], references: [id], onDelete: Restrict)
+  enfermedad       EnfermedadCie10  @relation(fields: [enfermedadId], references: [id], onDelete: Restrict)
+
+  @@unique([documentoClinicoId, enfermedadId])
+  @@index([enfermedadId])
+}
+
+model DocumentoClinicoTratamiento {
+  id                      String  @id @default(uuid()) @db.Uuid
+  documentoClinicoId      String  @db.Uuid
+  medicamentoId           String? @db.Uuid
+  nombreHistorico         String
+  concentracion           String?
+  dosis                   String
+  cantidad                String
+  frecuencia              String?
+  intervaloHoras          Int?
+  duracion                String?
+  via                     String?
+  indicaciones            String?
+  observaciones           String?
+  alertaAlergiaConfirmada Boolean @default(false)
+  justificacionAlergia    String?
+  orden                   Int     @default(0)
+
+  documentoClinico DocumentoClinico @relation(fields: [documentoClinicoId], references: [id], onDelete: Restrict)
+  medicamento      Medicamento?     @relation(fields: [medicamentoId], references: [id], onDelete: Restrict)
+
+  @@index([documentoClinicoId])
+  @@index([medicamentoId])
+}
+
+model CitaMedica {
+  id                String           @id @default(uuid()) @db.Uuid
+  trabajadorId      String           @db.Uuid
+  empresaId         String?          @db.Uuid
+  departamentoId    String?          @db.Uuid
+  profesionalId     String?          @db.Uuid
+  atencionMedicaId  String?          @db.Uuid
+  fecha             DateTime         @db.Date
+  horaInicio        String
+  horaFin           String?
+  motivo            String
+  observaciones     String?
+  estado            EstadoCitaMedica @default(PROGRAMADA)
+  recordatorio      Boolean          @default(false)
+  creadoPorId       String?          @db.Uuid
+  creadoEn          DateTime         @default(now())
+  actualizadoEn     DateTime         @updatedAt
+  canceladaEn       DateTime?        @db.Date
+  motivoCancelacion String?
+
+  trabajador     Trabajador      @relation(fields: [trabajadorId], references: [id], onDelete: Restrict)
+  empresa        Empresa?        @relation(fields: [empresaId], references: [id], onDelete: Restrict)
+  departamento   Departamento?   @relation(fields: [departamentoId], references: [id], onDelete: Restrict)
+  profesional    Usuario?        @relation("CitaProfesional", fields: [profesionalId], references: [id], onDelete: SetNull)
+  atencionMedica AtencionMedica? @relation(fields: [atencionMedicaId], references: [id], onDelete: SetNull)
+  creadoPor      Usuario?        @relation("CitaCreadoPor", fields: [creadoPorId], references: [id], onDelete: SetNull)
+
+  @@index([trabajadorId])
+  @@index([empresaId])
+  @@index([profesionalId])
+  @@index([atencionMedicaId])
+  @@index([fecha])
+  @@index([estado])
+  @@map("CitaMedica")
+}
+
+model Morbilidad {
+  id                String   @id @default(uuid()) @db.Uuid
+  nombre            String
+  nombreNormalizado String   @unique
+  activa            Boolean  @default(true)
+  creadoEn          DateTime @default(now())
+  actualizadoEn     DateTime @updatedAt
+
+  @@map("Morbilidad")
+}

@@ -1,0 +1,3247 @@
+{
+  ".agents/skills/security-audit/report-schema.json": {
+    "mtime": 1786463385.0894656,
+    "ast_hash": "4fc827599d92b544998e7402bc3c265c",
+    "semantic_hash": "4fc827599d92b544998e7402bc3c265c"
+  },
+  ".agents/skills/security-audit/validate-findings.cjs": {
+    "mtime": 1786463385.0894656,
+    "ast_hash": "fcc7aac30ad67b724828098b849e1f84",
+    "semantic_hash": "fcc7aac30ad67b724828098b849e1f84"
+  },
+  ".agents/skills/web-performance-audit/scripts/health-check.sh": {
+    "mtime": 1786463454.1078587,
+    "ast_hash": "d19113ccfb281b1a9032c59c7f6d4b6d",
+    "semantic_hash": "d19113ccfb281b1a9032c59c7f6d4b6d"
+  },
+  ".bug-hunter/triage.json": {
+    "mtime": 1786463545.9224901,
+    "ast_hash": "16a6c6cfc6d7b5920bea739dded20f27",
+    "semantic_hash": "16a6c6cfc6d7b5920bea739dded20f27"
+  },
+  ".impeccable/design.json": {
+    "mtime": 1785158985.1053839,
+    "ast_hash": "c25197d66ca7d23d18bf4d022c2a63a5",
+    "semantic_hash": "c25197d66ca7d23d18bf4d022c2a63a5"
+  },
+  ".obsidian/app.json": {
+    "mtime": 1784319004.6253462,
+    "ast_hash": "dee5833b348967e328e95eefb1817e82",
+    "semantic_hash": "dee5833b348967e328e95eefb1817e82"
+  },
+  ".obsidian/appearance.json": {
+    "mtime": 1784319004.7267296,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  ".obsidian/core-plugins.json": {
+    "mtime": 1784319003.383136,
+    "ast_hash": "7c877bea49eaeabb100563bd157b9051",
+    "semantic_hash": "7c877bea49eaeabb100563bd157b9051"
+  },
+  ".obsidian/graph.json": {
+    "mtime": 1784318694.587,
+    "ast_hash": "9b534c5a65653624c5d12e543d4eb720",
+    "semantic_hash": "9b534c5a65653624c5d12e543d4eb720"
+  },
+  ".obsidian/workspace.json": {
+    "mtime": 1784319133.7270257,
+    "ast_hash": "324a31ec82ad2cff01605529406f4d87",
+    "semantic_hash": "324a31ec82ad2cff01605529406f4d87"
+  },
+  "components.json": {
+    "mtime": 1784213220.878814,
+    "ast_hash": "b59117e3df6e9a5498cbc189bc8485a8",
+    "semantic_hash": "b59117e3df6e9a5498cbc189bc8485a8"
+  },
+  "docs/obsidian/.obsidian/app.json": {
+    "mtime": 1785267919.6458552,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  "docs/obsidian/.obsidian/appearance.json": {
+    "mtime": 1785267919.6668558,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  "docs/obsidian/.obsidian/core-plugins.json": {
+    "mtime": 1785267919.5909376,
+    "ast_hash": "7c877bea49eaeabb100563bd157b9051",
+    "semantic_hash": "7c877bea49eaeabb100563bd157b9051"
+  },
+  "docs/obsidian/.obsidian/graph.json": {
+    "mtime": 1785268168.775,
+    "ast_hash": "30e0aaeef782b6840b42855c68bdae68",
+    "semantic_hash": "30e0aaeef782b6840b42855c68bdae68"
+  },
+  "docs/obsidian/.obsidian/workspace.json": {
+    "mtime": 1785267919.6138537,
+    "ast_hash": "fa850a1d42fdab6d2ef504f568d71abc",
+    "semantic_hash": "fa850a1d42fdab6d2ef504f568d71abc"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1786470213.2160585,
+    "ast_hash": "3f6deedf542de040acaffef82b8ff31f",
+    "semantic_hash": "3f6deedf542de040acaffef82b8ff31f"
+  },
+  "next.config.ts": {
+    "mtime": 1784561330.8120265,
+    "ast_hash": "5cf18cb7a2c27596993ee88b5e3bc176",
+    "semantic_hash": "5cf18cb7a2c27596993ee88b5e3bc176"
+  },
+  "package.json": {
+    "mtime": 1784819696.4744265,
+    "ast_hash": "d02747ddbeb3cf3e1d33217cd1f9ffff",
+    "semantic_hash": "d02747ddbeb3cf3e1d33217cd1f9ffff"
+  },
+  "playwright.config.ts": {
+    "mtime": 1784211990.097055,
+    "ast_hash": "57c739bd24e4b2e5f4fc555d32a7a6e7",
+    "semantic_hash": "57c739bd24e4b2e5f4fc555d32a7a6e7"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1784133430.6731374,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "prisma.config.ts": {
+    "mtime": 1784301601.91387,
+    "ast_hash": "9a7490abdd17c19dab9ca15597837b19",
+    "semantic_hash": "9a7490abdd17c19dab9ca15597837b19"
+  },
+  "prisma/limpiar-pruebas.ts": {
+    "mtime": 1784820343.003043,
+    "ast_hash": "1a3cbf88614b7389beedc7e38db3c275",
+    "semantic_hash": "1a3cbf88614b7389beedc7e38db3c275"
+  },
+  "prisma/migrations/20260717183510_inicial_limpia/migration.sql": {
+    "mtime": 1784313310.941156,
+    "ast_hash": "666c0ffc079c561b97725b58b2462540",
+    "semantic_hash": "666c0ffc079c561b97725b58b2462540"
+  },
+  "prisma/migrations/20260720130608_agregar_estado_anulada_y_permisos_fichas/migration.sql": {
+    "mtime": 1784552768.2736788,
+    "ast_hash": "c20c7c9c3949078a837032158a631bc1",
+    "semantic_hash": "c20c7c9c3949078a837032158a631bc1"
+  },
+  "prisma/migrations/20260720133408_crear_catalogo_enfermedades_cie10/migration.sql": {
+    "mtime": 1784554471.9353056,
+    "ast_hash": "693d8305c031a3db878072fb19805356",
+    "semantic_hash": "693d8305c031a3db878072fb19805356"
+  },
+  "prisma/migrations/20260720141014_agregar_sinonimos_cie10/migration.sql": {
+    "mtime": 1784556641.124361,
+    "ast_hash": "26454f8e1633928f7c5fc5de89a79304",
+    "semantic_hash": "26454f8e1633928f7c5fc5de89a79304"
+  },
+  "prisma/migrations/20260720143340_finalizar_ficha_ocupacional/migration.sql": {
+    "mtime": 1784558020.6152718,
+    "ast_hash": "877e563ed6cac6bfc61f9ccbfabc9ac6",
+    "semantic_hash": "877e563ed6cac6bfc61f9ccbfabc9ac6"
+  },
+  "prisma/migrations/20260720173342_evaluaciones_medicas_asignaciones_alergias_recetas/migration.sql": {
+    "mtime": 1784568853.2073243,
+    "ast_hash": "9774b9c8b8eecedc55e7878a6560b464",
+    "semantic_hash": "9774b9c8b8eecedc55e7878a6560b464"
+  },
+  "prisma/migrations/20260720190000_evolucion_atenciones_recetas_citas/migration.sql": {
+    "mtime": 1784578844.1236484,
+    "ast_hash": "77509675119f8b14303e2bd9c52516d3",
+    "semantic_hash": "77509675119f8b14303e2bd9c52516d3"
+  },
+  "prisma/migrations/20260721131212_reconciliar_atenciones_y_snapshots_recetas/migration.sql": {
+    "mtime": 1784639622.1237822,
+    "ast_hash": "621e360cc2dda0b44bdb5bbd9ccc6783",
+    "semantic_hash": "621e360cc2dda0b44bdb5bbd9ccc6783"
+  },
+  "prisma/migrations/20260721131644_normalizar_fk_receta_creado_por/migration.sql": {
+    "mtime": 1784639804.3401995,
+    "ast_hash": "7e4b55c110c284145c2f97abb42be7df",
+    "semantic_hash": "7e4b55c110c284145c2f97abb42be7df"
+  },
+  "prisma/migrations/20260721194305_agregar_secuencia_receta/migration.sql": {
+    "mtime": 1784663105.5211966,
+    "ast_hash": "7bc04dd31c82c0e9251f14cf7469d79d",
+    "semantic_hash": "7bc04dd31c82c0e9251f14cf7469d79d"
+  },
+  "prisma/migrations/20260721202609_registro_diario_atencion/migration.sql": {
+    "mtime": 1784665569.269667,
+    "ast_hash": "b5b8aeeeb35f3c12788294a628fdddc3",
+    "semantic_hash": "b5b8aeeeb35f3c12788294a628fdddc3"
+  },
+  "prisma/migrations/20260721221000_reorganizar_flujo_clinico_directo/migration.sql": {
+    "mtime": 1784669919.6815047,
+    "ast_hash": "9274f93b7a3f74462519339c85e86e6d",
+    "semantic_hash": "9274f93b7a3f74462519339c85e86e6d"
+  },
+  "prisma/migrations/20260721222500_agregar_borrador_registro_diario/migration.sql": {
+    "mtime": 1784670023.5286362,
+    "ast_hash": "60b53336dc52ab5f4bb127c2b0b13538",
+    "semantic_hash": "60b53336dc52ab5f4bb127c2b0b13538"
+  },
+  "prisma/migrations/20260721224000_fecha_nacimiento_opcional_registro_diario/migration.sql": {
+    "mtime": 1784671641.413591,
+    "ast_hash": "2f6b6010817a001b80e966e7472c0b4a",
+    "semantic_hash": "2f6b6010817a001b80e966e7472c0b4a"
+  },
+  "prisma/migrations/20260723161421_asignacion_laboral_activa_unica/migration.sql": {
+    "mtime": 1784823284.21838,
+    "ast_hash": "a6ab1aac2a482c37e0d36319a810f83d",
+    "semantic_hash": "a6ab1aac2a482c37e0d36319a810f83d"
+  },
+  "prisma/migrations/20260723161511_citas_profesional_solape_unico/migration.sql": {
+    "mtime": 1784823311.7166438,
+    "ast_hash": "7fe2c74b1db9aeb5a816970ef7361c37",
+    "semantic_hash": "7fe2c74b1db9aeb5a816970ef7361c37"
+  },
+  "prisma/migrations/20260723161539_citas_profesional_solape_unico/migration.sql": {
+    "mtime": 1784823784.135434,
+    "ast_hash": "0cd17a046dce434c4a897e8bf4e00c04",
+    "semantic_hash": "0cd17a046dce434c4a897e8bf4e00c04"
+  },
+  "prisma/migrations/20260728212645_inventario_medicamentos/migration.sql": {
+    "mtime": 1785274005.8620882,
+    "ast_hash": "c3f140e9116047c20144d1f8c79fab62",
+    "semantic_hash": "c3f140e9116047c20144d1f8c79fab62"
+  },
+  "prisma/migrations/20260731155409_completar_datos_laborales_trabajador/migration.sql": {
+    "mtime": 1785513249.817222,
+    "ast_hash": "3dc89d1df436eaefcee5ff0b1977d021",
+    "semantic_hash": "3dc89d1df436eaefcee5ff0b1977d021"
+  },
+  "prisma/migrations/20260811090000_evitar_solape_citas_trabajador/migration.sql": {
+    "mtime": 1786469067.951272,
+    "ast_hash": "14e5891b65a35aa1c27c988dc0dee246",
+    "semantic_hash": "14e5891b65a35aa1c27c988dc0dee246"
+  },
+  "prisma/seed.ts": {
+    "mtime": 1785274377.4455662,
+    "ast_hash": "565649bddfdb464e1c99720b0429bbf4",
+    "semantic_hash": "565649bddfdb464e1c99720b0429bbf4"
+  },
+  "reportes/cie10/duplicados.json": {
+    "mtime": 1784554961.4371784,
+    "ast_hash": "a6b0d5a91e026f6a0df3afc27f7434e0",
+    "semantic_hash": "a6b0d5a91e026f6a0df3afc27f7434e0"
+  },
+  "reportes/cie10/no-interpretadas.json": {
+    "mtime": 1784554961.4371784,
+    "ast_hash": "58e0494c51d30eb3494f7c9198986bb9",
+    "semantic_hash": "58e0494c51d30eb3494f7c9198986bb9"
+  },
+  "scripts/cie10/extraer-cie10.ts": {
+    "mtime": 1784554940.0112593,
+    "ast_hash": "5d029c3d27c7ed10de638f6d4fe5d874",
+    "semantic_hash": "5d029c3d27c7ed10de638f6d4fe5d874"
+  },
+  "scripts/importar-cie10.ts": {
+    "mtime": 1784554828.962911,
+    "ast_hash": "176056fd7d195a9ab85b4b98936ee0a8",
+    "semantic_hash": "176056fd7d195a9ab85b4b98936ee0a8"
+  },
+  "scripts/importar-sinonimos-cie10.ts": {
+    "mtime": 1784556735.0397735,
+    "ast_hash": "5eb727e6f62b1c6591667283c3af0058",
+    "semantic_hash": "5eb727e6f62b1c6591667283c3af0058"
+  },
+  "scripts/limpiar-pruebas.ts": {
+    "mtime": 1784648775.0761576,
+    "ast_hash": "d012e2a625aadecc6511ad99bb3ff261",
+    "semantic_hash": "d012e2a625aadecc6511ad99bb3ff261"
+  },
+  "skills-lock.json": {
+    "mtime": 1786463461.56509,
+    "ast_hash": "60fe274bc42917ee61b3bec3ca309306",
+    "semantic_hash": "60fe274bc42917ee61b3bec3ca309306"
+  },
+  "src/app/(autenticacion)/iniciar-sesion/page.tsx": {
+    "mtime": 1784214385.2336383,
+    "ast_hash": "593abf58d355d1c49eb9607e63d8482d",
+    "semantic_hash": "593abf58d355d1c49eb9607e63d8482d"
+  },
+  "src/app/(autenticacion)/layout.tsx": {
+    "mtime": 1785276267.626937,
+    "ast_hash": "f42571103c09d3f652171def81aa26ea",
+    "semantic_hash": "f42571103c09d3f652171def81aa26ea"
+  },
+  "src/app/(dashboard)/atenciones/nueva/page.tsx": {
+    "mtime": 1785436023.7656074,
+    "ast_hash": "b54e90f004d6b5a6a303fbf368c9aee7",
+    "semantic_hash": "b54e90f004d6b5a6a303fbf368c9aee7"
+  },
+  "src/app/(dashboard)/atenciones/page.tsx": {
+    "mtime": 1784671917.4248183,
+    "ast_hash": "12986447cd32b1e40c13c5bcb3b6d901",
+    "semantic_hash": "12986447cd32b1e40c13c5bcb3b6d901"
+  },
+  "src/app/(dashboard)/auditoria/page.tsx": {
+    "mtime": 1786467150.396428,
+    "ast_hash": "533cbb816e9d7d98fd95ccdf187eaca8",
+    "semantic_hash": "533cbb816e9d7d98fd95ccdf187eaca8"
+  },
+  "src/app/(dashboard)/citas/[citaId]/editar/page.tsx": {
+    "mtime": 1785435976.890379,
+    "ast_hash": "9e33025250455d956625b9283dcc2e12",
+    "semantic_hash": "9e33025250455d956625b9283dcc2e12"
+  },
+  "src/app/(dashboard)/citas/[citaId]/page.tsx": {
+    "mtime": 1785435915.905721,
+    "ast_hash": "02a9fb1136f5b543a723d4f805447e82",
+    "semantic_hash": "02a9fb1136f5b543a723d4f805447e82"
+  },
+  "src/app/(dashboard)/citas/calendario/page.tsx": {
+    "mtime": 1785435990.1051614,
+    "ast_hash": "81ed9ea9aec09521209ce24a9a4574df",
+    "semantic_hash": "81ed9ea9aec09521209ce24a9a4574df"
+  },
+  "src/app/(dashboard)/citas/nueva/page.tsx": {
+    "mtime": 1785435947.6883621,
+    "ast_hash": "c27c4aebb9ca6f7e6b0fdf87b1c30dae",
+    "semantic_hash": "c27c4aebb9ca6f7e6b0fdf87b1c30dae"
+  },
+  "src/app/(dashboard)/citas/page.tsx": {
+    "mtime": 1784816278.2481365,
+    "ast_hash": "2b9f1c1f6e0373ee69609f36fbe04ad3",
+    "semantic_hash": "2b9f1c1f6e0373ee69609f36fbe04ad3"
+  },
+  "src/app/(dashboard)/configuracion/departamentos/[id]/editar/page.tsx": {
+    "mtime": 1784214385.2106962,
+    "ast_hash": "b422f1e86c16c64b74613f1d21d66def",
+    "semantic_hash": "b422f1e86c16c64b74613f1d21d66def"
+  },
+  "src/app/(dashboard)/configuracion/departamentos/nuevo/page.tsx": {
+    "mtime": 1784214385.2617478,
+    "ast_hash": "fa8b3bb40fe13d4e3b14fac0fb95f28f",
+    "semantic_hash": "fa8b3bb40fe13d4e3b14fac0fb95f28f"
+  },
+  "src/app/(dashboard)/configuracion/departamentos/page.tsx": {
+    "mtime": 1784214385.3415494,
+    "ast_hash": "94216030529b73c5140cf7d9afd9a32b",
+    "semantic_hash": "94216030529b73c5140cf7d9afd9a32b"
+  },
+  "src/app/(dashboard)/configuracion/empresas/page.tsx": {
+    "mtime": 1784235320.4725945,
+    "ast_hash": "4098f52d83f4700ebfd1154a466f43ac",
+    "semantic_hash": "4098f52d83f4700ebfd1154a466f43ac"
+  },
+  "src/app/(dashboard)/configuracion/layout.tsx": {
+    "mtime": 1784213694.1789289,
+    "ast_hash": "8cb36ce9096196a4435823e118d8a815",
+    "semantic_hash": "8cb36ce9096196a4435823e118d8a815"
+  },
+  "src/app/(dashboard)/configuracion/loading.tsx": {
+    "mtime": 1784213212.5534775,
+    "ast_hash": "e0cd0b64d8aadfccbd37a4e66dae6c5d",
+    "semantic_hash": "e0cd0b64d8aadfccbd37a4e66dae6c5d"
+  },
+  "src/app/(dashboard)/configuracion/page.tsx": {
+    "mtime": 1785435604.7891543,
+    "ast_hash": "2047f63a2a447916e513e6a1b0009659",
+    "semantic_hash": "2047f63a2a447916e513e6a1b0009659"
+  },
+  "src/app/(dashboard)/configuracion/roles/page.tsx": {
+    "mtime": 1785435602.9817433,
+    "ast_hash": "ae7048f59d5f41ab5ac7342485bb6750",
+    "semantic_hash": "ae7048f59d5f41ab5ac7342485bb6750"
+  },
+  "src/app/(dashboard)/configuracion/usuarios/page.tsx": {
+    "mtime": 1785435601.4830978,
+    "ast_hash": "805f0061ea43a616711267d9557cc072",
+    "semantic_hash": "805f0061ea43a616711267d9557cc072"
+  },
+  "src/app/(dashboard)/consultas/nueva/page.tsx": {
+    "mtime": 1784671917.4153748,
+    "ast_hash": "73e74770ed39eca6ff8ac3eb8c3ab691",
+    "semantic_hash": "73e74770ed39eca6ff8ac3eb8c3ab691"
+  },
+  "src/app/(dashboard)/consultas/page.tsx": {
+    "mtime": 1784671917.3758678,
+    "ast_hash": "12986447cd32b1e40c13c5bcb3b6d901",
+    "semantic_hash": "12986447cd32b1e40c13c5bcb3b6d901"
+  },
+  "src/app/(dashboard)/consultas/registro-diario/page.tsx": {
+    "mtime": 1784670459.0015116,
+    "ast_hash": "edd47728a1dbed68d261a475b4a5c276",
+    "semantic_hash": "edd47728a1dbed68d261a475b4a5c276"
+  },
+  "src/app/(dashboard)/documentos-clinicos/[documentoId]/editar/page.tsx": {
+    "mtime": 1784670750.7299423,
+    "ast_hash": "6ca67432b0d3791e672916987491d841",
+    "semantic_hash": "6ca67432b0d3791e672916987491d841"
+  },
+  "src/app/(dashboard)/documentos-clinicos/[documentoId]/page.tsx": {
+    "mtime": 1784670750.7169404,
+    "ast_hash": "52c67c6751b5c2f7f8c79518b10c630d",
+    "semantic_hash": "52c67c6751b5c2f7f8c79518b10c630d"
+  },
+  "src/app/(dashboard)/documentos-clinicos/nuevo/page.tsx": {
+    "mtime": 1784670750.6989398,
+    "ast_hash": "dce8a1100517d4c953cf7f491963d42a",
+    "semantic_hash": "dce8a1100517d4c953cf7f491963d42a"
+  },
+  "src/app/(dashboard)/documentos-clinicos/page.tsx": {
+    "mtime": 1784670750.6819425,
+    "ast_hash": "4f39bc501b02a6e903c377132cbb63f4",
+    "semantic_hash": "4f39bc501b02a6e903c377132cbb63f4"
+  },
+  "src/app/(dashboard)/evaluaciones-medicas/[evaluacionId]/editar/page.tsx": {
+    "mtime": 1784671076.0774748,
+    "ast_hash": "4cb43536ac036c65def24114fb3c449c",
+    "semantic_hash": "4cb43536ac036c65def24114fb3c449c"
+  },
+  "src/app/(dashboard)/evaluaciones-medicas/[evaluacionId]/page.tsx": {
+    "mtime": 1784671076.0644696,
+    "ast_hash": "b75ec3df0301ae1c7db63b6636fd8104",
+    "semantic_hash": "b75ec3df0301ae1c7db63b6636fd8104"
+  },
+  "src/app/(dashboard)/evaluaciones-medicas/nueva/page.tsx": {
+    "mtime": 1784671027.9853885,
+    "ast_hash": "cf7119063e2b38d054076e76779fc798",
+    "semantic_hash": "cf7119063e2b38d054076e76779fc798"
+  },
+  "src/app/(dashboard)/evaluaciones-medicas/page.tsx": {
+    "mtime": 1784816278.2817245,
+    "ast_hash": "e01f10944f1a6392dd8bca0c6047c754",
+    "semantic_hash": "e01f10944f1a6392dd8bca0c6047c754"
+  },
+  "src/app/(dashboard)/fichas-ocupacionales/[fichaId]/certificado/page.tsx": {
+    "mtime": 1784671290.4973893,
+    "ast_hash": "e45aa1b9cf1e0f67046504868bad275c",
+    "semantic_hash": "e45aa1b9cf1e0f67046504868bad275c"
+  },
+  "src/app/(dashboard)/fichas-ocupacionales/[fichaId]/editar/page.tsx": {
+    "mtime": 1784671290.4818642,
+    "ast_hash": "310bda44dcfbfc49949fac36814e937d",
+    "semantic_hash": "310bda44dcfbfc49949fac36814e937d"
+  },
+  "src/app/(dashboard)/fichas-ocupacionales/[fichaId]/page.tsx": {
+    "mtime": 1784671290.4685173,
+    "ast_hash": "d1e61347bfc49a580ae6b06b02189106",
+    "semantic_hash": "d1e61347bfc49a580ae6b06b02189106"
+  },
+  "src/app/(dashboard)/fichas-ocupacionales/nueva/page.tsx": {
+    "mtime": 1784671273.675587,
+    "ast_hash": "04d9dd1766564fb04d32fdf53e3e8c2a",
+    "semantic_hash": "04d9dd1766564fb04d32fdf53e3e8c2a"
+  },
+  "src/app/(dashboard)/fichas-ocupacionales/page.tsx": {
+    "mtime": 1785435671.4424362,
+    "ast_hash": "76a9cf91eb443dfe9eb7cb5186ccf1e4",
+    "semantic_hash": "76a9cf91eb443dfe9eb7cb5186ccf1e4"
+  },
+  "src/app/(dashboard)/inicio/page.tsx": {
+    "mtime": 1784214385.292943,
+    "ast_hash": "75a05fc21aada8002f57c24ed9c231a1",
+    "semantic_hash": "75a05fc21aada8002f57c24ed9c231a1"
+  },
+  "src/app/(dashboard)/inventario/[id]/editar/page.tsx": {
+    "mtime": 1785435946.2660873,
+    "ast_hash": "458a2380e9d3778470187b28b45bd68f",
+    "semantic_hash": "458a2380e9d3778470187b28b45bd68f"
+  },
+  "src/app/(dashboard)/inventario/[id]/page.tsx": {
+    "mtime": 1785435945.6218884,
+    "ast_hash": "afeaf9154bf27a8d29bbbaa5ca77e16a",
+    "semantic_hash": "afeaf9154bf27a8d29bbbaa5ca77e16a"
+  },
+  "src/app/(dashboard)/inventario/movimientos/page.tsx": {
+    "mtime": 1785435934.5913925,
+    "ast_hash": "793403589f0ca22119b37f066a212f9b",
+    "semantic_hash": "793403589f0ca22119b37f066a212f9b"
+  },
+  "src/app/(dashboard)/inventario/nuevo/page.tsx": {
+    "mtime": 1785435946.9805715,
+    "ast_hash": "54534cf299bb982266d137ba9fe98d54",
+    "semantic_hash": "54534cf299bb982266d137ba9fe98d54"
+  },
+  "src/app/(dashboard)/inventario/page.tsx": {
+    "mtime": 1785274336.6758714,
+    "ast_hash": "69e78b147693840cdfb531e4fbd307a1",
+    "semantic_hash": "69e78b147693840cdfb531e4fbd307a1"
+  },
+  "src/app/(dashboard)/layout.tsx": {
+    "mtime": 1784213708.6099217,
+    "ast_hash": "d426b3cf245bc76784cd3f32a7cea6b9",
+    "semantic_hash": "d426b3cf245bc76784cd3f32a7cea6b9"
+  },
+  "src/app/(dashboard)/recetas/[id]/editar/page.tsx": {
+    "mtime": 1784671541.3920598,
+    "ast_hash": "a079899a3dd0f6de6528dae5456f7d62",
+    "semantic_hash": "a079899a3dd0f6de6528dae5456f7d62"
+  },
+  "src/app/(dashboard)/recetas/[id]/page.tsx": {
+    "mtime": 1784733291.1776407,
+    "ast_hash": "23bfc38deb6b49295392742d3d5c9f2c",
+    "semantic_hash": "23bfc38deb6b49295392742d3d5c9f2c"
+  },
+  "src/app/(dashboard)/recetas/nueva/page.tsx": {
+    "mtime": 1784672469.2926393,
+    "ast_hash": "9170236990c202263907a27abbb3ac3e",
+    "semantic_hash": "9170236990c202263907a27abbb3ac3e"
+  },
+  "src/app/(dashboard)/recetas/page.tsx": {
+    "mtime": 1785435784.6033745,
+    "ast_hash": "eaec266dd6dd6e397383dda4d83d7559",
+    "semantic_hash": "eaec266dd6dd6e397383dda4d83d7559"
+  },
+  "src/app/(dashboard)/registro-diario/[registroId]/editar/page.tsx": {
+    "mtime": 1785274823.7216034,
+    "ast_hash": "3ac9e49c36a19dace1e8ce79ee083a13",
+    "semantic_hash": "3ac9e49c36a19dace1e8ce79ee083a13"
+  },
+  "src/app/(dashboard)/registro-diario/[registroId]/page.tsx": {
+    "mtime": 1784670458.8689675,
+    "ast_hash": "316376951150611339ceaa53b6914864",
+    "semantic_hash": "316376951150611339ceaa53b6914864"
+  },
+  "src/app/(dashboard)/registro-diario/nuevo/page.tsx": {
+    "mtime": 1785274611.3572764,
+    "ast_hash": "3561be93f3158d789baa562dfe94c776",
+    "semantic_hash": "3561be93f3158d789baa562dfe94c776"
+  },
+  "src/app/(dashboard)/registro-diario/page.tsx": {
+    "mtime": 1784672514.5147247,
+    "ast_hash": "4b3075a79c5c49e77da61783b3ee6126",
+    "semantic_hash": "4b3075a79c5c49e77da61783b3ee6126"
+  },
+  "src/app/(dashboard)/reportes/page.tsx": {
+    "mtime": 1784814534.8663137,
+    "ast_hash": "5d42f840415715d44b9a17144b7b4081",
+    "semantic_hash": "5d42f840415715d44b9a17144b7b4081"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/atenciones/[atencionId]/page.tsx": {
+    "mtime": 1784640947.7032373,
+    "ast_hash": "9ad9dda0433bd9399e75e606722182bd",
+    "semantic_hash": "9ad9dda0433bd9399e75e606722182bd"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/atenciones/nueva/page.tsx": {
+    "mtime": 1784671917.4027371,
+    "ast_hash": "3d98a6d563936e4721671bf75558bda6",
+    "semantic_hash": "3d98a6d563936e4721671bf75558bda6"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/editar/page.tsx": {
+    "mtime": 1784214385.2478054,
+    "ast_hash": "feb3642e9c6b557129c918a3a70e81a2",
+    "semantic_hash": "feb3642e9c6b557129c918a3a70e81a2"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/evaluaciones-medicas/[evaluacionId]/editar/page.tsx": {
+    "mtime": 1784569635.4405158,
+    "ast_hash": "4e02d403a4bd9ac8b3fa91fd720cbc7c",
+    "semantic_hash": "4e02d403a4bd9ac8b3fa91fd720cbc7c"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/evaluaciones-medicas/[evaluacionId]/page.tsx": {
+    "mtime": 1784655057.1073694,
+    "ast_hash": "155c59442b075ec79aee7f3f3c28a7f2",
+    "semantic_hash": "155c59442b075ec79aee7f3f3c28a7f2"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/evaluaciones-medicas/nueva/page.tsx": {
+    "mtime": 1784671051.117026,
+    "ast_hash": "dc1ec40ed479371200458cc23b22f330",
+    "semantic_hash": "dc1ec40ed479371200458cc23b22f330"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/evaluaciones-medicas/page.tsx": {
+    "mtime": 1784569653.4160233,
+    "ast_hash": "7787f8a6b2a77371b1a99c22047d3ecc",
+    "semantic_hash": "7787f8a6b2a77371b1a99c22047d3ecc"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/fichas/[fichaId]/certificado/page.tsx": {
+    "mtime": 1785162770.7380376,
+    "ast_hash": "ba1df67e4963b3faf0dd3088a99b0402",
+    "semantic_hash": "ba1df67e4963b3faf0dd3088a99b0402"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/fichas/[fichaId]/editar/page.tsx": {
+    "mtime": 1784561897.237161,
+    "ast_hash": "78635cf0d2096698140e473d87a03201",
+    "semantic_hash": "78635cf0d2096698140e473d87a03201"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/fichas/[fichaId]/page.tsx": {
+    "mtime": 1784559529.835966,
+    "ast_hash": "b901fa041a4afdd27bc97fd0b6817511",
+    "semantic_hash": "b901fa041a4afdd27bc97fd0b6817511"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/fichas/nueva/page.tsx": {
+    "mtime": 1784672797.3404741,
+    "ast_hash": "1ad5973b8928fd57ed9ceacec39b26d5",
+    "semantic_hash": "1ad5973b8928fd57ed9ceacec39b26d5"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/fichas/page.tsx": {
+    "mtime": 1784559590.742506,
+    "ast_hash": "4c6ea3aa2097c24d17bba3b0740afa46",
+    "semantic_hash": "4c6ea3aa2097c24d17bba3b0740afa46"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/page.tsx": {
+    "mtime": 1784214385.3238752,
+    "ast_hash": "19e5e1aaf18e9817297040224b78c358",
+    "semantic_hash": "19e5e1aaf18e9817297040224b78c358"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/recetas/nueva/page.tsx": {
+    "mtime": 1784672469.3017035,
+    "ast_hash": "a85f09a7f64042f33719c7bf85a3aaa6",
+    "semantic_hash": "a85f09a7f64042f33719c7bf85a3aaa6"
+  },
+  "src/app/(dashboard)/trabajadores/[id]/vinculos/nuevo/page.tsx": {
+    "mtime": 1784296973.3752506,
+    "ast_hash": "4d634588da6a038fb2470eb3fd3494df",
+    "semantic_hash": "4d634588da6a038fb2470eb3fd3494df"
+  },
+  "src/app/(dashboard)/trabajadores/nuevo/page.tsx": {
+    "mtime": 1784214385.195742,
+    "ast_hash": "0f0bec35ac770a70b8c7acbdd06c660a",
+    "semantic_hash": "0f0bec35ac770a70b8c7acbdd06c660a"
+  },
+  "src/app/(dashboard)/trabajadores/page.tsx": {
+    "mtime": 1784214385.2996712,
+    "ast_hash": "249bef956bd39352336e605b546e5178",
+    "semantic_hash": "249bef956bd39352336e605b546e5178"
+  },
+  "src/app/(dashboard)/vinculos-laborales/page.tsx": {
+    "mtime": 1784236059.2547655,
+    "ast_hash": "4ce09250977aa37e16cb11d88138cab3",
+    "semantic_hash": "4ce09250977aa37e16cb11d88138cab3"
+  },
+  "src/app/(dashboard)/vista-previa/[tipo]/[id]/page.tsx": {
+    "mtime": 1784743125.9909518,
+    "ast_hash": "5f70ebfc1fc9ba0722ca38dcdcf4e008",
+    "semantic_hash": "5f70ebfc1fc9ba0722ca38dcdcf4e008"
+  },
+  "src/app/api/auth/[...nextauth]/route.ts": {
+    "mtime": 1784208189.1266508,
+    "ast_hash": "a2101be5742620b8b1d74c1be9b47940",
+    "semantic_hash": "a2101be5742620b8b1d74c1be9b47940"
+  },
+  "src/app/api/documentos-clinicos/[documentoId]/pdf/route.ts": {
+    "mtime": 1784817474.716758,
+    "ast_hash": "6b6ef34596145a091fd87246b4cdc702",
+    "semantic_hash": "6b6ef34596145a091fd87246b4cdc702"
+  },
+  "src/app/api/evaluaciones-medicas/[evaluacionId]/pdf/route.ts": {
+    "mtime": 1784817474.6391952,
+    "ast_hash": "e4f5a5eb2f1e018da2f741ccfb991847",
+    "semantic_hash": "e4f5a5eb2f1e018da2f741ccfb991847"
+  },
+  "src/app/api/fichas/[fichaId]/certificado/pdf/route.ts": {
+    "mtime": 1784817474.783761,
+    "ast_hash": "55875338d309de3f907bff9111b40698",
+    "semantic_hash": "55875338d309de3f907bff9111b40698"
+  },
+  "src/app/api/fichas/[fichaId]/exportar/excel/route.ts": {
+    "mtime": 1786469683.4987416,
+    "ast_hash": "e39a6e47079d10b5e6739ad51ee83123",
+    "semantic_hash": "e39a6e47079d10b5e6739ad51ee83123"
+  },
+  "src/app/api/fichas/[fichaId]/pdf/route.ts": {
+    "mtime": 1784817506.6571314,
+    "ast_hash": "2e4fadac66fd67a6938035b77c418b4c",
+    "semantic_hash": "2e4fadac66fd67a6938035b77c418b4c"
+  },
+  "src/app/api/recetas/[recetaId]/pdf/route.ts": {
+    "mtime": 1784817474.7427602,
+    "ast_hash": "b71c6c5abf340b1a796155e3f1241697",
+    "semantic_hash": "b71c6c5abf340b1a796155e3f1241697"
+  },
+  "src/app/api/registro-diario/[registroId]/excel/route.ts": {
+    "mtime": 1784670459.1530707,
+    "ast_hash": "e1fd1401ada63fccf74fc09e7a1ee46c",
+    "semantic_hash": "e1fd1401ada63fccf74fc09e7a1ee46c"
+  },
+  "src/app/api/registro-diario/[registroId]/pdf/route.ts": {
+    "mtime": 1784817474.6046557,
+    "ast_hash": "4c991be6639aa2ac03aab06ce81338ab",
+    "semantic_hash": "4c991be6639aa2ac03aab06ce81338ab"
+  },
+  "src/app/api/registro-diario/pdf/route.ts": {
+    "mtime": 1784817474.622192,
+    "ast_hash": "8206165cfe6287dba3204d9cf110cf27",
+    "semantic_hash": "8206165cfe6287dba3204d9cf110cf27"
+  },
+  "src/app/api/reportes/exportar/route.ts": {
+    "mtime": 1784824399.6427517,
+    "ast_hash": "09cfb28df97838be197cde328b06c5ee",
+    "semantic_hash": "09cfb28df97838be197cde328b06c5ee"
+  },
+  "src/app/error.tsx": {
+    "mtime": 1784213694.226108,
+    "ast_hash": "d48e3005f4171456b15a22ff92c5045d",
+    "semantic_hash": "d48e3005f4171456b15a22ff92c5045d"
+  },
+  "src/app/layout.tsx": {
+    "mtime": 1784757404.4977417,
+    "ast_hash": "1abe1da3d46b353cace64c5c4a891e0a",
+    "semantic_hash": "1abe1da3d46b353cace64c5c4a891e0a"
+  },
+  "src/app/loading.tsx": {
+    "mtime": 1784213212.6513352,
+    "ast_hash": "ee3725e22b9e7d3d0b1d988df846f98a",
+    "semantic_hash": "ee3725e22b9e7d3d0b1d988df846f98a"
+  },
+  "src/app/not-found.tsx": {
+    "mtime": 1784828727.8846195,
+    "ast_hash": "d0bb9062f27379b034a8b96933995586",
+    "semantic_hash": "d0bb9062f27379b034a8b96933995586"
+  },
+  "src/app/page.tsx": {
+    "mtime": 1784148944.9292724,
+    "ast_hash": "ec9c9af503f2be4d57694fc2f7986215",
+    "semantic_hash": "ec9c9af503f2be4d57694fc2f7986215"
+  },
+  "src/componentes/documentos/barra-acciones-documento.tsx": {
+    "mtime": 1785436046.5584617,
+    "ast_hash": "24965dcc2a5737a25b808aaa249d6691",
+    "semantic_hash": "24965dcc2a5737a25b808aaa249d6691"
+  },
+  "src/componentes/documentos/boton-ver-imprimir-pdf.tsx": {
+    "mtime": 1785435441.5005927,
+    "ast_hash": "c2bc3155fe6cc5f9ab9f1ec89c655024",
+    "semantic_hash": "c2bc3155fe6cc5f9ab9f1ec89c655024"
+  },
+  "src/componentes/documentos/enlace-pdf.tsx": {
+    "mtime": 1784817557.6643214,
+    "ast_hash": "768186f6894cb26db32ba1911014f2a3",
+    "semantic_hash": "768186f6894cb26db32ba1911014f2a3"
+  },
+  "src/componentes/documentos/vista-previa-documento.tsx": {
+    "mtime": 1784739029.6409025,
+    "ast_hash": "79adefd6be52d5ae6753f78a939c34f5",
+    "semantic_hash": "79adefd6be52d5ae6753f78a939c34f5"
+  },
+  "src/componentes/elemento-acordeon.tsx": {
+    "mtime": 1784828727.857843,
+    "ast_hash": "2e8c38b34963f9ea1bf3bc0720e2ced5",
+    "semantic_hash": "2e8c38b34963f9ea1bf3bc0720e2ced5"
+  },
+  "src/componentes/estructura/barra-lateral.tsx": {
+    "mtime": 1785158758.0303314,
+    "ast_hash": "d518cb51cfbebe936f2008e7204c45b3",
+    "semantic_hash": "d518cb51cfbebe936f2008e7204c45b3"
+  },
+  "src/componentes/estructura/encabezado-pagina.tsx": {
+    "mtime": 1785158664.2395105,
+    "ast_hash": "4afddda0fd8b2bad2c345c16c3a22ce4",
+    "semantic_hash": "4afddda0fd8b2bad2c345c16c3a22ce4"
+  },
+  "src/componentes/estructura/encabezado.tsx": {
+    "mtime": 1784756009.2595923,
+    "ast_hash": "b2bd837a3f96bd2d815787968541031d",
+    "semantic_hash": "b2bd837a3f96bd2d815787968541031d"
+  },
+  "src/componentes/estructura/estructura-aplicacion.tsx": {
+    "mtime": 1785435462.6444676,
+    "ast_hash": "9d97ed11198a3db6e4c77ab8b0494f38",
+    "semantic_hash": "9d97ed11198a3db6e4c77ab8b0494f38"
+  },
+  "src/componentes/formularios/barra-acciones-formulario.tsx": {
+    "mtime": 1785436057.8818886,
+    "ast_hash": "c3293080b477d373002c3c75bb39cdb4",
+    "semantic_hash": "c3293080b477d373002c3c75bb39cdb4"
+  },
+  "src/componentes/formularios/buscador-autocompletado.tsx": {
+    "mtime": 1784745223.7300982,
+    "ast_hash": "42579c4b4426d101e54fc73607f1e4da",
+    "semantic_hash": "42579c4b4426d101e54fc73607f1e4da"
+  },
+  "src/componentes/formularios/campo-error.tsx": {
+    "mtime": 1784735673.6548507,
+    "ast_hash": "9568fcdb9d80ec5015ac89d1ebfa81f8",
+    "semantic_hash": "9568fcdb9d80ec5015ac89d1ebfa81f8"
+  },
+  "src/componentes/formularios/campo-filtro.tsx": {
+    "mtime": 1785158950.2868457,
+    "ast_hash": "49bd26084d05ea01c6755854a25e01ca",
+    "semantic_hash": "49bd26084d05ea01c6755854a25e01ca"
+  },
+  "src/componentes/formularios/panel-filtros.tsx": {
+    "mtime": 1784753878.2405899,
+    "ast_hash": "ac9daab95bcef78f32d7b826d2762d70",
+    "semantic_hash": "ac9daab95bcef78f32d7b826d2762d70"
+  },
+  "src/componentes/formularios/selector-trabajador-clinico.tsx": {
+    "mtime": 1784726937.2015502,
+    "ast_hash": "2219213f7f856558b30c13b2bab5a22a",
+    "semantic_hash": "2219213f7f856558b30c13b2bab5a22a"
+  },
+  "src/componentes/formularios/use-proteccion-salida.ts": {
+    "mtime": 1784665861.1186337,
+    "ast_hash": "ee8033a0fd38e2fac77aaade5f10a157",
+    "semantic_hash": "ee8033a0fd38e2fac77aaade5f10a157"
+  },
+  "src/componentes/marca/logo-apracom.tsx": {
+    "mtime": 1785276267.618993,
+    "ast_hash": "f0f8d3f5fcc92c4c16c75e88b78ec881",
+    "semantic_hash": "f0f8d3f5fcc92c4c16c75e88b78ec881"
+  },
+  "src/componentes/menu-lateral/menu-lateral-desplegable.tsx": {
+    "mtime": 1784823729.2425807,
+    "ast_hash": "6212ff811ebc4a7c24f163517f0a5d37",
+    "semantic_hash": "6212ff811ebc4a7c24f163517f0a5d37"
+  },
+  "src/componentes/navegacion/boton-regresar.tsx": {
+    "mtime": 1785435433.7617462,
+    "ast_hash": "17c3dfb0cde6924ba763d7d79d3d6cca",
+    "semantic_hash": "17c3dfb0cde6924ba763d7d79d3d6cca"
+  },
+  "src/componentes/navegacion/lista-navegacion.tsx": {
+    "mtime": 1785158950.308364,
+    "ast_hash": "5e98944fdb805b3c476439ca9049b725",
+    "semantic_hash": "5e98944fdb805b3c476439ca9049b725"
+  },
+  "src/componentes/navegacion/migas.tsx": {
+    "mtime": 1784733320.1734147,
+    "ast_hash": "1eb367caf9cb545b14464eff43621ac3",
+    "semantic_hash": "1eb367caf9cb545b14464eff43621ac3"
+  },
+  "src/componentes/navegacion/navegacion-configuracion.tsx": {
+    "mtime": 1784829346.2135704,
+    "ast_hash": "ad0bea055b44a5657e481ef290810fc2",
+    "semantic_hash": "ad0bea055b44a5657e481ef290810fc2"
+  },
+  "src/componentes/navegacion/navegacion-movil.tsx": {
+    "mtime": 1785158757.955339,
+    "ast_hash": "7243f3347cd5b5d52ce2577cf674c32c",
+    "semantic_hash": "7243f3347cd5b5d52ce2577cf674c32c"
+  },
+  "src/componentes/retroalimentacion/estado-error.tsx": {
+    "mtime": 1785158674.059906,
+    "ast_hash": "bf448395e473c8325baa3d2cc0e1a669",
+    "semantic_hash": "bf448395e473c8325baa3d2cc0e1a669"
+  },
+  "src/componentes/retroalimentacion/estado-vacio.tsx": {
+    "mtime": 1785158664.2816336,
+    "ast_hash": "d04ec51f183e6e587d42d26ccc9f7b9d",
+    "semantic_hash": "d04ec51f183e6e587d42d26ccc9f7b9d"
+  },
+  "src/componentes/seccion-colapsable.tsx": {
+    "mtime": 1784735673.639318,
+    "ast_hash": "9a14e3f3070829145232c9562b5aa777",
+    "semantic_hash": "9a14e3f3070829145232c9562b5aa777"
+  },
+  "src/componentes/tema/proveedor-tema.tsx": {
+    "mtime": 1784213708.6191623,
+    "ast_hash": "a8750c4ae49eb7dc5852cfd5cc4521b2",
+    "semantic_hash": "a8750c4ae49eb7dc5852cfd5cc4521b2"
+  },
+  "src/componentes/tema/selector-tema.tsx": {
+    "mtime": 1784213708.629888,
+    "ast_hash": "47fac7d03b850f7bdf4deddeb567bb98",
+    "semantic_hash": "47fac7d03b850f7bdf4deddeb567bb98"
+  },
+  "src/componentes/ui/avatar.tsx": {
+    "mtime": 1784213212.805791,
+    "ast_hash": "cff617440493803021f16d86910d0c01",
+    "semantic_hash": "cff617440493803021f16d86910d0c01"
+  },
+  "src/componentes/ui/badge-estado.tsx": {
+    "mtime": 1784751613.537607,
+    "ast_hash": "0ab5816a54edf115928ffe8cd6903206",
+    "semantic_hash": "0ab5816a54edf115928ffe8cd6903206"
+  },
+  "src/componentes/ui/badge.tsx": {
+    "mtime": 1784738629.8305955,
+    "ast_hash": "a0710f66c00c909fcc0e32e69caef7df",
+    "semantic_hash": "a0710f66c00c909fcc0e32e69caef7df"
+  },
+  "src/componentes/ui/button.tsx": {
+    "mtime": 1784738616.7684383,
+    "ast_hash": "3e80e6d62d00fce2ddb734a2f70fb6c0",
+    "semantic_hash": "3e80e6d62d00fce2ddb734a2f70fb6c0"
+  },
+  "src/componentes/ui/card.tsx": {
+    "mtime": 1784738641.477998,
+    "ast_hash": "dd0d0f69b5b90388d7adb435cd907673",
+    "semantic_hash": "dd0d0f69b5b90388d7adb435cd907673"
+  },
+  "src/componentes/ui/checkbox.tsx": {
+    "mtime": 1784834285.178622,
+    "ast_hash": "e0ac2863b53e97c0dad12c3f9deb829f",
+    "semantic_hash": "e0ac2863b53e97c0dad12c3f9deb829f"
+  },
+  "src/componentes/ui/dialog.tsx": {
+    "mtime": 1784830514.756111,
+    "ast_hash": "5db92170e004cc1955274e2407af9a1f",
+    "semantic_hash": "5db92170e004cc1955274e2407af9a1f"
+  },
+  "src/componentes/ui/dropdown-menu.tsx": {
+    "mtime": 1784213212.855672,
+    "ast_hash": "c2bc927937363185426b314dd9554b34",
+    "semantic_hash": "c2bc927937363185426b314dd9554b34"
+  },
+  "src/componentes/ui/etiqueta-campo.tsx": {
+    "mtime": 1785162440.9895656,
+    "ast_hash": "e71aed604fc2ddb5711c8452e3bd3aec",
+    "semantic_hash": "e71aed604fc2ddb5711c8452e3bd3aec"
+  },
+  "src/componentes/ui/input.tsx": {
+    "mtime": 1784735228.7893138,
+    "ast_hash": "5948a74f9c50b385df427868af1ab46c",
+    "semantic_hash": "5948a74f9c50b385df427868af1ab46c"
+  },
+  "src/componentes/ui/label.tsx": {
+    "mtime": 1784213212.8726704,
+    "ast_hash": "8b1f0a370592e17597eac112f684a44a",
+    "semantic_hash": "8b1f0a370592e17597eac112f684a44a"
+  },
+  "src/componentes/ui/scroll-area.tsx": {
+    "mtime": 1784213212.8807101,
+    "ast_hash": "625f41fe655617269b8a20cbe88e45ed",
+    "semantic_hash": "625f41fe655617269b8a20cbe88e45ed"
+  },
+  "src/componentes/ui/sheet.tsx": {
+    "mtime": 1784213212.8972597,
+    "ast_hash": "ae3ed30871f978214fe0f7ee63e9d6bf",
+    "semantic_hash": "ae3ed30871f978214fe0f7ee63e9d6bf"
+  },
+  "src/componentes/ui/skeleton.tsx": {
+    "mtime": 1784213212.9053154,
+    "ast_hash": "68755311afcebd4da937bea432bf87e7",
+    "semantic_hash": "68755311afcebd4da937bea432bf87e7"
+  },
+  "src/componentes/ui/textarea.tsx": {
+    "mtime": 1784735228.804056,
+    "ast_hash": "231bb9728608a506de35fbd0baeb140a",
+    "semantic_hash": "231bb9728608a506de35fbd0baeb140a"
+  },
+  "src/componentes/ui/tooltip.tsx": {
+    "mtime": 1784213212.9200332,
+    "ast_hash": "c43e293fdc1a36cf0749013a1b51c4ef",
+    "semantic_hash": "c43e293fdc1a36cf0749013a1b51c4ef"
+  },
+  "src/componentes/visualizacion-datos/paginacion-url.ts": {
+    "mtime": 1784816028.9337177,
+    "ast_hash": "23526cd3e8a703bc54a67b5ea403eeef",
+    "semantic_hash": "23526cd3e8a703bc54a67b5ea403eeef"
+  },
+  "src/componentes/visualizacion-datos/paginacion.tsx": {
+    "mtime": 1785158705.9810057,
+    "ast_hash": "4614cdea86976424fe7687cd43482020",
+    "semantic_hash": "4614cdea86976424fe7687cd43482020"
+  },
+  "src/componentes/visualizacion-datos/tarjeta-metrica.tsx": {
+    "mtime": 1784755376.244037,
+    "ast_hash": "531554469623b1eaf5032d18b36a35bb",
+    "semantic_hash": "531554469623b1eaf5032d18b36a35bb"
+  },
+  "src/configuracion/navegacion.ts": {
+    "mtime": 1785274377.4310117,
+    "ast_hash": "2b7fd420d9b69aaa71f6fc11dbdfe532",
+    "semantic_hash": "2b7fd420d9b69aaa71f6fc11dbdfe532"
+  },
+  "src/modulos/atenciones-medicas/componentes/pagina-detalle-atencion.tsx": {
+    "mtime": 1785436014.966988,
+    "ast_hash": "53acd2f726f7a83bff7b47dc4a53d22e",
+    "semantic_hash": "53acd2f726f7a83bff7b47dc4a53d22e"
+  },
+  "src/modulos/atenciones-medicas/consultas/atenciones.consulta.ts": {
+    "mtime": 1784641775.225306,
+    "ast_hash": "8b64ec52b7ce13ecb6fdbe65ff6b7628",
+    "semantic_hash": "8b64ec52b7ce13ecb6fdbe65ff6b7628"
+  },
+  "src/modulos/atenciones-medicas/tipos/index.ts": {
+    "mtime": 1784581801.293349,
+    "ast_hash": "872a333eb6961fd5627ce0465d0cdc78",
+    "semantic_hash": "872a333eb6961fd5627ce0465d0cdc78"
+  },
+  "src/modulos/auditoria/componentes/pagina-auditoria.tsx": {
+    "mtime": 1786467208.3265321,
+    "ast_hash": "6b8cd12a5b461c965196f300e4aa486f",
+    "semantic_hash": "6b8cd12a5b461c965196f300e4aa486f"
+  },
+  "src/modulos/auditoria/index.ts": {
+    "mtime": 1784757559.5699687,
+    "ast_hash": "e29558426709b6618400c36857874a50",
+    "semantic_hash": "e29558426709b6618400c36857874a50"
+  },
+  "src/modulos/auditoria/tipos/index.ts": {
+    "mtime": 1786467151.600264,
+    "ast_hash": "2933418f45dc826ca948dab57da22f92",
+    "semantic_hash": "2933418f45dc826ca948dab57da22f92"
+  },
+  "src/modulos/autenticacion/acciones/cerrar-sesion.accion.ts": {
+    "mtime": 1784208189.1427372,
+    "ast_hash": "4b74b1636949b2c01370a17eb11d5796",
+    "semantic_hash": "4b74b1636949b2c01370a17eb11d5796"
+  },
+  "src/modulos/autenticacion/componentes/boton-cerrar-sesion.tsx": {
+    "mtime": 1784214346.9300394,
+    "ast_hash": "dc19a6476185b2ba1c26f423b51a6bd2",
+    "semantic_hash": "dc19a6476185b2ba1c26f423b51a6bd2"
+  },
+  "src/modulos/autenticacion/componentes/formulario-inicio-sesion.tsx": {
+    "mtime": 1784656864.535184,
+    "ast_hash": "e3e0b75aaaeb86e8a97688f68593df79",
+    "semantic_hash": "e3e0b75aaaeb86e8a97688f68593df79"
+  },
+  "src/modulos/autenticacion/componentes/pagina-inicio-sesion.tsx": {
+    "mtime": 1784213212.4788928,
+    "ast_hash": "247b232ecf525c291e3493e9ef89a519",
+    "semantic_hash": "247b232ecf525c291e3493e9ef89a519"
+  },
+  "src/modulos/autenticacion/errores/credenciales-invalidas.error.ts": {
+    "mtime": 1784208121.777431,
+    "ast_hash": "ba75a09e9a1a932661fa17c89ae32bdd",
+    "semantic_hash": "ba75a09e9a1a932661fa17c89ae32bdd"
+  },
+  "src/modulos/autenticacion/errores/permiso-denegado.error.ts": {
+    "mtime": 1784208121.7956905,
+    "ast_hash": "1799e6b47bb25e395cc2008c6699c651",
+    "semantic_hash": "1799e6b47bb25e395cc2008c6699c651"
+  },
+  "src/modulos/autenticacion/errores/usuario-inactivo.error.ts": {
+    "mtime": 1784208121.7906969,
+    "ast_hash": "4db3e95c8b4c0fb8c9e7624138879c87",
+    "semantic_hash": "4db3e95c8b4c0fb8c9e7624138879c87"
+  },
+  "src/modulos/autenticacion/index.ts": {
+    "mtime": 1784214366.0603662,
+    "ast_hash": "973cdcaccfb9d1a76dda1eb4c7cc7573",
+    "semantic_hash": "973cdcaccfb9d1a76dda1eb4c7cc7573"
+  },
+  "src/modulos/autenticacion/repositorios/repositorio-autenticacion.ts": {
+    "mtime": 1784214346.9435716,
+    "ast_hash": "e316975c4a2c15cf6a4f6beca1548da0",
+    "semantic_hash": "e316975c4a2c15cf6a4f6beca1548da0"
+  },
+  "src/modulos/autenticacion/servicios/autenticar-usuario.servicio.ts": {
+    "mtime": 1784214346.9511383,
+    "ast_hash": "e86feeef562233a51f5ed992eeddde48",
+    "semantic_hash": "e86feeef562233a51f5ed992eeddde48"
+  },
+  "src/modulos/autenticacion/tipos/sesion.tipos.ts": {
+    "mtime": 1784208121.7629132,
+    "ast_hash": "61f49da5a8dd615cc65cf910ee10f63f",
+    "semantic_hash": "61f49da5a8dd615cc65cf910ee10f63f"
+  },
+  "src/modulos/autenticacion/validaciones/iniciar-sesion.schema.ts": {
+    "mtime": 1784208121.7748482,
+    "ast_hash": "39f9914cfd52eff4b5df3497ab409217",
+    "semantic_hash": "39f9914cfd52eff4b5df3497ab409217"
+  },
+  "src/modulos/autenticacion/validaciones/ruta-retorno.ts": {
+    "mtime": 1784208121.777431,
+    "ast_hash": "d1d738c73548a639cbd6bb62975d9715",
+    "semantic_hash": "d1d738c73548a639cbd6bb62975d9715"
+  },
+  "src/modulos/catalogo-cie10/acciones/buscar-cie10.accion.ts": {
+    "mtime": 1784823007.6843157,
+    "ast_hash": "60a38df56cbb69db1bc1eb645994ca62",
+    "semantic_hash": "60a38df56cbb69db1bc1eb645994ca62"
+  },
+  "src/modulos/catalogo-cie10/componentes/buscador-cie10.tsx": {
+    "mtime": 1785159052.7067068,
+    "ast_hash": "8ac864a4e8149c5b14b6dbda674b1e6b",
+    "semantic_hash": "8ac864a4e8149c5b14b6dbda674b1e6b"
+  },
+  "src/modulos/catalogo-cie10/constantes/sinonimos-iniciales.ts": {
+    "mtime": 1784556943.6031349,
+    "ast_hash": "f011eff09b7c92059eafed35020602c0",
+    "semantic_hash": "f011eff09b7c92059eafed35020602c0"
+  },
+  "src/modulos/catalogo-cie10/consultas/catalogo-cie10.consulta.ts": {
+    "mtime": 1784824785.8673677,
+    "ast_hash": "dced31bb62d2d4f7b6cfcdbb663f26fa",
+    "semantic_hash": "dced31bb62d2d4f7b6cfcdbb663f26fa"
+  },
+  "src/modulos/catalogo-cie10/index.ts": {
+    "mtime": 1784824444.1567743,
+    "ast_hash": "1ed1a34822f1bf2797d5bada2bd90583",
+    "semantic_hash": "1ed1a34822f1bf2797d5bada2bd90583"
+  },
+  "src/modulos/catalogo-cie10/servicios/buscar-cie10.servicio.ts": {
+    "mtime": 1784824477.4877944,
+    "ast_hash": "712f0c9308d2f890917ca1834fe71ec3",
+    "semantic_hash": "712f0c9308d2f890917ca1834fe71ec3"
+  },
+  "src/modulos/catalogo-cie10/tipos/index.ts": {
+    "mtime": 1784824425.1016586,
+    "ast_hash": "f2f6d7f0a0cf7943a7896c8416b67b04",
+    "semantic_hash": "f2f6d7f0a0cf7943a7896c8416b67b04"
+  },
+  "src/modulos/catalogo-cie10/utilidades/normalizar-termino-cie10.ts": {
+    "mtime": 1784825006.1071277,
+    "ast_hash": "a4c2df17a595a363cd03320110de8ee5",
+    "semantic_hash": "a4c2df17a595a363cd03320110de8ee5"
+  },
+  "src/modulos/catalogo-cie10/validaciones/busqueda-cie10.schema.ts": {
+    "mtime": 1784554563.3865647,
+    "ast_hash": "93b34577d9da46033259613c4dccef00",
+    "semantic_hash": "93b34577d9da46033259613c4dccef00"
+  },
+  "src/modulos/citas/acciones/citas.acciones.ts": {
+    "mtime": 1784580370.1274042,
+    "ast_hash": "bb9753d9bcea0dcc33d7193d8e5ebc53",
+    "semantic_hash": "bb9753d9bcea0dcc33d7193d8e5ebc53"
+  },
+  "src/modulos/citas/componentes/acciones-cita.tsx": {
+    "mtime": 1784828568.0720549,
+    "ast_hash": "ef1d427df89762bad91daed2e8c9e143",
+    "semantic_hash": "ef1d427df89762bad91daed2e8c9e143"
+  },
+  "src/modulos/citas/componentes/calendario-citas.tsx": {
+    "mtime": 1784752223.1859152,
+    "ast_hash": "bb7b265229d4c50dddbefa00ad582976",
+    "semantic_hash": "bb7b265229d4c50dddbefa00ad582976"
+  },
+  "src/modulos/citas/componentes/filtros-citas.tsx": {
+    "mtime": 1784744503.4105294,
+    "ast_hash": "96bde25de097cfabd65e335a9866fe31",
+    "semantic_hash": "96bde25de097cfabd65e335a9866fe31"
+  },
+  "src/modulos/citas/componentes/formulario-cita.tsx": {
+    "mtime": 1784828568.0611155,
+    "ast_hash": "0ef95c9c84a53fe67237a49ac0ff3b65",
+    "semantic_hash": "0ef95c9c84a53fe67237a49ac0ff3b65"
+  },
+  "src/modulos/citas/constantes/index.ts": {
+    "mtime": 1784754218.9963186,
+    "ast_hash": "0005096ac90e123ee90fd21e6936a493",
+    "semantic_hash": "0005096ac90e123ee90fd21e6936a493"
+  },
+  "src/modulos/citas/consultas/citas.consulta.ts": {
+    "mtime": 1784671610.4172115,
+    "ast_hash": "97e7a398eeeb68223b9a3df5e5d8d2c2",
+    "semantic_hash": "97e7a398eeeb68223b9a3df5e5d8d2c2"
+  },
+  "src/modulos/citas/repositorios/citas.repositorio.ts": {
+    "mtime": 1786469076.456522,
+    "ast_hash": "9337ec7ae35553b1766455b7ebbd20b7",
+    "semantic_hash": "9337ec7ae35553b1766455b7ebbd20b7"
+  },
+  "src/modulos/citas/servicios/citas.servicio.ts": {
+    "mtime": 1784580327.0320654,
+    "ast_hash": "3d391396a6016399da509d18ffb580f2",
+    "semantic_hash": "3d391396a6016399da509d18ffb580f2"
+  },
+  "src/modulos/citas/tipos/index.ts": {
+    "mtime": 1784671610.3723278,
+    "ast_hash": "70976720370fa7202ada8d41c5cdc675",
+    "semantic_hash": "70976720370fa7202ada8d41c5cdc675"
+  },
+  "src/modulos/citas/validaciones/cita.schema.ts": {
+    "mtime": 1784671610.3598197,
+    "ast_hash": "3b438d5f17bfcb6d58925a9bf0ec95a0",
+    "semantic_hash": "3b438d5f17bfcb6d58925a9bf0ec95a0"
+  },
+  "src/modulos/configuracion-profesional/acciones/profesional.acciones.ts": {
+    "mtime": 1784828814.454356,
+    "ast_hash": "7c8567609f9fa374647963b6a7e0de86",
+    "semantic_hash": "7c8567609f9fa374647963b6a7e0de86"
+  },
+  "src/modulos/configuracion-profesional/componentes/formulario-datos-profesional.tsx": {
+    "mtime": 1784828814.4670615,
+    "ast_hash": "fb934b9312df55afd1db7e82d59f6d1a",
+    "semantic_hash": "fb934b9312df55afd1db7e82d59f6d1a"
+  },
+  "src/modulos/configuracion-profesional/repositorios/profesional.repositorio.ts": {
+    "mtime": 1784828814.4827173,
+    "ast_hash": "df5fc9d6a93c64fc2a8de3544aef568f",
+    "semantic_hash": "df5fc9d6a93c64fc2a8de3544aef568f"
+  },
+  "src/modulos/configuracion-profesional/servicios/profesional.servicio.ts": {
+    "mtime": 1784828814.560619,
+    "ast_hash": "917a62a1961665d30ec50a6dd8902054",
+    "semantic_hash": "917a62a1961665d30ec50a6dd8902054"
+  },
+  "src/modulos/configuracion-profesional/tipos/index.ts": {
+    "mtime": 1784828814.7305324,
+    "ast_hash": "a3d2bf2806aebc3db5c6ad1bdae64aa6",
+    "semantic_hash": "a3d2bf2806aebc3db5c6ad1bdae64aa6"
+  },
+  "src/modulos/configuracion-profesional/validaciones/profesional.schema.ts": {
+    "mtime": 1784828814.7571497,
+    "ast_hash": "d97f8f861d0935371e7cbc36c26b7779",
+    "semantic_hash": "d97f8f861d0935371e7cbc36c26b7779"
+  },
+  "src/modulos/departamentos/acciones/departamentos.acciones.ts": {
+    "mtime": 1784307745.2944362,
+    "ast_hash": "743d5b141b0063114f489da61fe90f58",
+    "semantic_hash": "743d5b141b0063114f489da61fe90f58"
+  },
+  "src/modulos/departamentos/componentes/filtros-departamentos.tsx": {
+    "mtime": 1784816125.2978966,
+    "ast_hash": "b5bf41cd285db61a3bb4787c244a5415",
+    "semantic_hash": "b5bf41cd285db61a3bb4787c244a5415"
+  },
+  "src/modulos/departamentos/componentes/formulario-departamento.tsx": {
+    "mtime": 1784656880.3533034,
+    "ast_hash": "315124223734f8d7953d7e47d27c8060",
+    "semantic_hash": "315124223734f8d7953d7e47d27c8060"
+  },
+  "src/modulos/departamentos/componentes/pagina-departamentos.tsx": {
+    "mtime": 1785435592.8186374,
+    "ast_hash": "db44192d5f89cd7dc0bb32fedc1ca5b3",
+    "semantic_hash": "db44192d5f89cd7dc0bb32fedc1ca5b3"
+  },
+  "src/modulos/departamentos/componentes/pagina-editar-departamento.tsx": {
+    "mtime": 1785435599.5304303,
+    "ast_hash": "3ba30bd8a67b274bfdc3f851d2362def",
+    "semantic_hash": "3ba30bd8a67b274bfdc3f851d2362def"
+  },
+  "src/modulos/departamentos/componentes/pagina-nuevo-departamento.tsx": {
+    "mtime": 1785435595.7128658,
+    "ast_hash": "ea3d539ee9dcc3915f788e35969ca835",
+    "semantic_hash": "ea3d539ee9dcc3915f788e35969ca835"
+  },
+  "src/modulos/departamentos/componentes/tabla-departamentos.tsx": {
+    "mtime": 1784735953.0884697,
+    "ast_hash": "17a587e019b3e6a67e39098ec51cc487",
+    "semantic_hash": "17a587e019b3e6a67e39098ec51cc487"
+  },
+  "src/modulos/departamentos/constantes/index.ts": {
+    "mtime": 1784816066.463876,
+    "ast_hash": "11ef97f7ecc097c115c1c6151814db7e",
+    "semantic_hash": "11ef97f7ecc097c115c1c6151814db7e"
+  },
+  "src/modulos/departamentos/consultas/departamentos.consulta.ts": {
+    "mtime": 1784816093.7409997,
+    "ast_hash": "c996d38892166478cbe1bdf6b6746332",
+    "semantic_hash": "c996d38892166478cbe1bdf6b6746332"
+  },
+  "src/modulos/departamentos/errores/index.ts": {
+    "mtime": 1784307071.5279343,
+    "ast_hash": "89a2e04465194a1c4f393b4f945dd723",
+    "semantic_hash": "89a2e04465194a1c4f393b4f945dd723"
+  },
+  "src/modulos/departamentos/index.ts": {
+    "mtime": 1784214366.1191642,
+    "ast_hash": "935004c76db160af48f530f6cde608b5",
+    "semantic_hash": "935004c76db160af48f530f6cde608b5"
+  },
+  "src/modulos/departamentos/repositorios/departamentos.repositorio.ts": {
+    "mtime": 1784307071.3457131,
+    "ast_hash": "22bb65e391297ac77e6d14fa282e805f",
+    "semantic_hash": "22bb65e391297ac77e6d14fa282e805f"
+  },
+  "src/modulos/departamentos/servicios/departamentos.servicio.ts": {
+    "mtime": 1784320393.2520437,
+    "ast_hash": "c826b15ee89be81dd000b9fdb93bfcec",
+    "semantic_hash": "c826b15ee89be81dd000b9fdb93bfcec"
+  },
+  "src/modulos/departamentos/tipos/index.ts": {
+    "mtime": 1784816071.1013713,
+    "ast_hash": "d257de93601837fd1499778d4200b886",
+    "semantic_hash": "d257de93601837fd1499778d4200b886"
+  },
+  "src/modulos/departamentos/validaciones/departamento.schema.ts": {
+    "mtime": 1784816080.870644,
+    "ast_hash": "3a90c3001aef07ceb4ca45d2b3171d84",
+    "semantic_hash": "3a90c3001aef07ceb4ca45d2b3171d84"
+  },
+  "src/modulos/documentos-clinicos/acciones/documentos-clinicos.acciones.ts": {
+    "mtime": 1786467898.3149443,
+    "ast_hash": "a343e0168b3ef2cbbb81bb54289e7fd4",
+    "semantic_hash": "a343e0168b3ef2cbbb81bb54289e7fd4"
+  },
+  "src/modulos/documentos-clinicos/componentes/autocomplete-busqueda-documentos.tsx": {
+    "mtime": 1784744813.0703778,
+    "ast_hash": "58e965f836fe383379e12a15f19b8f1f",
+    "semantic_hash": "58e965f836fe383379e12a15f19b8f1f"
+  },
+  "src/modulos/documentos-clinicos/componentes/detalle-documento-clinico.tsx": {
+    "mtime": 1785435597.725,
+    "ast_hash": "d2bb6ca8fd891f55167680c847c19001",
+    "semantic_hash": "d2bb6ca8fd891f55167680c847c19001"
+  },
+  "src/modulos/documentos-clinicos/componentes/formulario-documento-clinico.tsx": {
+    "mtime": 1785436086.1998737,
+    "ast_hash": "468cf9cf854b5e342ce55c9ba567e5de",
+    "semantic_hash": "468cf9cf854b5e342ce55c9ba567e5de"
+  },
+  "src/modulos/documentos-clinicos/componentes/pagina-documentos-clinicos.tsx": {
+    "mtime": 1785435683.4003198,
+    "ast_hash": "c32aa7b082fc2e64e59389549e1008b1",
+    "semantic_hash": "c32aa7b082fc2e64e59389549e1008b1"
+  },
+  "src/modulos/documentos-clinicos/consultas/documentos-clinicos.consulta.ts": {
+    "mtime": 1784670581.0961032,
+    "ast_hash": "60c1d01c1291b6722f5b5456030b5f00",
+    "semantic_hash": "60c1d01c1291b6722f5b5456030b5f00"
+  },
+  "src/modulos/documentos-clinicos/errores/index.ts": {
+    "mtime": 1784670580.7564645,
+    "ast_hash": "c9f69d4966b6f78673f62b8003e1c501",
+    "semantic_hash": "c9f69d4966b6f78673f62b8003e1c501"
+  },
+  "src/modulos/documentos-clinicos/repositorios/documentos-clinicos.repositorio.ts": {
+    "mtime": 1784823497.264853,
+    "ast_hash": "df9137acecbb5f127115d371fb5f9300",
+    "semantic_hash": "df9137acecbb5f127115d371fb5f9300"
+  },
+  "src/modulos/documentos-clinicos/servicios/documentos-clinicos.servicio.ts": {
+    "mtime": 1784670581.1300986,
+    "ast_hash": "46bd93ec2ab37a055d2763155d1ae5b8",
+    "semantic_hash": "46bd93ec2ab37a055d2763155d1ae5b8"
+  },
+  "src/modulos/documentos-clinicos/servicios/generar-documento-clinico-pdf.ts": {
+    "mtime": 1784817087.8250322,
+    "ast_hash": "f0c6299696d2530b79f6549e51b1c4dc",
+    "semantic_hash": "f0c6299696d2530b79f6549e51b1c4dc"
+  },
+  "src/modulos/documentos-clinicos/tipos/index.ts": {
+    "mtime": 1784670581.0485635,
+    "ast_hash": "961935fa210ce33759adc5f2c79a025d",
+    "semantic_hash": "961935fa210ce33759adc5f2c79a025d"
+  },
+  "src/modulos/documentos-clinicos/validaciones/documento-clinico.schema.ts": {
+    "mtime": 1784674613.503003,
+    "ast_hash": "33967c857e3404a4fc34644d916ec6cc",
+    "semantic_hash": "33967c857e3404a4fc34644d916ec6cc"
+  },
+  "src/modulos/empresas/acciones/buscar-empresas.accion.ts": {
+    "mtime": 1784744558.060722,
+    "ast_hash": "23e0cfdfb3493370c6999cd2840f7a5e",
+    "semantic_hash": "23e0cfdfb3493370c6999cd2840f7a5e"
+  },
+  "src/modulos/empresas/componentes/autocomplete-busqueda-empresa.tsx": {
+    "mtime": 1784744567.8379006,
+    "ast_hash": "81232ddd3683f20ce9f2375e4b6bc260",
+    "semantic_hash": "81232ddd3683f20ce9f2375e4b6bc260"
+  },
+  "src/modulos/empresas/componentes/pagina-empresas.tsx": {
+    "mtime": 1785435591.0330994,
+    "ast_hash": "8c16c712a6c4f6208efe3ba0cccd9dd2",
+    "semantic_hash": "8c16c712a6c4f6208efe3ba0cccd9dd2"
+  },
+  "src/modulos/empresas/consultas/empresas.consulta.ts": {
+    "mtime": 1784649877.586476,
+    "ast_hash": "b634f11f940c4b9ad7e28aa77f6a9fee",
+    "semantic_hash": "b634f11f940c4b9ad7e28aa77f6a9fee"
+  },
+  "src/modulos/empresas/errores/index.ts": {
+    "mtime": 1784235320.291616,
+    "ast_hash": "039398e88ddac41e4b024dc0c68c0812",
+    "semantic_hash": "039398e88ddac41e4b024dc0c68c0812"
+  },
+  "src/modulos/empresas/index.ts": {
+    "mtime": 1784235320.4524777,
+    "ast_hash": "a6d5ed3bc2ac4472b4962d84730bfa04",
+    "semantic_hash": "a6d5ed3bc2ac4472b4962d84730bfa04"
+  },
+  "src/modulos/empresas/repositorios/empresas.repositorio.ts": {
+    "mtime": 1784823026.5174878,
+    "ast_hash": "042f75949214c95d2cf6bdab2b392464",
+    "semantic_hash": "042f75949214c95d2cf6bdab2b392464"
+  },
+  "src/modulos/empresas/servicios/acceso-empresa.servicio.ts": {
+    "mtime": 1784823026.5284898,
+    "ast_hash": "b57909d3b84d89ff2cf28f9e5f1f25ee",
+    "semantic_hash": "b57909d3b84d89ff2cf28f9e5f1f25ee"
+  },
+  "src/modulos/evaluaciones-medicas/acciones/evaluaciones.acciones.ts": {
+    "mtime": 1784569427.6232562,
+    "ast_hash": "814210922998648ed314e5dfe954a53b",
+    "semantic_hash": "814210922998648ed314e5dfe954a53b"
+  },
+  "src/modulos/evaluaciones-medicas/componentes/alerta-alergias.tsx": {
+    "mtime": 1784751970.723171,
+    "ast_hash": "8882a3d81e3ad87cde8c6dbdcbe0a08b",
+    "semantic_hash": "8882a3d81e3ad87cde8c6dbdcbe0a08b"
+  },
+  "src/modulos/evaluaciones-medicas/componentes/autocomplete-busqueda-evaluaciones.tsx": {
+    "mtime": 1784744762.7837346,
+    "ast_hash": "f9008820623487187411dfaa05a2d941",
+    "semantic_hash": "f9008820623487187411dfaa05a2d941"
+  },
+  "src/modulos/evaluaciones-medicas/componentes/boton-anular-evaluacion.tsx": {
+    "mtime": 1784569572.7773154,
+    "ast_hash": "367b4176ccd4ea9b55a03564009045fb",
+    "semantic_hash": "367b4176ccd4ea9b55a03564009045fb"
+  },
+  "src/modulos/evaluaciones-medicas/componentes/detalle-evaluacion.tsx": {
+    "mtime": 1785435618.820935,
+    "ast_hash": "f781ddcdd197db5f4c7a05c9135a5d8e",
+    "semantic_hash": "f781ddcdd197db5f4c7a05c9135a5d8e"
+  },
+  "src/modulos/evaluaciones-medicas/componentes/formulario-evaluacion.tsx": {
+    "mtime": 1785436114.9168768,
+    "ast_hash": "37895c1c8f8960219d5ff1d9b831f700",
+    "semantic_hash": "37895c1c8f8960219d5ff1d9b831f700"
+  },
+  "src/modulos/evaluaciones-medicas/componentes/gestion-alergias.tsx": {
+    "mtime": 1785162557.1001275,
+    "ast_hash": "58fa629d4a2e1f00629e206677b7a6d4",
+    "semantic_hash": "58fa629d4a2e1f00629e206677b7a6d4"
+  },
+  "src/modulos/evaluaciones-medicas/componentes/lista-evaluaciones.tsx": {
+    "mtime": 1784735766.2062795,
+    "ast_hash": "49d017a6445f8b9a670d5cfaf3c1bb6c",
+    "semantic_hash": "49d017a6445f8b9a670d5cfaf3c1bb6c"
+  },
+  "src/modulos/evaluaciones-medicas/componentes/valores-iniciales-evaluacion.ts": {
+    "mtime": 1784670839.4368424,
+    "ast_hash": "3cb6d78d0b7afbbc464a6d3aa7608697",
+    "semantic_hash": "3cb6d78d0b7afbbc464a6d3aa7608697"
+  },
+  "src/modulos/evaluaciones-medicas/consultas/evaluaciones.consulta.ts": {
+    "mtime": 1784746403.6892738,
+    "ast_hash": "9f07de8bc93b06044edae8d349aa9912",
+    "semantic_hash": "9f07de8bc93b06044edae8d349aa9912"
+  },
+  "src/modulos/evaluaciones-medicas/errores/index.ts": {
+    "mtime": 1784569265.9768982,
+    "ast_hash": "52f1e82a0c4a9ddae00d1c2ffa8cd552",
+    "semantic_hash": "52f1e82a0c4a9ddae00d1c2ffa8cd552"
+  },
+  "src/modulos/evaluaciones-medicas/repositorios/alergias.repositorio.ts": {
+    "mtime": 1784569372.0956583,
+    "ast_hash": "65f32ed8e5b2452b19aa2be94b335772",
+    "semantic_hash": "65f32ed8e5b2452b19aa2be94b335772"
+  },
+  "src/modulos/evaluaciones-medicas/repositorios/evaluaciones.repositorio.ts": {
+    "mtime": 1786468345.44568,
+    "ast_hash": "e9add704059484b5cbcba549fb8413eb",
+    "semantic_hash": "e9add704059484b5cbcba549fb8413eb"
+  },
+  "src/modulos/evaluaciones-medicas/servicios/alergias.servicio.ts": {
+    "mtime": 1784569427.6153018,
+    "ast_hash": "5366a288b1688e2a321968644f793691",
+    "semantic_hash": "5366a288b1688e2a321968644f793691"
+  },
+  "src/modulos/evaluaciones-medicas/servicios/evaluaciones.servicio.ts": {
+    "mtime": 1784823711.7660017,
+    "ast_hash": "9b9ae9369c307e249fa7060a348b32d4",
+    "semantic_hash": "9b9ae9369c307e249fa7060a348b32d4"
+  },
+  "src/modulos/evaluaciones-medicas/servicios/generar-evaluacion-pdf.ts": {
+    "mtime": 1784817050.6859646,
+    "ast_hash": "d42c972cda5aaaa298f93170807f5290",
+    "semantic_hash": "d42c972cda5aaaa298f93170807f5290"
+  },
+  "src/modulos/evaluaciones-medicas/tipos/index.ts": {
+    "mtime": 1784649739.4096751,
+    "ast_hash": "3d9a81f2a63b360e032d60e8b39fca78",
+    "semantic_hash": "3d9a81f2a63b360e032d60e8b39fca78"
+  },
+  "src/modulos/evaluaciones-medicas/utilidades/normalizar-sustancia.ts": {
+    "mtime": 1784570126.0306575,
+    "ast_hash": "98ed6bab313cc20cf3b290db8741a485",
+    "semantic_hash": "98ed6bab313cc20cf3b290db8741a485"
+  },
+  "src/modulos/evaluaciones-medicas/validaciones/evaluacion.schema.ts": {
+    "mtime": 1784670839.4218335,
+    "ast_hash": "40ef7d53944e43e5108bba3bbf479120",
+    "semantic_hash": "40ef7d53944e43e5108bba3bbf479120"
+  },
+  "src/modulos/fichas-ocupacionales/acciones/fichas.acciones.ts": {
+    "mtime": 1784558600.7095718,
+    "ast_hash": "a11b497e805927bd40c99a89f0d9f04d",
+    "semantic_hash": "a11b497e805927bd40c99a89f0d9f04d"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/acciones-certificado.tsx": {
+    "mtime": 1785436355.248266,
+    "ast_hash": "fe2853974178974508dbea42b66dc111",
+    "semantic_hash": "fe2853974178974508dbea42b66dc111"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/autocomplete-busqueda-fichas.tsx": {
+    "mtime": 1784744621.821813,
+    "ast_hash": "d47bd4f942d6441c805ce45cdbed454f",
+    "semantic_hash": "d47bd4f942d6441c805ce45cdbed454f"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/boton-anular-ficha.tsx": {
+    "mtime": 1784324213.7716682,
+    "ast_hash": "f55db875fb55e358077702d5c389ba48",
+    "semantic_hash": "f55db875fb55e358077702d5c389ba48"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/campos/campo.tsx": {
+    "mtime": 1784735673.6660151,
+    "ast_hash": "efea64dd07b78aaa80c5f89cfa078f3c",
+    "semantic_hash": "efea64dd07b78aaa80c5f89cfa078f3c"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/certificado-oficial.tsx": {
+    "mtime": 1784828728.1517272,
+    "ast_hash": "7ec26b2da36b563b19ac7c0dd9a1e0ef",
+    "semantic_hash": "7ec26b2da36b563b19ac7c0dd9a1e0ef"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/certificado-plantilla.tsx": {
+    "mtime": 1784828728.1364975,
+    "ast_hash": "c73638923adbd01dadd5445865aa2789",
+    "semantic_hash": "c73638923adbd01dadd5445865aa2789"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/formulario-ficha.tsx": {
+    "mtime": 1785436086.758203,
+    "ast_hash": "97e05b7ab434dc04f519e53ab5a85240",
+    "semantic_hash": "97e05b7ab434dc04f519e53ab5a85240"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/pagina-lista-fichas.tsx": {
+    "mtime": 1785435669.13045,
+    "ast_hash": "ce89728a493bf147086f4eecab27973a",
+    "semantic_hash": "ce89728a493bf147086f4eecab27973a"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/props.ts": {
+    "mtime": 1784323359.1726453,
+    "ast_hash": "82eb28c2d64e687479b356f0751e1a47",
+    "semantic_hash": "82eb28c2d64e687479b356f0751e1a47"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-a-establecimiento-usuario.tsx": {
+    "mtime": 1785162483.7444475,
+    "ast_hash": "23a1e02bb612ac4a80a8798561989d7f",
+    "semantic_hash": "23a1e02bb612ac4a80a8798561989d7f"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-b-motivo-consulta.tsx": {
+    "mtime": 1784559590.76186,
+    "ast_hash": "30e5e3eef860ed74299da343c317b8ad",
+    "semantic_hash": "30e5e3eef860ed74299da343c317b8ad"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-c-antecedentes-personales.tsx": {
+    "mtime": 1784559590.8227992,
+    "ast_hash": "f69251943cecc2b4895d339c84efc54d",
+    "semantic_hash": "f69251943cecc2b4895d339c84efc54d"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-d-problema-actual.tsx": {
+    "mtime": 1784323473.4779274,
+    "ast_hash": "8b63edb928d6e5baebfb09e61c2eb9b9",
+    "semantic_hash": "8b63edb928d6e5baebfb09e61c2eb9b9"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-e-constantes-vitales.tsx": {
+    "mtime": 1784323496.006411,
+    "ast_hash": "098d36dfdb7806ca6ef5778c3e173679",
+    "semantic_hash": "098d36dfdb7806ca6ef5778c3e173679"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-f-examen-fisico.tsx": {
+    "mtime": 1784323588.0933397,
+    "ast_hash": "e487b6fba44034898a37adb3fb2f5403",
+    "semantic_hash": "e487b6fba44034898a37adb3fb2f5403"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-g-factores-riesgo.tsx": {
+    "mtime": 1784323598.763819,
+    "ast_hash": "e1f890b9bacbaf4822881d50db11a353",
+    "semantic_hash": "e1f890b9bacbaf4822881d50db11a353"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-h-antecedentes-laborales.tsx": {
+    "mtime": 1784323636.1363971,
+    "ast_hash": "00dd5764bfd3949d63a847fcce7b86f3",
+    "semantic_hash": "00dd5764bfd3949d63a847fcce7b86f3"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-i-actividades-extralaborales.tsx": {
+    "mtime": 1784323670.6021483,
+    "ast_hash": "02338dd762deb71bc1ab516c90c34fdf",
+    "semantic_hash": "02338dd762deb71bc1ab516c90c34fdf"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-j-resultados-examenes.tsx": {
+    "mtime": 1784323716.1054564,
+    "ast_hash": "cb86e65f5f7c1e8b20293f9d6d30b34d",
+    "semantic_hash": "cb86e65f5f7c1e8b20293f9d6d30b34d"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-k-diagnosticos.tsx": {
+    "mtime": 1784323763.7305117,
+    "ast_hash": "53cbed62c7c83eee1db9b74f5995af5b",
+    "semantic_hash": "53cbed62c7c83eee1db9b74f5995af5b"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-l-aptitud-medica.tsx": {
+    "mtime": 1784323811.1818552,
+    "ast_hash": "a16e6c27999a7c8b1c14e1c47a8f3f35",
+    "semantic_hash": "a16e6c27999a7c8b1c14e1c47a8f3f35"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-m-recomendaciones.tsx": {
+    "mtime": 1784323793.284198,
+    "ast_hash": "588ec24fe8885cbbaa9151f84ed32218",
+    "semantic_hash": "588ec24fe8885cbbaa9151f84ed32218"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-n-retiro.tsx": {
+    "mtime": 1784323848.3644712,
+    "ast_hash": "e2f98ebe545ba34556ad7f7475d56044",
+    "semantic_hash": "e2f98ebe545ba34556ad7f7475d56044"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-o-datos-profesional.tsx": {
+    "mtime": 1784558297.0340455,
+    "ast_hash": "9dddcafe4e88b7b705fa3ea25a4b2b6b",
+    "semantic_hash": "9dddcafe4e88b7b705fa3ea25a4b2b6b"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/secciones/seccion-p-firma-trabajador.tsx": {
+    "mtime": 1784558297.050031,
+    "ast_hash": "bd516b2227ad532bcbd9f4729f2043b6",
+    "semantic_hash": "bd516b2227ad532bcbd9f4729f2043b6"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/tablas/examen-fisico-regiones.tsx": {
+    "mtime": 1784324998.1455684,
+    "ast_hash": "21cfa891af20bc4c665f12143fb8c058",
+    "semantic_hash": "21cfa891af20bc4c665f12143fb8c058"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/tablas/factores-riesgo.tsx": {
+    "mtime": 1784558316.3081594,
+    "ast_hash": "90a4adf152df5ecddadb451d0db8aeb4",
+    "semantic_hash": "90a4adf152df5ecddadb451d0db8aeb4"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/tablas/tabla-actividades-extralaborales.tsx": {
+    "mtime": 1784559590.8739574,
+    "ast_hash": "fce3435f2cdfead1d33e17476d8b8a50",
+    "semantic_hash": "fce3435f2cdfead1d33e17476d8b8a50"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/tablas/tabla-antecedentes-laborales.tsx": {
+    "mtime": 1784559590.9280293,
+    "ast_hash": "3b123966d147f9e00261db0cadd13e69",
+    "semantic_hash": "3b123966d147f9e00261db0cadd13e69"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/tablas/tabla-consumo-sustancias.tsx": {
+    "mtime": 1784559590.9610162,
+    "ast_hash": "81276cbd47e255538a4f907e5d9df677",
+    "semantic_hash": "81276cbd47e255538a4f907e5d9df677"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/tablas/tabla-diagnosticos.tsx": {
+    "mtime": 1784824543.410853,
+    "ast_hash": "c5f9e0c61d280984c92c69acff00efe3",
+    "semantic_hash": "c5f9e0c61d280984c92c69acff00efe3"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/tablas/tabla-examenes-reproductivos.tsx": {
+    "mtime": 1784558316.3420377,
+    "ast_hash": "a5407239676f0f72718de0a4a823bb45",
+    "semantic_hash": "a5407239676f0f72718de0a4a823bb45"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/tablas/tabla-recomendaciones.tsx": {
+    "mtime": 1784559590.9875374,
+    "ast_hash": "3e4ffb08895723695c3d2ab9fd8178aa",
+    "semantic_hash": "3e4ffb08895723695c3d2ab9fd8178aa"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/tablas/tabla-resultados-examenes.tsx": {
+    "mtime": 1784558316.3420377,
+    "ast_hash": "7ac63056899bf111dd6ccf7be23a86c1",
+    "semantic_hash": "7ac63056899bf111dd6ccf7be23a86c1"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/valores-iniciales.ts": {
+    "mtime": 1784671168.6842632,
+    "ast_hash": "166291ed3c64a0ae96e79ad995fe75df",
+    "semantic_hash": "166291ed3c64a0ae96e79ad995fe75df"
+  },
+  "src/modulos/fichas-ocupacionales/componentes/vista-previa-certificado.tsx": {
+    "mtime": 1784749931.2125454,
+    "ast_hash": "4002ac694cc117f77b96c7f24deff15e",
+    "semantic_hash": "4002ac694cc117f77b96c7f24deff15e"
+  },
+  "src/modulos/fichas-ocupacionales/constantes/index.ts": {
+    "mtime": 1785162445.7175362,
+    "ast_hash": "f6332bdd7c62ce8188f9b179e7a41f80",
+    "semantic_hash": "f6332bdd7c62ce8188f9b179e7a41f80"
+  },
+  "src/modulos/fichas-ocupacionales/consultas/fichas.consulta.ts": {
+    "mtime": 1786469684.966631,
+    "ast_hash": "98cc8a9e7f44505d7747913575e8988a",
+    "semantic_hash": "98cc8a9e7f44505d7747913575e8988a"
+  },
+  "src/modulos/fichas-ocupacionales/errores/index.ts": {
+    "mtime": 1784322922.0716963,
+    "ast_hash": "4be538667cbfb54a38357cab8ddecbb3",
+    "semantic_hash": "4be538667cbfb54a38357cab8ddecbb3"
+  },
+  "src/modulos/fichas-ocupacionales/index.ts": {
+    "mtime": 1784559200.145039,
+    "ast_hash": "48da163e7c49c569593859d6b8fa0bf7",
+    "semantic_hash": "48da163e7c49c569593859d6b8fa0bf7"
+  },
+  "src/modulos/fichas-ocupacionales/repositorios/fichas.repositorio.ts": {
+    "mtime": 1786466136.9807346,
+    "ast_hash": "253e621f650d926054e2a98b131c1a6c",
+    "semantic_hash": "253e621f650d926054e2a98b131c1a6c"
+  },
+  "src/modulos/fichas-ocupacionales/servicios/fichas.servicio.ts": {
+    "mtime": 1784558600.700204,
+    "ast_hash": "63bc1f45c0f028fc5bb4f306c21f9f9b",
+    "semantic_hash": "63bc1f45c0f028fc5bb4f306c21f9f9b"
+  },
+  "src/modulos/fichas-ocupacionales/servicios/generar-certificado-pdf.ts": {
+    "mtime": 1784817288.3523383,
+    "ast_hash": "ce9294402ce95c6a05cf9920e7574fa6",
+    "semantic_hash": "ce9294402ce95c6a05cf9920e7574fa6"
+  },
+  "src/modulos/fichas-ocupacionales/servicios/generar-ficha-excel.ts": {
+    "mtime": 1784828728.101307,
+    "ast_hash": "d2b70d365b47ec1fe249ae1f0de6000b",
+    "semantic_hash": "d2b70d365b47ec1fe249ae1f0de6000b"
+  },
+  "src/modulos/fichas-ocupacionales/servicios/generar-ficha-pdf.ts": {
+    "mtime": 1786469686.151776,
+    "ast_hash": "ccffca0db948ea51431815e57140d891",
+    "semantic_hash": "ccffca0db948ea51431815e57140d891"
+  },
+  "src/modulos/fichas-ocupacionales/servicios/nombre-exportacion.ts": {
+    "mtime": 1784558874.2974298,
+    "ast_hash": "62244539dd9ccd3e7e980bc6ed3e7ee3",
+    "semantic_hash": "62244539dd9ccd3e7e980bc6ed3e7ee3"
+  },
+  "src/modulos/fichas-ocupacionales/tipos/index.ts": {
+    "mtime": 1786469684.277676,
+    "ast_hash": "04630c8c708a587845ef3abe1574477a",
+    "semantic_hash": "04630c8c708a587845ef3abe1574477a"
+  },
+  "src/modulos/fichas-ocupacionales/validaciones/ficha.schema.ts": {
+    "mtime": 1784671168.6376734,
+    "ast_hash": "a0e3fd1167ebc173910daaad057c6209",
+    "semantic_hash": "a0e3fd1167ebc173910daaad057c6209"
+  },
+  "src/modulos/inicio/componentes/pagina-inicio.tsx": {
+    "mtime": 1784755354.312645,
+    "ast_hash": "744e99b990968fb3c535d540572bea4b",
+    "semantic_hash": "744e99b990968fb3c535d540572bea4b"
+  },
+  "src/modulos/inicio/consultas/inicio.consulta.ts": {
+    "mtime": 1784671736.1685169,
+    "ast_hash": "f1633aca077126ab37152295d3df3a62",
+    "semantic_hash": "f1633aca077126ab37152295d3df3a62"
+  },
+  "src/modulos/inicio/index.ts": {
+    "mtime": 1784214366.1337066,
+    "ast_hash": "3b0c6ec0b2aa5e8c9b020cf8e812e6ed",
+    "semantic_hash": "3b0c6ec0b2aa5e8c9b020cf8e812e6ed"
+  },
+  "src/modulos/inventario/acciones/inventario.acciones.ts": {
+    "mtime": 1785339788.8100047,
+    "ast_hash": "badfd0c60ab8ae9b362d23abbfd5b083",
+    "semantic_hash": "badfd0c60ab8ae9b362d23abbfd5b083"
+  },
+  "src/modulos/inventario/componentes/acciones-inventario.tsx": {
+    "mtime": 1785340244.9525783,
+    "ast_hash": "6e39c8088a4f3274f885679c1fe88155",
+    "semantic_hash": "6e39c8088a4f3274f885679c1fe88155"
+  },
+  "src/modulos/inventario/componentes/dialogo-agregar-cantidad.tsx": {
+    "mtime": 1785339944.68099,
+    "ast_hash": "500258772b45dd4507952467aa874c90",
+    "semantic_hash": "500258772b45dd4507952467aa874c90"
+  },
+  "src/modulos/inventario/componentes/dialogo-eliminar-cantidad.tsx": {
+    "mtime": 1785339957.1895022,
+    "ast_hash": "f4a7addf77f32c292f1e16fba9768b6d",
+    "semantic_hash": "f4a7addf77f32c292f1e16fba9768b6d"
+  },
+  "src/modulos/inventario/componentes/formulario-medicamento-inventario.tsx": {
+    "mtime": 1785339858.9724631,
+    "ast_hash": "87ba77e476384990f966f6fe5db2f035",
+    "semantic_hash": "87ba77e476384990f966f6fe5db2f035"
+  },
+  "src/modulos/inventario/componentes/formulario-movimiento-inventario.tsx": {
+    "mtime": 1785340449.3462696,
+    "ast_hash": "0be463b193f12350e0491b869a73b45f",
+    "semantic_hash": "0be463b193f12350e0491b869a73b45f"
+  },
+  "src/modulos/inventario/componentes/pagina-inventario.tsx": {
+    "mtime": 1785435931.036828,
+    "ast_hash": "df98a3636275f115e38fee1a9c0f41e5",
+    "semantic_hash": "df98a3636275f115e38fee1a9c0f41e5"
+  },
+  "src/modulos/inventario/constantes/index.ts": {
+    "mtime": 1785340430.800972,
+    "ast_hash": "fdfc133266b01f42b4459a4386227fd6",
+    "semantic_hash": "fdfc133266b01f42b4459a4386227fd6"
+  },
+  "src/modulos/inventario/consultas/inventario.consulta.ts": {
+    "mtime": 1785274215.7769718,
+    "ast_hash": "807f771af05e046534bb9bd3fe7fad99",
+    "semantic_hash": "807f771af05e046534bb9bd3fe7fad99"
+  },
+  "src/modulos/inventario/errores/index.ts": {
+    "mtime": 1785274107.6461577,
+    "ast_hash": "a2ac9dd791eb5869b8f8df7c5b4530cd",
+    "semantic_hash": "a2ac9dd791eb5869b8f8df7c5b4530cd"
+  },
+  "src/modulos/inventario/index.ts": {
+    "mtime": 1785274107.6556876,
+    "ast_hash": "041324ee0ad9192ecdc706583cbadae7",
+    "semantic_hash": "041324ee0ad9192ecdc706583cbadae7"
+  },
+  "src/modulos/inventario/repositorios/inventario.repositorio.ts": {
+    "mtime": 1786467627.6558619,
+    "ast_hash": "593820ac5999a3d467e0a2cb8d6445c0",
+    "semantic_hash": "593820ac5999a3d467e0a2cb8d6445c0"
+  },
+  "src/modulos/inventario/servicios/inventario.servicio.ts": {
+    "mtime": 1785340272.9103074,
+    "ast_hash": "5631ec8c4b8ad042e43de58823913da5",
+    "semantic_hash": "5631ec8c4b8ad042e43de58823913da5"
+  },
+  "src/modulos/inventario/tipos/index.ts": {
+    "mtime": 1785274107.6194582,
+    "ast_hash": "fbe52d4f8e6dc05dda869ee6b4d69a69",
+    "semantic_hash": "fbe52d4f8e6dc05dda869ee6b4d69a69"
+  },
+  "src/modulos/inventario/validaciones/inventario.schema.ts": {
+    "mtime": 1785339754.5782864,
+    "ast_hash": "2b6e2cdf06183e016ed3daf123b5c971",
+    "semantic_hash": "2b6e2cdf06183e016ed3daf123b5c971"
+  },
+  "src/modulos/recetas/acciones/recetas.acciones.ts": {
+    "mtime": 1786468105.885872,
+    "ast_hash": "1c4c15a750c4bbe2233bebabf29d997d",
+    "semantic_hash": "1c4c15a750c4bbe2233bebabf29d997d"
+  },
+  "src/modulos/recetas/componentes/acciones-receta.tsx": {
+    "mtime": 1785436356.1019404,
+    "ast_hash": "61789c1e14c8c9840290969bab413aca",
+    "semantic_hash": "61789c1e14c8c9840290969bab413aca"
+  },
+  "src/modulos/recetas/componentes/detalle-receta.tsx": {
+    "mtime": 1786469965.520749,
+    "ast_hash": "b70a5145aeaad6116911927d457e4c09",
+    "semantic_hash": "b70a5145aeaad6116911927d457e4c09"
+  },
+  "src/modulos/recetas/componentes/filtros-recetas.tsx": {
+    "mtime": 1784744527.411637,
+    "ast_hash": "9e461ca491a6e31592043bf1e4223e8a",
+    "semantic_hash": "9e461ca491a6e31592043bf1e4223e8a"
+  },
+  "src/modulos/recetas/componentes/formulario-receta.tsx": {
+    "mtime": 1785436356.648885,
+    "ast_hash": "d0136cd787ee00abda819504be586304",
+    "semantic_hash": "d0136cd787ee00abda819504be586304"
+  },
+  "src/modulos/recetas/componentes/vista-previa-receta.tsx": {
+    "mtime": 1785435832.7299874,
+    "ast_hash": "0f17787376dcdb9eb3ecabeacc680b09",
+    "semantic_hash": "0f17787376dcdb9eb3ecabeacc680b09"
+  },
+  "src/modulos/recetas/constantes/index.ts": {
+    "mtime": 1784754169.193191,
+    "ast_hash": "d32d9ddc6b95c2402201e917055a662e",
+    "semantic_hash": "d32d9ddc6b95c2402201e917055a662e"
+  },
+  "src/modulos/recetas/repositorios/recetas.repositorio.ts": {
+    "mtime": 1786468323.1462114,
+    "ast_hash": "0baaa7d389e8db2f5041a1ecb6b5cd93",
+    "semantic_hash": "0baaa7d389e8db2f5041a1ecb6b5cd93"
+  },
+  "src/modulos/recetas/servicios/generar-receta-pdf.ts": {
+    "mtime": 1786470053.1574056,
+    "ast_hash": "c6358720ff4b47f171afb02acbc07ef3",
+    "semantic_hash": "c6358720ff4b47f171afb02acbc07ef3"
+  },
+  "src/modulos/recetas/servicios/recetas.servicio.ts": {
+    "mtime": 1784671488.24147,
+    "ast_hash": "6ca26afb9adbacddfc7904dc545c724e",
+    "semantic_hash": "6ca26afb9adbacddfc7904dc545c724e"
+  },
+  "src/modulos/recetas/tipos/index.ts": {
+    "mtime": 1784672469.2696967,
+    "ast_hash": "e3c0bd0d5f3fbd210e5c31cee7e20056",
+    "semantic_hash": "e3c0bd0d5f3fbd210e5c31cee7e20056"
+  },
+  "src/modulos/recetas/validaciones/receta.schema.ts": {
+    "mtime": 1785274670.7266767,
+    "ast_hash": "77fd7e9c5548eaf6a0edf109d7e8057e",
+    "semantic_hash": "77fd7e9c5548eaf6a0edf109d7e8057e"
+  },
+  "src/modulos/registro-diario/acciones/registro-diario.acciones.ts": {
+    "mtime": 1785274591.0513937,
+    "ast_hash": "ae34982c5362784fa979d714f1ee7856",
+    "semantic_hash": "ae34982c5362784fa979d714f1ee7856"
+  },
+  "src/modulos/registro-diario/componentes/acciones-registro-diario.tsx": {
+    "mtime": 1784749605.8310845,
+    "ast_hash": "2b4a836945f8bd542f2c634fb8bcc262",
+    "semantic_hash": "2b4a836945f8bd542f2c634fb8bcc262"
+  },
+  "src/modulos/registro-diario/componentes/autocomplete-busqueda-registro.tsx": {
+    "mtime": 1784744847.5918305,
+    "ast_hash": "b0006822a6d82ca4b97169dd5886f6c5",
+    "semantic_hash": "b0006822a6d82ca4b97169dd5886f6c5"
+  },
+  "src/modulos/registro-diario/componentes/campo-filtro.tsx": {
+    "mtime": 1785158950.2985203,
+    "ast_hash": "993d2cc17f368c3ed6e1232f7bce6131",
+    "semantic_hash": "993d2cc17f368c3ed6e1232f7bce6131"
+  },
+  "src/modulos/registro-diario/componentes/detalle-registro-diario.tsx": {
+    "mtime": 1785435659.9802322,
+    "ast_hash": "13218adc43d87ac7e19350aba66834ee",
+    "semantic_hash": "13218adc43d87ac7e19350aba66834ee"
+  },
+  "src/modulos/registro-diario/componentes/formulario-registro-diario.tsx": {
+    "mtime": 1785436084.9816163,
+    "ast_hash": "1c0949bfa5a81b7011ca374a81576a99",
+    "semantic_hash": "1c0949bfa5a81b7011ca374a81576a99"
+  },
+  "src/modulos/registro-diario/componentes/pagina-registro-diario.tsx": {
+    "mtime": 1785435742.0010674,
+    "ast_hash": "a03ef869c19068b54c13cc9c70bd4f60",
+    "semantic_hash": "a03ef869c19068b54c13cc9c70bd4f60"
+  },
+  "src/modulos/registro-diario/consultas/registro-diario.consulta.ts": {
+    "mtime": 1785274445.2681975,
+    "ast_hash": "29f116b89dce104130f2ddda294e4fdc",
+    "semantic_hash": "29f116b89dce104130f2ddda294e4fdc"
+  },
+  "src/modulos/registro-diario/errores/index.ts": {
+    "mtime": 1784670201.7981005,
+    "ast_hash": "557979f6e18492e81071a93afe110010",
+    "semantic_hash": "557979f6e18492e81071a93afe110010"
+  },
+  "src/modulos/registro-diario/repositorios/registro-diario.repositorio.ts": {
+    "mtime": 1786468832.686309,
+    "ast_hash": "a5646c255ffb05ba6886e3ab10d226c5",
+    "semantic_hash": "a5646c255ffb05ba6886e3ab10d226c5"
+  },
+  "src/modulos/registro-diario/servicios/generar-registro-diario-excel.ts": {
+    "mtime": 1784670458.804426,
+    "ast_hash": "26ec29f93ded56d69ecca3dee77f1396",
+    "semantic_hash": "26ec29f93ded56d69ecca3dee77f1396"
+  },
+  "src/modulos/registro-diario/servicios/generar-registro-diario-pdf.ts": {
+    "mtime": 1784817000.7826302,
+    "ast_hash": "d258a828b5e758913e1fb39022a70b26",
+    "semantic_hash": "d258a828b5e758913e1fb39022a70b26"
+  },
+  "src/modulos/registro-diario/servicios/registro-diario.servicio.ts": {
+    "mtime": 1785274475.2168941,
+    "ast_hash": "e4d9f9c11a749ba2291a1a8fc48a9ad7",
+    "semantic_hash": "e4d9f9c11a749ba2291a1a8fc48a9ad7"
+  },
+  "src/modulos/registro-diario/tipos/index.ts": {
+    "mtime": 1785274823.7045991,
+    "ast_hash": "6062c98461a14b55ac7b22945f5548a0",
+    "semantic_hash": "6062c98461a14b55ac7b22945f5548a0"
+  },
+  "src/modulos/registro-diario/validaciones/registro-diario.schema.ts": {
+    "mtime": 1785274428.8373563,
+    "ast_hash": "957033bbee724fccd83b6427ed5baac2",
+    "semantic_hash": "957033bbee724fccd83b6427ed5baac2"
+  },
+  "src/modulos/reportes/componentes/graficos/grafico-barras.tsx": {
+    "mtime": 1785158967.2402825,
+    "ast_hash": "08b0b1ba5a231aaf914c496c516c3e2b",
+    "semantic_hash": "08b0b1ba5a231aaf914c496c516c3e2b"
+  },
+  "src/modulos/reportes/componentes/graficos/grafico-donut.tsx": {
+    "mtime": 1785158967.2594907,
+    "ast_hash": "afddc9bd922f942a38222b20c1dc4c39",
+    "semantic_hash": "afddc9bd922f942a38222b20c1dc4c39"
+  },
+  "src/modulos/reportes/componentes/graficos/grafico-lineas.tsx": {
+    "mtime": 1785158967.2504945,
+    "ast_hash": "88abe6c682e80e509c1f5189bb89ae83",
+    "semantic_hash": "88abe6c682e80e509c1f5189bb89ae83"
+  },
+  "src/modulos/reportes/componentes/pagina-reportes.tsx": {
+    "mtime": 1785435994.6049976,
+    "ast_hash": "776caee3d52c0468446633fc0c6c6ba3",
+    "semantic_hash": "776caee3d52c0468446633fc0c6c6ba3"
+  },
+  "src/modulos/reportes/consultas/reportes.consulta.ts": {
+    "mtime": 1784823545.0395076,
+    "ast_hash": "d9b95279255018d41103c87b6643cefd",
+    "semantic_hash": "d9b95279255018d41103c87b6643cefd"
+  },
+  "src/modulos/reportes/index.ts": {
+    "mtime": 1784813873.5354042,
+    "ast_hash": "a02db9adfbdc9c7af2c5273e7ac26e36",
+    "semantic_hash": "a02db9adfbdc9c7af2c5273e7ac26e36"
+  },
+  "src/modulos/reportes/servicios/generar-reporte-pdf.ts": {
+    "mtime": 1784817329.3061123,
+    "ast_hash": "00a98cb3ff3369ff4457b92169c6c04b",
+    "semantic_hash": "00a98cb3ff3369ff4457b92169c6c04b"
+  },
+  "src/modulos/reportes/tipos/index.ts": {
+    "mtime": 1784813698.231064,
+    "ast_hash": "072b2eabc34b51e806d2ef80b0dc1c50",
+    "semantic_hash": "072b2eabc34b51e806d2ef80b0dc1c50"
+  },
+  "src/modulos/roles/acciones/actualizar-permisos-rol.accion.ts": {
+    "mtime": 1784834221.5204751,
+    "ast_hash": "92534679d9ac65398e727ab486cabda4",
+    "semantic_hash": "92534679d9ac65398e727ab486cabda4"
+  },
+  "src/modulos/roles/componentes/matriz-permisos.tsx": {
+    "mtime": 1784838973.7870996,
+    "ast_hash": "b3904f485838b87e3fe8fe2850f457f6",
+    "semantic_hash": "b3904f485838b87e3fe8fe2850f457f6"
+  },
+  "src/modulos/roles/componentes/pagina-roles-permisos.tsx": {
+    "mtime": 1786469372.6095524,
+    "ast_hash": "ddf09026c684806c018a4f9f141e6448",
+    "semantic_hash": "ddf09026c684806c018a4f9f141e6448"
+  },
+  "src/modulos/roles/constantes/matriz-config.ts": {
+    "mtime": 1786469355.8530235,
+    "ast_hash": "fc68f4b94e43b1d75f8e91baf7f5d968",
+    "semantic_hash": "fc68f4b94e43b1d75f8e91baf7f5d968"
+  },
+  "src/modulos/roles/consultas/roles-permisos.consulta.ts": {
+    "mtime": 1784834217.7895713,
+    "ast_hash": "1321ef83c348caaab926bf471aaefa8a",
+    "semantic_hash": "1321ef83c348caaab926bf471aaefa8a"
+  },
+  "src/modulos/roles/errores/index.ts": {
+    "mtime": 1786469371.4735906,
+    "ast_hash": "290c69e7fdbcf82dbfec0134a35db862",
+    "semantic_hash": "290c69e7fdbcf82dbfec0134a35db862"
+  },
+  "src/modulos/roles/servicios/roles-permisos.servicio.ts": {
+    "mtime": 1786469370.6619034,
+    "ast_hash": "20487825405a7352c6a3ca871bd7ea4a",
+    "semantic_hash": "20487825405a7352c6a3ca871bd7ea4a"
+  },
+  "src/modulos/roles/tipos/matriz-permisos.ts": {
+    "mtime": 1784837656.6296937,
+    "ast_hash": "e40daa97352c52eefe5b48c942b1ea14",
+    "semantic_hash": "e40daa97352c52eefe5b48c942b1ea14"
+  },
+  "src/modulos/trabajadores/acciones/buscar-trabajadores-clinicos.accion.ts": {
+    "mtime": 1784670991.5143948,
+    "ast_hash": "dfb1cd68fc6c941073e4d18aa1709b00",
+    "semantic_hash": "dfb1cd68fc6c941073e4d18aa1709b00"
+  },
+  "src/modulos/trabajadores/acciones/buscar-trabajadores-header.accion.ts": {
+    "mtime": 1784744320.4319253,
+    "ast_hash": "24d8333d2a03d5a2d974114260d24555",
+    "semantic_hash": "24d8333d2a03d5a2d974114260d24555"
+  },
+  "src/modulos/trabajadores/acciones/trabajadores.acciones.ts": {
+    "mtime": 1785513430.4149752,
+    "ast_hash": "db0bb8ef07a47d9d628617ddbc7650b1",
+    "semantic_hash": "db0bb8ef07a47d9d628617ddbc7650b1"
+  },
+  "src/modulos/trabajadores/componentes/estado-trabajador.tsx": {
+    "mtime": 1784738877.4957225,
+    "ast_hash": "008a3d8ff94881571e92c47a20eb888d",
+    "semantic_hash": "008a3d8ff94881571e92c47a20eb888d"
+  },
+  "src/modulos/trabajadores/componentes/filtros-trabajadores.tsx": {
+    "mtime": 1784744465.2538154,
+    "ast_hash": "bceb2d08cc315db46767fda1f92fac8f",
+    "semantic_hash": "bceb2d08cc315db46767fda1f92fac8f"
+  },
+  "src/modulos/trabajadores/componentes/formulario-trabajador.tsx": {
+    "mtime": 1785528567.1560192,
+    "ast_hash": "ae3481e5e03284e1eb5d1d32994a7b47",
+    "semantic_hash": "ae3481e5e03284e1eb5d1d32994a7b47"
+  },
+  "src/modulos/trabajadores/componentes/formulario-vinculo-laboral.tsx": {
+    "mtime": 1785516240.5212586,
+    "ast_hash": "8111b2e45fc8c149a8e9eba377b2ac57",
+    "semantic_hash": "8111b2e45fc8c149a8e9eba377b2ac57"
+  },
+  "src/modulos/trabajadores/componentes/historial-clinico-colapsable.tsx": {
+    "mtime": 1784828728.181388,
+    "ast_hash": "780e7b77283cec507c9f94ce19a12ec5",
+    "semantic_hash": "780e7b77283cec507c9f94ce19a12ec5"
+  },
+  "src/modulos/trabajadores/componentes/pagina-editar-trabajador.tsx": {
+    "mtime": 1785435519.7875328,
+    "ast_hash": "5a3571e45e3c23d97c0903c79f133efe",
+    "semantic_hash": "5a3571e45e3c23d97c0903c79f133efe"
+  },
+  "src/modulos/trabajadores/componentes/pagina-nuevo-trabajador.tsx": {
+    "mtime": 1785513546.4919984,
+    "ast_hash": "578b34b7bfdee9780c9e5d747a87efe1",
+    "semantic_hash": "578b34b7bfdee9780c9e5d747a87efe1"
+  },
+  "src/modulos/trabajadores/componentes/pagina-nuevo-vinculo-laboral.tsx": {
+    "mtime": 1785435520.5153835,
+    "ast_hash": "b7f35835dfb90bdd1a29f9b2ce464145",
+    "semantic_hash": "b7f35835dfb90bdd1a29f9b2ce464145"
+  },
+  "src/modulos/trabajadores/componentes/pagina-perfil-trabajador.tsx": {
+    "mtime": 1785528589.0839036,
+    "ast_hash": "b820930bee7ee1f37c047adcaa5dc2b0",
+    "semantic_hash": "b820930bee7ee1f37c047adcaa5dc2b0"
+  },
+  "src/modulos/trabajadores/componentes/pagina-trabajadores.tsx": {
+    "mtime": 1785435518.1669748,
+    "ast_hash": "50270d362b6ef16240b5f0bae8a84a64",
+    "semantic_hash": "50270d362b6ef16240b5f0bae8a84a64"
+  },
+  "src/modulos/trabajadores/componentes/paginacion-trabajadores.tsx": {
+    "mtime": 1784296640.8007107,
+    "ast_hash": "fb20795a48e8291b42f767e34ec8eab2",
+    "semantic_hash": "fb20795a48e8291b42f767e34ec8eab2"
+  },
+  "src/modulos/trabajadores/componentes/panel-citas-colapsable.tsx": {
+    "mtime": 1784828728.167431,
+    "ast_hash": "1ee7326c0475c83a6029e65c797905ca",
+    "semantic_hash": "1ee7326c0475c83a6029e65c797905ca"
+  },
+  "src/modulos/trabajadores/componentes/seccion-contacto.tsx": {
+    "mtime": 1785513487.8956213,
+    "ast_hash": "be157b9cebbc8d7e608147ef42fb265a",
+    "semantic_hash": "be157b9cebbc8d7e608147ef42fb265a"
+  },
+  "src/modulos/trabajadores/componentes/seccion-datos-laborales.tsx": {
+    "mtime": 1785527376.6798542,
+    "ast_hash": "10d9bd2f5d7690a7566db6743df08bd9",
+    "semantic_hash": "10d9bd2f5d7690a7566db6743df08bd9"
+  },
+  "src/modulos/trabajadores/componentes/seccion-datos-personales.tsx": {
+    "mtime": 1785513478.6010368,
+    "ast_hash": "64f0e77ddcd22ca9ada4701584d3d2a9",
+    "semantic_hash": "64f0e77ddcd22ca9ada4701584d3d2a9"
+  },
+  "src/modulos/trabajadores/componentes/tabla-trabajadores.tsx": {
+    "mtime": 1784749575.8178003,
+    "ast_hash": "73af29d61bbf14a633179e4fd12f323f",
+    "semantic_hash": "73af29d61bbf14a633179e4fd12f323f"
+  },
+  "src/modulos/trabajadores/constantes/index.ts": {
+    "mtime": 1785528741.1008494,
+    "ast_hash": "d63e4beaca3d0e58e72ecf5029c2ef74",
+    "semantic_hash": "d63e4beaca3d0e58e72ecf5029c2ef74"
+  },
+  "src/modulos/trabajadores/consultas/historial-clinico.consulta.ts": {
+    "mtime": 1784727156.4832673,
+    "ast_hash": "0c6c4bc680366f5ca267f4aa9456c0f8",
+    "semantic_hash": "0c6c4bc680366f5ca267f4aa9456c0f8"
+  },
+  "src/modulos/trabajadores/consultas/trabajadores.consulta.ts": {
+    "mtime": 1785528589.2220159,
+    "ast_hash": "6964f53afc469faa34ba6ff510124650",
+    "semantic_hash": "6964f53afc469faa34ba6ff510124650"
+  },
+  "src/modulos/trabajadores/errores/index.ts": {
+    "mtime": 1785513349.3918648,
+    "ast_hash": "deeab1094ce08a3d3ffefaf0fb364c16",
+    "semantic_hash": "deeab1094ce08a3d3ffefaf0fb364c16"
+  },
+  "src/modulos/trabajadores/index.ts": {
+    "mtime": 1784214366.088522,
+    "ast_hash": "3a2c28e51a3a40184cfcaff71a649549",
+    "semantic_hash": "3a2c28e51a3a40184cfcaff71a649549"
+  },
+  "src/modulos/trabajadores/repositorios/trabajadores.repositorio.ts": {
+    "mtime": 1785528555.0032547,
+    "ast_hash": "c6aef698fdc93617401cba6775f4e6fa",
+    "semantic_hash": "c6aef698fdc93617401cba6775f4e6fa"
+  },
+  "src/modulos/trabajadores/servicios/trabajadores.servicio.ts": {
+    "mtime": 1785528555.750934,
+    "ast_hash": "e50d06e03f2f95e0e055faeaf253b952",
+    "semantic_hash": "e50d06e03f2f95e0e055faeaf253b952"
+  },
+  "src/modulos/trabajadores/tipos/historial-clinico.ts": {
+    "mtime": 1784727156.4652662,
+    "ast_hash": "451553eda199cae30bde12c0d14866eb",
+    "semantic_hash": "451553eda199cae30bde12c0d14866eb"
+  },
+  "src/modulos/trabajadores/tipos/index.ts": {
+    "mtime": 1785528553.8762653,
+    "ast_hash": "b1e4eef9b30b90ff5427b470a564862d",
+    "semantic_hash": "b1e4eef9b30b90ff5427b470a564862d"
+  },
+  "src/modulos/trabajadores/utilidades/agrupar-historial-clinico.ts": {
+    "mtime": 1784673035.4055014,
+    "ast_hash": "43c9f0b16a2a5609562cb82ba8c29202",
+    "semantic_hash": "43c9f0b16a2a5609562cb82ba8c29202"
+  },
+  "src/modulos/trabajadores/utilidades/clasificar-citas.ts": {
+    "mtime": 1784664511.8112056,
+    "ast_hash": "f1bd37ac88f508e6b423b76d41a5c8a7",
+    "semantic_hash": "f1bd37ac88f508e6b423b76d41a5c8a7"
+  },
+  "src/modulos/trabajadores/validaciones/trabajador.schema.ts": {
+    "mtime": 1786470211.897701,
+    "ast_hash": "dc41c4a2426a92e5f1fbf893e8efae47",
+    "semantic_hash": "dc41c4a2426a92e5f1fbf893e8efae47"
+  },
+  "src/modulos/usuarios/acciones/alternar-estado-usuario.accion.ts": {
+    "mtime": 1784830549.711037,
+    "ast_hash": "8986e0a5b93f3898b3a490e7a13ec58b",
+    "semantic_hash": "8986e0a5b93f3898b3a490e7a13ec58b"
+  },
+  "src/modulos/usuarios/acciones/cambiar-rol-usuario.accion.ts": {
+    "mtime": 1784829291.9293284,
+    "ast_hash": "008fa07e0fe0679226e4f08e8e5c0fbd",
+    "semantic_hash": "008fa07e0fe0679226e4f08e8e5c0fbd"
+  },
+  "src/modulos/usuarios/componentes/pagina-usuarios.tsx": {
+    "mtime": 1784831027.6874118,
+    "ast_hash": "d7371e1cff6bc55ff149d2e215f100f8",
+    "semantic_hash": "d7371e1cff6bc55ff149d2e215f100f8"
+  },
+  "src/modulos/usuarios/errores/index.ts": {
+    "mtime": 1784829285.870536,
+    "ast_hash": "3a18b864ad2e27cc23a51d627d1d2bd3",
+    "semantic_hash": "3a18b864ad2e27cc23a51d627d1d2bd3"
+  },
+  "src/modulos/usuarios/servicios/alternar-estado-usuario.servicio.ts": {
+    "mtime": 1784830548.4406574,
+    "ast_hash": "5b215f84e86ce14a6a7bf0d55275340e",
+    "semantic_hash": "5b215f84e86ce14a6a7bf0d55275340e"
+  },
+  "src/modulos/usuarios/servicios/cambiar-rol-usuario.servicio.ts": {
+    "mtime": 1784829889.2831242,
+    "ast_hash": "527fec19832521ed365cde79a098fd28",
+    "semantic_hash": "527fec19832521ed365cde79a098fd28"
+  },
+  "src/modulos/usuarios/tipos/index.ts": {
+    "mtime": 1784829286.5413854,
+    "ast_hash": "ebb9a679059397dd0207ca28b1ab93e1",
+    "semantic_hash": "ebb9a679059397dd0207ca28b1ab93e1"
+  },
+  "src/modulos/vinculos-laborales/componentes/pagina-vinculos-laborales.tsx": {
+    "mtime": 1785516339.408503,
+    "ast_hash": "248811d2a0eeb1e8f094e60169eed39c",
+    "semantic_hash": "248811d2a0eeb1e8f094e60169eed39c"
+  },
+  "src/modulos/vinculos-laborales/consultas/vinculos-laborales.consulta.ts": {
+    "mtime": 1785516370.240724,
+    "ast_hash": "4625e1d0225f55dc1c4519408f9d910f",
+    "semantic_hash": "4625e1d0225f55dc1c4519408f9d910f"
+  },
+  "src/modulos/vinculos-laborales/index.ts": {
+    "mtime": 1784236059.0908835,
+    "ast_hash": "c9f1bcfb8bef4df110a0fc22f7b518f3",
+    "semantic_hash": "c9f1bcfb8bef4df110a0fc22f7b518f3"
+  },
+  "src/servicios/auditoria/consultas/obtener-registros.ts": {
+    "mtime": 1786467414.580426,
+    "ast_hash": "ce8c36ccf1a2e37972271cee4e7ca242",
+    "semantic_hash": "ce8c36ccf1a2e37972271cee4e7ca242"
+  },
+  "src/servicios/auditoria/registrar-auditoria.ts": {
+    "mtime": 1784672018.410561,
+    "ast_hash": "2f86d85788801cf2a247839220c14dbe",
+    "semantic_hash": "2f86d85788801cf2a247839220c14dbe"
+  },
+  "src/servicios/autenticacion/auth.ts": {
+    "mtime": 1784214347.0203695,
+    "ast_hash": "065ea8f73532ff9ef88660a76a03575c",
+    "semantic_hash": "065ea8f73532ff9ef88660a76a03575c"
+  },
+  "src/servicios/autenticacion/obtener-sesion.ts": {
+    "mtime": 1784214347.035429,
+    "ast_hash": "1dfb96fea1436e24d6fc3edc24b17fb3",
+    "semantic_hash": "1dfb96fea1436e24d6fc3edc24b17fb3"
+  },
+  "src/servicios/autenticacion/requerir-permiso.ts": {
+    "mtime": 1784581018.4750726,
+    "ast_hash": "4221bbabc843ba22aca2985301693e7d",
+    "semantic_hash": "4221bbabc843ba22aca2985301693e7d"
+  },
+  "src/servicios/autenticacion/requerir-usuario.ts": {
+    "mtime": 1784236319.559438,
+    "ast_hash": "af45a62f4cc04e19b6127989606fb6e6",
+    "semantic_hash": "af45a62f4cc04e19b6127989606fb6e6"
+  },
+  "src/servicios/autenticacion/tiene-permiso.ts": {
+    "mtime": 1784313582.351303,
+    "ast_hash": "b3d9f106368bb21fb4eba506cd811377",
+    "semantic_hash": "b3d9f106368bb21fb4eba506cd811377"
+  },
+  "src/servicios/base-datos/numero-correlativo.ts": {
+    "mtime": 1784670062.262393,
+    "ast_hash": "1e35ecf354fcdbb1ffb994e13d7e9f7f",
+    "semantic_hash": "1e35ecf354fcdbb1ffb994e13d7e9f7f"
+  },
+  "src/servicios/base-datos/prisma.ts": {
+    "mtime": 1784151345.80939,
+    "ast_hash": "4d4c1a6c970de3aba4380a24bf30f433",
+    "semantic_hash": "4d4c1a6c970de3aba4380a24bf30f433"
+  },
+  "src/servicios/documentos/pdf/pdf-comun.ts": {
+    "mtime": 1784828727.9547362,
+    "ast_hash": "af70cb5688bce730f5951932b243355b",
+    "semantic_hash": "af70cb5688bce730f5951932b243355b"
+  },
+  "src/servicios/documentos/pdf/respuesta-pdf.ts": {
+    "mtime": 1784816949.2189944,
+    "ast_hash": "4f3db60f4c603108590e2679aaca3407",
+    "semantic_hash": "4f3db60f4c603108590e2679aaca3407"
+  },
+  "src/servicios/seguridad/verificar-clave-scrypt.ts": {
+    "mtime": 1784208121.800692,
+    "ast_hash": "f54ae66cc4ceb492f85125f0b06bcc48",
+    "semantic_hash": "f54ae66cc4ceb492f85125f0b06bcc48"
+  },
+  "src/tipos/next-auth.d.ts": {
+    "mtime": 1784208121.765696,
+    "ast_hash": "153e7893348cb0984b18365e837a1fec",
+    "semantic_hash": "153e7893348cb0984b18365e837a1fec"
+  },
+  "src/tipos/resultado-accion.ts": {
+    "mtime": 1784210885.7488313,
+    "ast_hash": "98a5dbc98c64aeb6457152ca4fcebd9b",
+    "semantic_hash": "98a5dbc98c64aeb6457152ca4fcebd9b"
+  },
+  "src/utilidades/cadenas/limpiar-documento.ts": {
+    "mtime": 1784320393.1334088,
+    "ast_hash": "ba7d16c11340201348ad71010792d08c",
+    "semantic_hash": "ba7d16c11340201348ad71010792d08c"
+  },
+  "src/utilidades/cadenas/limpiar-nombre.ts": {
+    "mtime": 1784320393.0355954,
+    "ast_hash": "3942ee88643b18da3c1059aa0271cbb4",
+    "semantic_hash": "3942ee88643b18da3c1059aa0271cbb4"
+  },
+  "src/utilidades/cadenas/validar-cedula-ecuatoriana.ts": {
+    "mtime": 1784320393.1585624,
+    "ast_hash": "cb9dc015b22f3524e834b3c9f2741deb",
+    "semantic_hash": "cb9dc015b22f3524e834b3c9f2741deb"
+  },
+  "src/utilidades/clases.ts": {
+    "mtime": 1784149218.095869,
+    "ast_hash": "5a6fd53fdcf2be529e9cc0b718fde352",
+    "semantic_hash": "5a6fd53fdcf2be529e9cc0b718fde352"
+  },
+  "src/utilidades/fechas/formatear-fecha.ts": {
+    "mtime": 1784640884.8422608,
+    "ast_hash": "0e30cd7e4793c8f47e7355510f63271b",
+    "semantic_hash": "0e30cd7e4793c8f47e7355510f63271b"
+  },
+  "src/utilidades/marca/cargar-logo-apracom.ts": {
+    "mtime": 1784828727.8398643,
+    "ast_hash": "0f7886492bf73fa84c177f1109971cef",
+    "semantic_hash": "0f7886492bf73fa84c177f1109971cef"
+  },
+  "tests/e2e/autenticacion.spec.ts": {
+    "mtime": 1785276461.973524,
+    "ast_hash": "251e1a2806069bc27aebc29d3b2d9323",
+    "semantic_hash": "251e1a2806069bc27aebc29d3b2d9323"
+  },
+  "tests/e2e/evaluaciones-medicas.spec.ts": {
+    "mtime": 1784727917.0228992,
+    "ast_hash": "e10f4b102f7a322f08c9bcfa6c914f21",
+    "semantic_hash": "e10f4b102f7a322f08c9bcfa6c914f21"
+  },
+  "tests/e2e/fase4-configuracion.spec.ts": {
+    "mtime": 1784727906.3403432,
+    "ast_hash": "eaf08a3302b33df631235af0087cf99f",
+    "semantic_hash": "eaf08a3302b33df631235af0087cf99f"
+  },
+  "tests/e2e/ficha-ocupacional-completa.spec.ts": {
+    "mtime": 1784727906.2968197,
+    "ast_hash": "c57e5f95792d3cc9656c90dfbaad4bab",
+    "semantic_hash": "c57e5f95792d3cc9656c90dfbaad4bab"
+  },
+  "tests/e2e/fichas-ocupacionales.spec.ts": {
+    "mtime": 1784727906.3293455,
+    "ast_hash": "d24dc9aa1eb3699608caf1459468a84e",
+    "semantic_hash": "d24dc9aa1eb3699608caf1459468a84e"
+  },
+  "tests/e2e/flujo-clinico-navegacion.spec.ts": {
+    "mtime": 1784728909.8889503,
+    "ast_hash": "3ddc9efe8e8ff086ee8d20897a48a0ea",
+    "semantic_hash": "3ddc9efe8e8ff086ee8d20897a48a0ea"
+  },
+  "tests/e2e/receta-impresion.spec.ts": {
+    "mtime": 1784734188.0390177,
+    "ast_hash": "df84b150fc4a998390721711ce193a9e",
+    "semantic_hash": "df84b150fc4a998390721711ce193a9e"
+  },
+  "tests/unitarias/acceso-empresa.servicio.test.ts": {
+    "mtime": 1784823026.5541928,
+    "ast_hash": "b451565142004eb7cba870b706d3e7b3",
+    "semantic_hash": "b451565142004eb7cba870b706d3e7b3"
+  },
+  "tests/unitarias/alerta-alergia-medicamentos.test.ts": {
+    "mtime": 1784570168.6780367,
+    "ast_hash": "e40b7490353e6a6815d9f2b7b69b714c",
+    "semantic_hash": "e40b7490353e6a6815d9f2b7b69b714c"
+  },
+  "tests/unitarias/asignacion-laboral.repositorio.test.ts": {
+    "mtime": 1785516433.916516,
+    "ast_hash": "35769ab1c9411a8c7dfa0ba067b74765",
+    "semantic_hash": "35769ab1c9411a8c7dfa0ba067b74765"
+  },
+  "tests/unitarias/atenciones-agrupacion.test.ts": {
+    "mtime": 1784641715.3783965,
+    "ast_hash": "b6307d3944a52e219bc5f3d4d1b6c9b7",
+    "semantic_hash": "b6307d3944a52e219bc5f3d4d1b6c9b7"
+  },
+  "tests/unitarias/auditoria-consultas.test.ts": {
+    "mtime": 1786467225.7132137,
+    "ast_hash": "c7e818794a5d106d5d6a79ad0e6c95b7",
+    "semantic_hash": "c7e818794a5d106d5d6a79ad0e6c95b7"
+  },
+  "tests/unitarias/auditoria-permisos.test.ts": {
+    "mtime": 1786467227.0672092,
+    "ast_hash": "67144366a8786021bd761afba2a51a96",
+    "semantic_hash": "67144366a8786021bd761afba2a51a96"
+  },
+  "tests/unitarias/certificado-estructura.test.tsx": {
+    "mtime": 1784674613.560622,
+    "ast_hash": "b3caeb933f840f5df9a28032cbbe30b7",
+    "semantic_hash": "b3caeb933f840f5df9a28032cbbe30b7"
+  },
+  "tests/unitarias/certificado-exportaciones.test.ts": {
+    "mtime": 1784817808.9024308,
+    "ast_hash": "667dcc2c40b9cbd3345ab8a1b1999a4d",
+    "semantic_hash": "667dcc2c40b9cbd3345ab8a1b1999a4d"
+  },
+  "tests/unitarias/certificado-permisos.test.ts": {
+    "mtime": 1784559185.8132002,
+    "ast_hash": "8828ed2a1b57351c4922e2da5757a5a4",
+    "semantic_hash": "8828ed2a1b57351c4922e2da5757a5a4"
+  },
+  "tests/unitarias/cie10-accion-permisos.test.ts": {
+    "mtime": 1784823977.7570338,
+    "ast_hash": "3bd933647e174d86b6e74ea902882046",
+    "semantic_hash": "3bd933647e174d86b6e74ea902882046"
+  },
+  "tests/unitarias/cie10-busqueda.test.ts": {
+    "mtime": 1784825006.1240623,
+    "ast_hash": "943fff14360c286895ff1fcb4cde65ac",
+    "semantic_hash": "943fff14360c286895ff1fcb4cde65ac"
+  },
+  "tests/unitarias/cie10-extraccion.test.ts": {
+    "mtime": 1784672886.2061257,
+    "ast_hash": "a4064bc2cbcdc7abf03f0fa9819a60c8",
+    "semantic_hash": "a4064bc2cbcdc7abf03f0fa9819a60c8"
+  },
+  "tests/unitarias/cie10-importacion.test.ts": {
+    "mtime": 1784554829.005077,
+    "ast_hash": "681815bfc129346e54bd00fd3ff1a3c8",
+    "semantic_hash": "681815bfc129346e54bd00fd3ff1a3c8"
+  },
+  "tests/unitarias/citas-conflictos.test.ts": {
+    "mtime": 1786469125.0646448,
+    "ast_hash": "2d419ccbfe3a9496b3e511b97c8c2f2f",
+    "semantic_hash": "2d419ccbfe3a9496b3e511b97c8c2f2f"
+  },
+  "tests/unitarias/clasificar-citas.test.ts": {
+    "mtime": 1784674613.5913363,
+    "ast_hash": "3fb58857ff1621b6f108631dbf9f3b09",
+    "semantic_hash": "3fb58857ff1621b6f108631dbf9f3b09"
+  },
+  "tests/unitarias/consulta-trabajadores.test.ts": {
+    "mtime": 1785528624.2038367,
+    "ast_hash": "5cc2d8131c2c69aa13351b1102e24ded",
+    "semantic_hash": "5cc2d8131c2c69aa13351b1102e24ded"
+  },
+  "tests/unitarias/departamento.schema.test.ts": {
+    "mtime": 1784236244.599496,
+    "ast_hash": "9ff2e70b68a31d237cc64a0b3e6913c3",
+    "semantic_hash": "9ff2e70b68a31d237cc64a0b3e6913c3"
+  },
+  "tests/unitarias/departamentos-paginacion.test.ts": {
+    "mtime": 1784816153.3143976,
+    "ast_hash": "44dcf1be4908732b6be466a1b4fa9c87",
+    "semantic_hash": "44dcf1be4908732b6be466a1b4fa9c87"
+  },
+  "tests/unitarias/departamentos.servicio.test.ts": {
+    "mtime": 1784312936.3089826,
+    "ast_hash": "f58b6e88270ef2334c65dd72b77884c2",
+    "semantic_hash": "f58b6e88270ef2334c65dd72b77884c2"
+  },
+  "tests/unitarias/documentos-clinicos-permisos.test.ts": {
+    "mtime": 1786467998.1220644,
+    "ast_hash": "5f74af0e6a1c1063e7918052507bbb96",
+    "semantic_hash": "5f74af0e6a1c1063e7918052507bbb96"
+  },
+  "tests/unitarias/evaluacion-finalizacion-atomicidad.test.ts": {
+    "mtime": 1786468701.9267712,
+    "ast_hash": "fb54069febfef28bdcacd8e64c30ac45",
+    "semantic_hash": "fb54069febfef28bdcacd8e64c30ac45"
+  },
+  "tests/unitarias/evaluacion-medica.schema.test.ts": {
+    "mtime": 1784570168.665758,
+    "ast_hash": "ec2301c52515c3a8a3b19082a9f6b80e",
+    "semantic_hash": "ec2301c52515c3a8a3b19082a9f6b80e"
+  },
+  "tests/unitarias/evolucion-clinica-estructura.test.ts": {
+    "mtime": 1784641715.4034853,
+    "ast_hash": "e897f00d206f2238848c7527eaae2fdc",
+    "semantic_hash": "e897f00d206f2238848c7527eaae2fdc"
+  },
+  "tests/unitarias/ficha-pdf-dto.test.ts": {
+    "mtime": 1786469843.69949,
+    "ast_hash": "932b2565ae6a65827cc488fe5e5cebd5",
+    "semantic_hash": "932b2565ae6a65827cc488fe5e5cebd5"
+  },
+  "tests/unitarias/ficha.fixture.ts": {
+    "mtime": 1784558685.2868366,
+    "ast_hash": "a80ab805646e5e6ebeed7ff12bacd38e",
+    "semantic_hash": "a80ab805646e5e6ebeed7ff12bacd38e"
+  },
+  "tests/unitarias/ficha.schema.test.ts": {
+    "mtime": 1784560405.8256154,
+    "ast_hash": "9500398438ea802ff6a0815e182b2a13",
+    "semantic_hash": "9500398438ea802ff6a0815e182b2a13"
+  },
+  "tests/unitarias/fichas-autocarga.test.ts": {
+    "mtime": 1784569960.0174322,
+    "ast_hash": "48ab500e7e196082bf55ab0290a6d775",
+    "semantic_hash": "48ab500e7e196082bf55ab0290a6d775"
+  },
+  "tests/unitarias/fichas-permisos.test.ts": {
+    "mtime": 1784559088.770923,
+    "ast_hash": "af40406afb265dd55771c046bed84328",
+    "semantic_hash": "af40406afb265dd55771c046bed84328"
+  },
+  "tests/unitarias/fichas.repositorio.test.ts": {
+    "mtime": 1786466261.652827,
+    "ast_hash": "8c4b56843a8faefb00d4d812a60b84dd",
+    "semantic_hash": "8c4b56843a8faefb00d4d812a60b84dd"
+  },
+  "tests/unitarias/fichas.servicio.test.ts": {
+    "mtime": 1784559529.8636136,
+    "ast_hash": "624fc33e713638a35ebd712957fad148",
+    "semantic_hash": "624fc33e713638a35ebd712957fad148"
+  },
+  "tests/unitarias/flujo-clinico-reorganizado.test.ts": {
+    "mtime": 1785275041.078544,
+    "ast_hash": "72e085babe98eade53001cb306abfcf7",
+    "semantic_hash": "72e085babe98eade53001cb306abfcf7"
+  },
+  "tests/unitarias/iniciar-sesion.schema.test.ts": {
+    "mtime": 1784208415.3354342,
+    "ast_hash": "1afdeadd6a006a0f46ed096baed4047c",
+    "semantic_hash": "1afdeadd6a006a0f46ed096baed4047c"
+  },
+  "tests/unitarias/inventario-stock-atomicidad.test.ts": {
+    "mtime": 1786467755.9663165,
+    "ast_hash": "58c229ee2224ced22c390a0538729f6b",
+    "semantic_hash": "58c229ee2224ced22c390a0538729f6b"
+  },
+  "tests/unitarias/limpiar-documento.test.ts": {
+    "mtime": 1784320393.3814108,
+    "ast_hash": "60deedcbde3300ff5b7fef908a2bd9b2",
+    "semantic_hash": "60deedcbde3300ff5b7fef908a2bd9b2"
+  },
+  "tests/unitarias/limpiar-nombre.test.ts": {
+    "mtime": 1784320393.3035896,
+    "ast_hash": "541fe77963893d6adb48c83fd085d2a2",
+    "semantic_hash": "541fe77963893d6adb48c83fd085d2a2"
+  },
+  "tests/unitarias/pdf-infraestructura.test.ts": {
+    "mtime": 1786469860.570279,
+    "ast_hash": "14085fbf39ab0e802dc85d91fff19208",
+    "semantic_hash": "14085fbf39ab0e802dc85d91fff19208"
+  },
+  "tests/unitarias/permisos-evaluaciones.test.ts": {
+    "mtime": 1784570168.7278433,
+    "ast_hash": "7df7cd01b175ca4cc1436ef8894c2e48",
+    "semantic_hash": "7df7cd01b175ca4cc1436ef8894c2e48"
+  },
+  "tests/unitarias/receta-pdf.test.ts": {
+    "mtime": 1786470067.644201,
+    "ast_hash": "eec6e117d3e2280e2d403daca9eea850",
+    "semantic_hash": "eec6e117d3e2280e2d403daca9eea850"
+  },
+  "tests/unitarias/recetas-emision.test.ts": {
+    "mtime": 1786468128.079801,
+    "ast_hash": "52dd31ea98bdda6569679b7fe35f7632",
+    "semantic_hash": "52dd31ea98bdda6569679b7fe35f7632"
+  },
+  "tests/unitarias/registro-diario-exportacion.test.ts": {
+    "mtime": 1784813944.6728666,
+    "ast_hash": "f9e4bf6120ab3cf46859177daa4227e2",
+    "semantic_hash": "f9e4bf6120ab3cf46859177daa4227e2"
+  },
+  "tests/unitarias/registro-diario-guard.test.ts": {
+    "mtime": 1786468911.230639,
+    "ast_hash": "e32f86d910b28a7ded4989ccd0bb80e1",
+    "semantic_hash": "e32f86d910b28a7ded4989ccd0bb80e1"
+  },
+  "tests/unitarias/registro-diario-pdf-rutas.test.ts": {
+    "mtime": 1784819044.1255383,
+    "ast_hash": "44980c0625a71e5913768647290e694a",
+    "semantic_hash": "44980c0625a71e5913768647290e694a"
+  },
+  "tests/unitarias/reportes-exportar-xlsx.test.ts": {
+    "mtime": 1784824445.8797212,
+    "ast_hash": "7851211bced7291c390023544b491117",
+    "semantic_hash": "7851211bced7291c390023544b491117"
+  },
+  "tests/unitarias/roles-permisos.test.ts": {
+    "mtime": 1786469440.5263147,
+    "ast_hash": "13865b415f159c613e2e43843f3680d0",
+    "semantic_hash": "13865b415f159c613e2e43843f3680d0"
+  },
+  "tests/unitarias/ruta-retorno.test.ts": {
+    "mtime": 1784208415.349398,
+    "ast_hash": "7ac6004d41cb41a63dd1bb235339fcc8",
+    "semantic_hash": "7ac6004d41cb41a63dd1bb235339fcc8"
+  },
+  "tests/unitarias/sinonimos-cie10.test.ts": {
+    "mtime": 1784824912.7713034,
+    "ast_hash": "a43e9500cbb27acc40d8d101633c54ad",
+    "semantic_hash": "a43e9500cbb27acc40d8d101633c54ad"
+  },
+  "tests/unitarias/snapshots-clinicos.test.ts": {
+    "mtime": 1784570168.7071908,
+    "ast_hash": "704311a68c3225852a7b67c183ee4ec6",
+    "semantic_hash": "704311a68c3225852a7b67c183ee4ec6"
+  },
+  "tests/unitarias/tiene-permiso.test.ts": {
+    "mtime": 1784308751.172344,
+    "ast_hash": "c32326a1edd31d0859ce8757f3e3d600",
+    "semantic_hash": "c32326a1edd31d0859ce8757f3e3d600"
+  },
+  "tests/unitarias/trabajador.schema.test.ts": {
+    "mtime": 1785528657.5064914,
+    "ast_hash": "8812b1b159f57dcc59602f5baecd08a0",
+    "semantic_hash": "8812b1b159f57dcc59602f5baecd08a0"
+  },
+  "tests/unitarias/trabajadores.repositorio.test.ts": {
+    "mtime": 1785528621.9011078,
+    "ast_hash": "228c5f713f2cf5543b29f3ac4b3b24bb",
+    "semantic_hash": "228c5f713f2cf5543b29f3ac4b3b24bb"
+  },
+  "tests/unitarias/trabajadores.servicio.test.ts": {
+    "mtime": 1785528622.9619136,
+    "ast_hash": "88aed50ca5f7f8eeb25d727ada112d52",
+    "semantic_hash": "88aed50ca5f7f8eeb25d727ada112d52"
+  },
+  "tests/unitarias/usuarios-rol.test.ts": {
+    "mtime": 1784830821.1177518,
+    "ast_hash": "7e17611649b8dd9569e5baef870f6ad3",
+    "semantic_hash": "7e17611649b8dd9569e5baef870f6ad3"
+  },
+  "tests/unitarias/validar-cedula-ecuatoriana.test.ts": {
+    "mtime": 1784307194.1726935,
+    "ast_hash": "39a028adcf8e323fb688a8248dc988d5",
+    "semantic_hash": "39a028adcf8e323fb688a8248dc988d5"
+  },
+  "tests/unitarias/verificar-clave-scrypt.test.ts": {
+    "mtime": 1784208443.9023309,
+    "ast_hash": "84e5acc80585393ccba388f4ba3d8fb5",
+    "semantic_hash": "84e5acc80585393ccba388f4ba3d8fb5"
+  },
+  "tsconfig.json": {
+    "mtime": 1784148925.7871797,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  "vitest.config.ts": {
+    "mtime": 1784666741.783132,
+    "ast_hash": "c787c2e6839d62054938d9a991d897e3",
+    "semantic_hash": "c787c2e6839d62054938d9a991d897e3"
+  },
+  "tests/unitarias/inventario-permisos.test.ts": {
+    "mtime": 1786471453.5485716,
+    "ast_hash": "accb239e47eb81a5feee034e5f1850a5",
+    "semantic_hash": ""
+  },
+  "tests/unitarias/inventario-servicio.test.ts": {
+    "mtime": 1786471499.5562458,
+    "ast_hash": "2489dfad0add36d49f0010c88ac04ca9",
+    "semantic_hash": ""
+  },
+  ".agents/skills/knip-dead-code/REFERENCE.md": {
+    "mtime": 1786463448.841055,
+    "ast_hash": "989bc96b5fc692607275b3e7245050db",
+    "semantic_hash": ""
+  },
+  ".agents/skills/knip-dead-code/SKILL.md": {
+    "mtime": 1786463448.844823,
+    "ast_hash": "af6bb30114b0a2acad4d79aaa5714ea6",
+    "semantic_hash": ""
+  },
+  ".agents/skills/nextjs-app-router-patterns/SKILL.md": {
+    "mtime": 1786463388.0200307,
+    "ast_hash": "2b4ea7bfd6962bdfe9d803ba91789981",
+    "semantic_hash": ""
+  },
+  ".agents/skills/nextjs-app-router-patterns/references/details.md": {
+    "mtime": 1786463388.041377,
+    "ast_hash": "59a6ed1306f69b7d97292642c11da32e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-client-api/SKILL.md": {
+    "mtime": 1786463354.038199,
+    "ast_hash": "33e8490da9422e0409a9d6720d738432",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-client-api/references/client-methods.md": {
+    "mtime": 1786463354.0399606,
+    "ast_hash": "415a45ea5ddf1995a14c1d70694868ed",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-client-api/references/constructor.md": {
+    "mtime": 1786463354.0410209,
+    "ast_hash": "266f293805dcec719babe5827701c354",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-client-api/references/filters.md": {
+    "mtime": 1786463354.0410209,
+    "ast_hash": "44a7456d7ea6cb8d8f4ccc6a20b16814",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-client-api/references/model-queries.md": {
+    "mtime": 1786463354.0430195,
+    "ast_hash": "2bb53c933e4baf20076d713e13151091",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-client-api/references/query-options.md": {
+    "mtime": 1786463354.0440204,
+    "ast_hash": "30e889e6586befa4d524469e9110b989",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-client-api/references/raw-queries.md": {
+    "mtime": 1786463354.04502,
+    "ast_hash": "ac6abaf987e38d31ecb67bd7b29043b6",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-client-api/references/relations.md": {
+    "mtime": 1786463354.04502,
+    "ast_hash": "2c822b05319d89528354ada1d09dc241",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-client-api/references/transactions.md": {
+    "mtime": 1786463354.0460236,
+    "ast_hash": "b63ef1dd624c20c22a028f28a9e8a705",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-postgres/SKILL.md": {
+    "mtime": 1786463354.760343,
+    "ast_hash": "e6103f81002eaa9c170059d370b43bb5",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-postgres/references/console-and-connections.md": {
+    "mtime": 1786463354.7648067,
+    "ast_hash": "697aa29674e72ae690f8fa652fd1ee44",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-postgres/references/create-db-cli.md": {
+    "mtime": 1786463354.7678027,
+    "ast_hash": "0a3b59e3666f81aeaedff67b173e94d0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-postgres/references/management-api-sdk.md": {
+    "mtime": 1786463354.7698104,
+    "ast_hash": "2da338ac537807761ffa4b0d83c3f811",
+    "semantic_hash": ""
+  },
+  ".agents/skills/prisma-postgres/references/management-api.md": {
+    "mtime": 1786463354.7708344,
+    "ast_hash": "7c877be02351395b8db6e4fe53d6b611",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-audit/AI-AND-LLM.md": {
+    "mtime": 1786463385.073714,
+    "ast_hash": "7066d0c305fff6a4ec20ff10d01df5da",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-audit/ATTACK-CLASSES.md": {
+    "mtime": 1786463385.073714,
+    "ast_hash": "848c12452835c058499587b6d82987c7",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-audit/CLIENT-SIDE.md": {
+    "mtime": 1786463385.073714,
+    "ast_hash": "9f77a403f364a84f48cf9fc0df566ca1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-audit/HUNTING.md": {
+    "mtime": 1786463385.073714,
+    "ast_hash": "99cd4cc9c71ea798b86c63ccacae958a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md": {
+    "mtime": 1786463385.073714,
+    "ast_hash": "5836abe25f8139ce9f84c851f1d5bff3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-audit/RECONNAISSANCE.md": {
+    "mtime": 1786463385.0894656,
+    "ast_hash": "b317a0b7042c579cb340a049da83db6b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-audit/SKILL.md": {
+    "mtime": 1786463385.0894656,
+    "ast_hash": "192b13f6269ae01c7427f0f73c9759ee",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-audit/VALIDATION-AND-REPORTING.md": {
+    "mtime": 1786463385.0894656,
+    "ast_hash": "45ea6f5d6fbe568913624fddf6d0997a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-audit/WEB-PROTOCOL-AND-AUTH.md": {
+    "mtime": 1786463385.0894656,
+    "ast_hash": "a6b71c7275ed5856d2a4f9504c541967",
+    "semantic_hash": ""
+  },
+  ".agents/skills/web-performance-audit/SKILL.md": {
+    "mtime": 1786463453.9809601,
+    "ast_hash": "1ad8667c27c6829e357c520da5d96dac",
+    "semantic_hash": ""
+  },
+  ".agents/skills/web-performance-audit/references/monitoring-continuous-improvement.md": {
+    "mtime": 1786463454.0081797,
+    "ast_hash": "b8dea58be9e2d239042e845b09d0e4ed",
+    "semantic_hash": ""
+  },
+  ".agents/skills/web-performance-audit/references/optimization-strategies.md": {
+    "mtime": 1786463454.0443952,
+    "ast_hash": "eeaf43b01f5f046b1bfd5cf003acb3b3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/web-performance-audit/references/performance-analysis-process.md": {
+    "mtime": 1786463454.071169,
+    "ast_hash": "9fe2d27c569b1787f498ef7b8be45777",
+    "semantic_hash": ""
+  },
+  ".agents/skills/web-performance-audit/references/performance-metrics.md": {
+    "mtime": 1786463454.0923543,
+    "ast_hash": "d355df07c32b4a25e4d4fd233ae2f308",
+    "semantic_hash": ""
+  },
+  ".agents/skills/web-performance-audit/templates/dashboard-config.yaml": {
+    "mtime": 1786463454.1152878,
+    "ast_hash": "0b8074672fcd1538805efc28b3d5628d",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1785436561.1133842,
+    "ast_hash": "258b19bde2d0bfb591b1c1b442792854",
+    "semantic_hash": ""
+  },
+  "DESIGN.md": {
+    "mtime": 1785158985.086526,
+    "ast_hash": "3faf07d2712f121014e1943b618733ca",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1785164297.053879,
+    "ast_hash": "a4fe263176b6f96465e126e2f6cde3f8",
+    "semantic_hash": ""
+  },
+  "docs/00-INICIO.md": {
+    "mtime": 1785164281.2074244,
+    "ast_hash": "49b1180e452ef80e5cd57c65f5573412",
+    "semantic_hash": ""
+  },
+  "docs/ARQUITECTURA_DEL_SISTEMA.md": {
+    "mtime": 1785164281.2295935,
+    "ast_hash": "d9b13b673931556fb0e3616fbc233797",
+    "semantic_hash": ""
+  },
+  "docs/AUDITORIA_COMPLETA_DE_CODIGO.html": {
+    "mtime": 1786465778.720835,
+    "ast_hash": "260c90177f4650812bf07d23caf9b42a",
+    "semantic_hash": ""
+  },
+  "docs/AUDITORIA_COMPLETA_DE_CODIGO.md": {
+    "mtime": 1786471636.7830126,
+    "ast_hash": "a15c588ccf1fb754fd98e279d264eb12",
+    "semantic_hash": ""
+  },
+  "docs/AUDITORIA_FLUJOS_CLINICOS.md": {
+    "mtime": 1785275382.7886083,
+    "ast_hash": "4e44182b50dffe8e953091fe23600c5a",
+    "semantic_hash": ""
+  },
+  "docs/AUDITORIA_IMPECCABLE.md": {
+    "mtime": 1785159088.4512763,
+    "ast_hash": "ed533c5e1a79835135f4882a0fec6f31",
+    "semantic_hash": ""
+  },
+  "docs/AUDITORIA_MARKDOWN.md": {
+    "mtime": 1785164579.1444592,
+    "ast_hash": "80f7e5e2adbe0945e1ba5da0644e24d7",
+    "semantic_hash": ""
+  },
+  "docs/AUDITORIA_NAVEGACION_Y_PDF.md": {
+    "mtime": 1785436206.2647586,
+    "ast_hash": "92f747a164449534e9ef634357d1b666",
+    "semantic_hash": ""
+  },
+  "docs/BASELINE_REORGANIZACION.md": {
+    "mtime": 1784828549.2187774,
+    "ast_hash": "d0d91b14c5a3192a69b1f7208346602a",
+    "semantic_hash": ""
+  },
+  "docs/CAMBIOS_RECIENTES.md": {
+    "mtime": 1785164281.3394952,
+    "ast_hash": "014da24fea86d628d5244984576b0219",
+    "semantic_hash": ""
+  },
+  "docs/DECISIONES_TECNICAS.md": {
+    "mtime": 1785528707.2051806,
+    "ast_hash": "36e2b96aefbe301c6653820f59c984e7",
+    "semantic_hash": ""
+  },
+  "docs/ESTADO_ACTUAL.md": {
+    "mtime": 1786471607.3279798,
+    "ast_hash": "376a2e634f3021f1764a42a2ef3a4d64",
+    "semantic_hash": ""
+  },
+  "docs/MAPA_DE_BASE_DE_DATOS.md": {
+    "mtime": 1785528708.3308,
+    "ast_hash": "b0d3fb465718e7fc14ad967e117e6fab",
+    "semantic_hash": ""
+  },
+  "docs/MAPA_DE_FUNCIONES.md": {
+    "mtime": 1786469791.1091843,
+    "ast_hash": "6b5d228d09814e6c222eb09e6f02fea4",
+    "semantic_hash": ""
+  },
+  "docs/MAPA_DE_MODULOS.md": {
+    "mtime": 1785340925.0180824,
+    "ast_hash": "6bd8e2805ec231e58567ec9646932766",
+    "semantic_hash": ""
+  },
+  "docs/MAPA_DE_RUTAS.md": {
+    "mtime": 1785517186.2027173,
+    "ast_hash": "4f8cf6996b111f81a1a35639b5cc45e0",
+    "semantic_hash": ""
+  },
+  "docs/MAPA_FORMATO_FICHA_OCUPACIONAL.md": {
+    "mtime": 1785436219.6530087,
+    "ast_hash": "071886aa18b084f5c99aad8ab53a1493",
+    "semantic_hash": ""
+  },
+  "docs/RENOMBRADOS_REALIZADOS.md": {
+    "mtime": 1784830115.8054962,
+    "ast_hash": "ad5b7f2e0cd595a1c83f0b8822c9bf25",
+    "semantic_hash": ""
+  },
+  "docs/fichas-ocupacionales/AUDITORIA_FORMATO_FICHA_PDF.md": {
+    "mtime": 1785333829.416288,
+    "ast_hash": "3116f9256edc078a6c27c671c2285780",
+    "semantic_hash": ""
+  },
+  "docs/fichas-ocupacionales/MAPA_FORMATO_FICHA_OCUPACIONAL.md": {
+    "mtime": 1785333820.5001638,
+    "ast_hash": "7255663b09f23c507bb878021fcc006b",
+    "semantic_hash": ""
+  },
+  "docs/fichas-ocupacionales/inventario-campos.md": {
+    "mtime": 1784322866.2716634,
+    "ast_hash": "c991a38da07a830e1713906b840d2f8b",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/arquitectura.md": {
+    "mtime": 1785164518.9874704,
+    "ast_hash": "212d3b597fa229000f58b374d67daa19",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/base-de-datos.md": {
+    "mtime": 1785164518.993495,
+    "ast_hash": "0e846c3f42d1245a2b7481c54fe31a63",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/convenciones.md": {
+    "mtime": 1784214681.0663764,
+    "ast_hash": "44e31f943c4608fd1670f9d6d943badd",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/dashboard.md": {
+    "mtime": 1784214681.074346,
+    "ast_hash": "0502cdf2fc416028b40530301e537378",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/despliegue.md": {
+    "mtime": 1784144474.9277337,
+    "ast_hash": "1f70ee3f58ac6e277793bced10bcdd82",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/estructura.md": {
+    "mtime": 1784313001.1169767,
+    "ast_hash": "34db7a18483b395aabe2bb47d022db5d",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/normalizarNombre().md": {
+    "mtime": 1784557109.3610919,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/plantilla-modulo.md": {
+    "mtime": 1784214681.0901277,
+    "ast_hash": "7345c838ea16f0aa4bbfef68abcd82ed",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/pruebas.md": {
+    "mtime": 1784144474.9207306,
+    "ast_hash": "dd18527df39fa16a1b8d53ae8a2a83ba",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/reportes.md": {
+    "mtime": 1784216771.8547726,
+    "ast_hash": "fa7cf1f39f62df89e4c7b3fc5f16d9cb",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/roadmap.md": {
+    "mtime": 1784672984.6013157,
+    "ast_hash": "80d01904762d1b207de5d501711a8710",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/roles-y-permisos.md": {
+    "mtime": 1785164518.9992723,
+    "ast_hash": "0f50cfd059514b0bc62347c2c907f99e",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/seguridad.md": {
+    "mtime": 1784208438.682856,
+    "ast_hash": "a930fa0a054e418deb513dcb7b88057e",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/semantic_hash_99.md": {
+    "mtime": 1784319556.8024485,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "docs/obsidian/trabajadores.repositorio.ts.md": {
+    "mtime": 1784319638.6538024,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "docs/reorganizacion-nombres-arquitectura-plan.md": {
+    "mtime": 1784825799.4159772,
+    "ast_hash": "10393f1898b12ec7525bad9b0e18de06",
+    "semantic_hash": ""
+  },
+  "docs/stitch/auditor_a_m_vil/code.html": {
+    "mtime": 1784741020.5045555,
+    "ast_hash": "6ec264286d29efd5e794970d48870758",
+    "semantic_hash": ""
+  },
+  "docs/stitch/centro_de_reportes_m_dicos/code.html": {
+    "mtime": 1784741020.0595694,
+    "ast_hash": "0a5c6dd8c6586501f7c1c91e3b7a6a57",
+    "semantic_hash": ""
+  },
+  "docs/stitch/clinical_precision_evolution/DESIGN.md": {
+    "mtime": 1784741020.6343007,
+    "ast_hash": "dd623f7e4e9a9019e7a1f14aeca9a43e",
+    "semantic_hash": ""
+  },
+  "docs/stitch/configuraci_n_general_del_sistema/code.html": {
+    "mtime": 1784741018.659812,
+    "ast_hash": "674e74852af744d3e7574b61f6728354",
+    "semantic_hash": ""
+  },
+  "docs/stitch/dashboard_del_sistema_modernizado_final/code.html": {
+    "mtime": 1784741017.109694,
+    "ast_hash": "664a79cbed9940feb080cec92d0c8f2c",
+    "semantic_hash": ""
+  },
+  "docs/stitch/estados_del_sistema_vac_o_y_b_squeda/code.html": {
+    "mtime": 1784741020.2672565,
+    "ast_hash": "8e7391737115494ab61eb1285cac2e0e",
+    "semantic_hash": ""
+  },
+  "docs/stitch/ficha_m_dica_ocupacional_a_p_final/code.html": {
+    "mtime": 1784741019.3631177,
+    "ast_hash": "8f227b5a2eb5efb4672daca2d3f601ff",
+    "semantic_hash": ""
+  },
+  "docs/stitch/gesti_n_de_recetas_m_dicas_escritorio/code.html": {
+    "mtime": 1784741018.2204823,
+    "ast_hash": "5e3d01cf7e61cbd4bf665c7d9301a60b",
+    "semantic_hash": ""
+  },
+  "docs/stitch/gesti_n_de_trabajadores_modernizada_final/code.html": {
+    "mtime": 1784741017.5731006,
+    "ast_hash": "16f091c30c573a00828c5b23d8dc2570",
+    "semantic_hash": ""
+  },
+  "docs/stitch/gesti_n_de_usuarios_y_permisos/code.html": {
+    "mtime": 1784741019.1343539,
+    "ast_hash": "6b003a62c9d947e5c44f5a8a3085d084",
+    "semantic_hash": ""
+  },
+  "docs/stitch/panel_de_auditor_a_del_sistema/code.html": {
+    "mtime": 1784741018.8839874,
+    "ast_hash": "bcb3216bb0acd820cfd296701cb96c94",
+    "semantic_hash": ""
+  },
+  "docs/stitch/perfil_del_trabajador_modernizado_final/code.html": {
+    "mtime": 1784741017.815088,
+    "ast_hash": "5ae9f92866d6bbe2ab041c198a950154",
+    "semantic_hash": ""
+  },
+  "docs/stitch/registro_diario_de_atenciones_escritorio/code.html": {
+    "mtime": 1784741017.330244,
+    "ast_hash": "88b0627479ae6f4c08d32fb03e9180fe",
+    "semantic_hash": ""
+  },
+  "docs/stitch/registro_diario_de_atenciones_m_vil/code.html": {
+    "mtime": 1784741019.5955906,
+    "ast_hash": "2bb3a27e2ca31184a6f6ef3425094213",
+    "semantic_hash": ""
+  },
+  "docs/stitch/registro_diario_estado_vac_o_escritorio/code.html": {
+    "mtime": 1784741019.8029585,
+    "ast_hash": "ec031e6f1e46e58d455845851b6accbf",
+    "semantic_hash": ""
+  },
+  "docs/stitch/vista_de_impresi_n_receta_a4_escritorio/code.html": {
+    "mtime": 1784741018.445438,
+    "ast_hash": "def33b4b7e2de4844d7f3d9920fa3d75",
+    "semantic_hash": ""
+  },
+  "errors.txt": {
+    "mtime": 1786466622.7612524,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "src/modulos/atenciones-medicas/README.md": {
+    "mtime": 1785164496.1872487,
+    "ast_hash": "8917ed7da3cb5b187a5e2e18aa4f3a80",
+    "semantic_hash": ""
+  },
+  "src/modulos/auditoria/README.md": {
+    "mtime": 1785164496.155137,
+    "ast_hash": "6f68eb090ffb1a87c91f92263c87b921",
+    "semantic_hash": ""
+  },
+  "src/modulos/autenticacion/README.md": {
+    "mtime": 1785164332.9487703,
+    "ast_hash": "b5e6394cc429ac477d1c7f6fc7863aa9",
+    "semantic_hash": ""
+  },
+  "src/modulos/catalogo-cie10/README.md": {
+    "mtime": 1785164496.1030974,
+    "ast_hash": "ddba92b676f1d292eef8fb6cc7dbce77",
+    "semantic_hash": ""
+  },
+  "src/modulos/citas/README.md": {
+    "mtime": 1785164496.1160736,
+    "ast_hash": "366c674798e37f485f0445d417ca87ae",
+    "semantic_hash": ""
+  },
+  "src/modulos/configuracion-profesional/README.md": {
+    "mtime": 1785164332.9737737,
+    "ast_hash": "a9cd5e547c5c3c9ced4aa441797baf99",
+    "semantic_hash": ""
+  },
+  "src/modulos/departamentos/README.md": {
+    "mtime": 1785164406.5272486,
+    "ast_hash": "15b167627b4fbd775893df6038f5ba01",
+    "semantic_hash": ""
+  },
+  "src/modulos/documentos-clinicos/README.md": {
+    "mtime": 1785164450.1338813,
+    "ast_hash": "9e5490a29c3eb46f98ac753258a080e3",
+    "semantic_hash": ""
+  },
+  "src/modulos/empresas/README.md": {
+    "mtime": 1785164406.5174737,
+    "ast_hash": "eb425ad618d043e4161498c5dafe46d5",
+    "semantic_hash": ""
+  },
+  "src/modulos/evaluaciones-medicas/README.md": {
+    "mtime": 1785164450.1040056,
+    "ast_hash": "55dc217ef6fb14173dd935697e6507d9",
+    "semantic_hash": ""
+  },
+  "src/modulos/fichas-ocupacionales/README.md": {
+    "mtime": 1786469716.8372598,
+    "ast_hash": "b70567d31ba6de4d486fe66c7ce56145",
+    "semantic_hash": ""
+  },
+  "src/modulos/inicio/README.md": {
+    "mtime": 1785164496.1682088,
+    "ast_hash": "4c580c8cc6b92ccf78e56f42be270d13",
+    "semantic_hash": ""
+  },
+  "src/modulos/inventario/README.md": {
+    "mtime": 1785340854.2594523,
+    "ast_hash": "62292a0989a680bfcc7077506ce98bc6",
+    "semantic_hash": ""
+  },
+  "src/modulos/recetas/README.md": {
+    "mtime": 1785275455.1150284,
+    "ast_hash": "9a60ba902a0243e0c572f168647136c7",
+    "semantic_hash": ""
+  },
+  "src/modulos/registro-diario/README.md": {
+    "mtime": 1785275455.1060245,
+    "ast_hash": "3ae16901d94a09935eebbe04969520b0",
+    "semantic_hash": ""
+  },
+  "src/modulos/reportes/README.md": {
+    "mtime": 1785164496.1373243,
+    "ast_hash": "ddbc79cc154e7b176f83397d37b7ba16",
+    "semantic_hash": ""
+  },
+  "src/modulos/roles/README.md": {
+    "mtime": 1785164332.9649408,
+    "ast_hash": "6d3a490d45db22275dfd95f05ab3f371",
+    "semantic_hash": ""
+  },
+  "src/modulos/trabajadores/README.md": {
+    "mtime": 1785523965.5169318,
+    "ast_hash": "985434c0ed2476b85b1581708eacc2be",
+    "semantic_hash": ""
+  },
+  "src/modulos/usuarios/README.md": {
+    "mtime": 1785164332.9574165,
+    "ast_hash": "ef3fdd5ef8e4b00a3dd5ce8c7e22e7da",
+    "semantic_hash": ""
+  },
+  "src/modulos/vinculos-laborales/README.md": {
+    "mtime": 1785517147.5337594,
+    "ast_hash": "b78864be0f45face66eb4b6499caedf8",
+    "semantic_hash": ""
+  },
+  "formatos/CIE_10.pdf": {
+    "mtime": 1784231582.1887577,
+    "ast_hash": "b624ae107d45c91b326d604a4543df35",
+    "semantic_hash": ""
+  },
+  "formatos/Orden-Exa\u0301menes-BIOKOCHMED.pdf": {
+    "mtime": 1784221380.0,
+    "ast_hash": "5fa0bdf68cac9b8c8b1dbdaa0d90a149",
+    "semantic_hash": ""
+  },
+  "docs/stitch/auditor_a_m_vil/screen.png": {
+    "mtime": 1784741020.5658076,
+    "ast_hash": "cf5879430973f7073064db722d664b2a",
+    "semantic_hash": ""
+  },
+  "docs/stitch/centro_de_reportes_m_dicos/screen.png": {
+    "mtime": 1784741020.1306703,
+    "ast_hash": "79250c41ebd52b2b50b507afaa759b7c",
+    "semantic_hash": ""
+  },
+  "docs/stitch/configuraci_n_general_del_sistema/screen.png": {
+    "mtime": 1784741018.7300603,
+    "ast_hash": "4a09c78a3d0b6f63f854c7fa9b8fc092",
+    "semantic_hash": ""
+  },
+  "docs/stitch/dashboard_del_sistema_modernizado_final/screen.png": {
+    "mtime": 1784741017.177528,
+    "ast_hash": "074316117f19892c578e4e5a0a32f1a5",
+    "semantic_hash": ""
+  },
+  "docs/stitch/estados_del_sistema_vac_o_y_b_squeda/screen.png": {
+    "mtime": 1784741020.3439732,
+    "ast_hash": "8f3e63d60c2481d57dff638547178d92",
+    "semantic_hash": ""
+  },
+  "docs/stitch/ficha_m_dica_ocupacional_a_p_final/screen.png": {
+    "mtime": 1784741019.430883,
+    "ast_hash": "af049a93d254988455e0b3fc72ec3223",
+    "semantic_hash": ""
+  },
+  "docs/stitch/gesti_n_de_recetas_m_dicas_escritorio/screen.png": {
+    "mtime": 1784741018.2835214,
+    "ast_hash": "3d823aca6c5080c256aaf3818028036c",
+    "semantic_hash": ""
+  },
+  "docs/stitch/gesti_n_de_trabajadores_modernizada_final/screen.png": {
+    "mtime": 1784741017.6545458,
+    "ast_hash": "d181bc7d26a74c0b67edbfadb0c72d13",
+    "semantic_hash": ""
+  },
+  "docs/stitch/gesti_n_de_usuarios_y_permisos/screen.png": {
+    "mtime": 1784741019.1973777,
+    "ast_hash": "1ad86c87d01243b27ef26f692af9ecb3",
+    "semantic_hash": ""
+  },
+  "docs/stitch/panel_de_auditor_a_del_sistema/screen.png": {
+    "mtime": 1784741018.9477832,
+    "ast_hash": "5276d69c08db2f2e5d0f0682de9d63af",
+    "semantic_hash": ""
+  },
+  "docs/stitch/perfil_del_trabajador_modernizado_final/screen.png": {
+    "mtime": 1784741017.956331,
+    "ast_hash": "a4c7173b473f8160b0a325cee7225e05",
+    "semantic_hash": ""
+  },
+  "docs/stitch/registro_diario_de_atenciones_escritorio/screen.png": {
+    "mtime": 1784741017.3917086,
+    "ast_hash": "1bdce87025ac071054c02661903a9e58",
+    "semantic_hash": ""
+  },
+  "docs/stitch/registro_diario_de_atenciones_m_vil/screen.png": {
+    "mtime": 1784741019.6474528,
+    "ast_hash": "99db12678c67a362c8bf8af9da034dbd",
+    "semantic_hash": ""
+  },
+  "docs/stitch/registro_diario_estado_vac_o_escritorio/screen.png": {
+    "mtime": 1784741019.8591423,
+    "ast_hash": "0302ce3560125fb8859e2f536ecf75c6",
+    "semantic_hash": ""
+  },
+  "docs/stitch/vista_de_impresi_n_receta_a4_escritorio/screen.png": {
+    "mtime": 1784741018.5153852,
+    "ast_hash": "b5417534a80661228edcfc6831e19cc9",
+    "semantic_hash": ""
+  },
+  "public/img/logoAP.png": {
+    "mtime": 1784651259.0553439,
+    "ast_hash": "6d091cdffcc36354d6676f8118b7b79c",
+    "semantic_hash": ""
+  },
+  "src/img/logoAP.png": {
+    "mtime": 1784651259.0553439,
+    "ast_hash": "6d091cdffcc36354d6676f8118b7b79c",
+    "semantic_hash": ""
+  }
+}

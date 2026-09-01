@@ -1,0 +1,2 @@
+export const TAMANO_PAGINA_DEPARTAMENTOS = 20;
+export const OPCIONES_TAMANO_PAGINA_DEPARTAMENTOS = [20, 50, 60, 80] as const;

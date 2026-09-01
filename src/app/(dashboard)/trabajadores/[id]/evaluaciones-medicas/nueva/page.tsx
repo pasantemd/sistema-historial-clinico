@@ -1,0 +1,2 @@
+import { redirect } from "next/navigation";
+export default async function Page({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ registroDiarioId?: string | string[] }> }) { const { id } = await params; const p = await searchParams; const registro = typeof p.registroDiarioId === "string" ? `&registroDiarioId=${p.registroDiarioId}` : ""; redirect(`/evaluaciones-medicas/nueva?trabajadorId=${id}${registro}`); }

@@ -1,0 +1,89 @@
+name: Validación
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: sistema_historial_clinico
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/sistema_historial_clinico?schema=public
+      NEXTAUTH_URL: http://127.0.0.1:3100
+      SEED_ADMIN_EMAIL: administrador@desarrollo.local
+      PLAYWRIGHT_BASE_URL: http://127.0.0.1:3100
+      PLAYWRIGHT_EMAIL: qa_admin@historial.local
+      PLAYWRIGHT_PERMITIR_ESCRITURAS: "NO"
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Generar secretos efímeros
+        run: |
+          echo "NEXTAUTH_SECRET=$(openssl rand -hex 32)" >> "$GITHUB_ENV"
+          echo "SEED_ADMIN_PASSWORD=$(openssl rand -hex 24)" >> "$GITHUB_ENV"
+          QA_PASSWORD="$(openssl rand -hex 24)"
+          echo "QA_E2E_PASSWORD=$QA_PASSWORD" >> "$GITHUB_ENV"
+          echo "PLAYWRIGHT_PASSWORD=$QA_PASSWORD" >> "$GITHUB_ENV"
+
+      - name: Aplicar migraciones
+        run: npx prisma migrate deploy
+
+      - name: Cargar catálogos y datos QA
+        run: |
+          npx prisma db seed
+          npm run datos:qa:cargar
+
+      - name: Validar Prisma
+        run: |
+          npx prisma validate
+          npx prisma migrate status
+
+      - name: Validar tipos
+        run: npm run typecheck
+
+      - name: Ejecutar lint
+        run: npm run lint
+
+      - name: Ejecutar pruebas unitarias
+        run: npm test
+
+      - name: Compilar
+        run: npm run build
+
+      - name: Instalar Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Ejecutar E2E seguras
+        run: npx playwright test --workers=1

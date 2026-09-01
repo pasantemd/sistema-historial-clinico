@@ -1,0 +1,359 @@
+.certificado-oficial {
+  --certificado-borde: #7f7f7f;
+  --certificado-cabecera: #d9daf8;
+  --certificado-celda: #c9f7cc;
+  width: 285mm;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: #000;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  line-height: 1.05;
+  box-sizing: border-box;
+}
+
+.certificado-oficial,
+.certificado-oficial * {
+  box-sizing: border-box;
+}
+
+.certificado-titulo,
+.certificado-seccion-titulo {
+  margin: 0;
+  border: 1px solid var(--certificado-borde);
+  background: var(--certificado-cabecera);
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.certificado-titulo {
+  min-height: 5.5mm;
+  padding: 0.6mm 1mm;
+  text-align: center;
+  font-size: 10pt;
+  line-height: 1;
+}
+
+.certificado-seccion-titulo {
+  min-height: 5mm;
+  padding: 0.7mm 0.5mm 0.35mm;
+  font-size: 9pt;
+  line-height: 1;
+}
+
+.certificado-tabla {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.certificado-tabla th,
+.certificado-tabla td {
+  border: 1px solid var(--certificado-borde);
+  color: #000;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 400;
+  overflow-wrap: anywhere;
+}
+
+.certificado-tabla th {
+  height: 9.5mm;
+  padding: 0.5mm;
+  background: var(--certificado-celda);
+  font-size: 7.3pt;
+  line-height: 1.05;
+}
+
+.certificado-tabla td {
+  height: 5mm;
+  padding: 0.4mm 0.7mm;
+  background: #fff;
+  font-size: 7pt;
+}
+
+.certificado-tabla-establecimiento th:nth-child(1) { width: 29.5%; }
+.certificado-tabla-establecimiento th:nth-child(2) { width: 16.5%; }
+.certificado-tabla-establecimiento th:nth-child(3) { width: 10%; }
+.certificado-tabla-establecimiento th:nth-child(4) { width: 16%; }
+.certificado-tabla-establecimiento th:nth-child(5) { width: 16.5%; }
+.certificado-tabla-establecimiento th:nth-child(6) { width: 11.5%; }
+
+.certificado-tabla-persona th {
+  height: 4.6mm;
+  padding-block: 0.35mm;
+  font-size: 7pt;
+}
+
+.certificado-tabla-persona th:nth-child(1) { width: 24%; }
+.certificado-tabla-persona th:nth-child(2) { width: 19.5%; }
+.certificado-tabla-persona th:nth-child(3) { width: 16.8%; }
+.certificado-tabla-persona th:nth-child(4) { width: 13.7%; }
+.certificado-tabla-persona th:nth-child(5) { width: 6%; }
+.certificado-tabla-persona th:nth-child(6) { width: 20%; }
+
+.certificado-separador {
+  height: 5mm;
+  border-bottom: 1mm solid var(--certificado-borde);
+}
+
+.certificado-bloque-enmarcado {
+  border-inline: 1px solid var(--certificado-borde);
+  border-bottom: 1px solid var(--certificado-borde);
+}
+
+.certificado-datos-generales {
+  min-height: 23mm;
+  padding: 4.5mm 9mm 2.5mm;
+  font-size: 8pt;
+}
+
+.certificado-fecha,
+.certificado-evaluacion {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 45mm 1fr;
+}
+
+.certificado-fecha {
+  margin-bottom: 2.5mm;
+}
+
+.certificado-fecha-campos {
+  display: grid;
+  width: 48mm;
+  grid-template-columns: 18mm 9mm 9mm;
+  grid-template-rows: 5mm 3mm;
+  text-align: center;
+}
+
+.certificado-fecha-campos > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--certificado-borde);
+  border-right: 0;
+  font-size: 7pt;
+}
+
+.certificado-fecha-campos > span:nth-child(3) {
+  border-right: 1px solid var(--certificado-borde);
+}
+
+.certificado-fecha-campos small {
+  padding-top: 0.5mm;
+  font-size: 5pt;
+}
+
+.certificado-evaluacion {
+  grid-template-columns: 45mm repeat(4, 1fr);
+}
+
+.certificado-evaluacion label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9mm;
+  font-weight: 400;
+}
+
+.certificado-casilla {
+  display: inline-flex;
+  width: 12mm;
+  height: 5mm;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--certificado-borde);
+  background: #fff;
+  font-size: 7pt;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.certificado-introduccion {
+  height: 5mm;
+  margin: 0;
+  padding: 0.55mm 0.3mm;
+  border-bottom: 1px solid var(--certificado-borde);
+  font-size: 7.6pt;
+}
+
+.certificado-opciones-aptitud {
+  display: grid;
+  grid-template-columns: 21.5% 27.5% 25% 26%;
+  min-height: 5mm;
+  border-bottom: 1px solid var(--certificado-borde);
+}
+
+.certificado-opciones-aptitud > div {
+  display: grid;
+  grid-template-columns: 1fr 8mm;
+  align-items: center;
+  text-align: center;
+}
+
+.certificado-opciones-aptitud > div > span:first-child {
+  height: 100%;
+  padding-top: 0.7mm;
+  background: var(--certificado-celda);
+}
+
+.certificado-opciones-aptitud .certificado-casilla {
+  width: 8mm;
+  height: 100%;
+  border-block: 0;
+  border-right: 0;
+}
+
+.certificado-observaciones strong {
+  display: block;
+  height: 4.5mm;
+  padding: 0.6mm 0.3mm;
+  font-size: 7pt;
+  font-weight: 400;
+}
+
+.certificado-lineas {
+  min-height: 18mm;
+  padding: 0.6mm 1mm;
+  white-space: pre-wrap;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 4.35mm,
+    var(--certificado-borde) 4.35mm,
+    var(--certificado-borde) 4.6mm
+  );
+  font-size: 7pt;
+  line-height: 4.5mm;
+}
+
+.certificado-recomendaciones {
+  min-height: 15mm;
+  padding: 1mm 2mm;
+  border-top: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 4.5mm,
+    var(--certificado-borde) 4.5mm,
+    var(--certificado-borde) 4.75mm
+  );
+  text-align: center;
+  white-space: pre-wrap;
+  font-size: 7.5pt;
+  font-weight: 700;
+  line-height: 4.5mm;
+}
+
+.certificado-recomendaciones-contenido {
+  text-align: left;
+  font-weight: 400;
+}
+
+.certificado-declaracion {
+  min-height: 9mm;
+  margin: 4mm 0 0;
+  padding: 1mm 0.4mm;
+  border-block: 1px solid var(--certificado-borde);
+  background: var(--certificado-celda);
+  font-size: 7.3pt;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.certificado-confidencialidad {
+  min-height: 6mm;
+  margin: 0;
+  padding: 1.1mm 0.4mm;
+  font-size: 7pt;
+}
+
+.certificado-firmas {
+  display: grid;
+  grid-template-columns: minmax(0, 72fr) minmax(0, 28fr);
+  gap: 5mm;
+}
+
+.certificado-profesional-grid {
+  display: grid;
+  min-height: 14mm;
+  grid-template-columns: 17% 27% 14% 18% 12% 12%;
+  border-left: 1px solid var(--certificado-borde);
+  border-bottom: 1px solid var(--certificado-borde);
+}
+
+.certificado-profesional-grid > span {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  padding: 0.8mm;
+  border-right: 1px solid var(--certificado-borde);
+  overflow-wrap: anywhere;
+  font-size: 6.3pt;
+}
+
+.certificado-etiqueta {
+  background: var(--certificado-celda);
+}
+
+.certificado-etiqueta-firma {
+  justify-content: center;
+  text-align: center;
+  font-size: 8pt !important;
+}
+
+.certificado-espacio-firma {
+  background: #fff;
+}
+
+.certificado-espacio-firma-trabajador {
+  min-height: 14mm;
+  border: 1px solid var(--certificado-borde);
+  border-top: 0;
+}
+
+@page certificado-ocupacional {
+  size: A4 landscape;
+  margin: 6mm;
+}
+
+@media screen {
+  .certificado-oficial {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 18%);
+  }
+}
+
+@media print {
+  .certificado-oficial {
+    page: certificado-ocupacional;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  body:has(.certificado-oficial),
+  body:has(.certificado-oficial) main {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+}

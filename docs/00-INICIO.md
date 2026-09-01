@@ -1,0 +1,15 @@
+# Documentación
+
+- [[ESTADO_ACTUAL]]
+- [[SISTEMA]]
+- [[AUDITORIA]]
+- [[cerebro/FLUJO_GENERAL]]
+- [[cerebro/ARQUITECTURA]]
+- [[cerebro/USUARIOS_ROLES_PERMISOS]]
+- [[cerebro/TRABAJADORES_Y_VINCULOS]]
+- [[cerebro/CITAS_Y_ATENCION]]
+- [[cerebro/FLUJO_CLINICO]]
+- [[cerebro/INVENTARIO]]
+- [[cerebro/DOCUMENTOS_PDF]]
+- [[cerebro/BASE_DE_DATOS]]
+- [[cerebro/INTEGRACIONES]]
