@@ -92,6 +92,7 @@ async function main() {
   });
   const usuarioIds = usuariosQa.map((u) => u.id);
   if (usuarioIds.length > 0) {
+    await prisma.movimientoInventario.deleteMany({ where: { usuarioId: { in: usuarioIds } } });
     await prisma.usuarioRol.deleteMany({ where: { usuarioId: { in: usuarioIds } } });
     await prisma.usuarioEmpresa.deleteMany({ where: { usuarioId: { in: usuarioIds } } });
     await prisma.usuario.deleteMany({ where: { id: { in: usuarioIds } } });
